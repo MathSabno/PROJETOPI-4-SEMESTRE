@@ -34,7 +34,11 @@ public class LoginController : ControllerBase
         if (!senhaValida)
             return Unauthorized("Usuário não encontrado ou credenciais inválidas.");
 
-        // Se tudo estiver correto, retorna sucesso
-        return Ok("Login realizado com sucesso.");
+        // Se tudo estiver correto, retorna sucesso com o grupo do usuário
+        return Ok(new
+        {
+            Mensagem = "Login realizado com sucesso.",
+            Grupo = usuarioExistente.Grupo // Retorna o grupo do usuário
+        });
     }
 }

@@ -1,30 +1,29 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Importando useNavigate para redirecionamento
+import { useNavigate, useLocation } from "react-router-dom"; // Importando useLocation para acessar o estado
 
 const HomeSite = () => {
   const navigate = useNavigate(); // Hook para navegação
+  const location = useLocation(); // Hook para acessar o estado passado na navegação
 
-  // Função para redirecionar para a página de cadastro
-  const handleCadastrarUsuario = () => {
-    navigate("/cadastro-usuario");
-  };
+  const userGroup = location.state?.userGroup; // Acessa o grupo do usuário
 
-  // Função para redirecionar para a página de consulta
-  const handleConsultarUsuario = () => {
-    navigate("/consulta-usuario");
-  };
+  console.log("Estado passado:", location.state); // Depuração
+  console.log("Grupo do usuário:", userGroup); // Depuração
 
   return (
     <div style={styles.container}>
       <div style={styles.formContainer}>
         <h1 style={styles.titulo}>Bem-vindo ao Sistema de Usuários</h1>
         <div style={styles.botoesContainer}>
-          <button onClick={handleCadastrarUsuario} style={styles.loginFormBtn}>
-            Cadastrar Usuários
+          <button style={styles.loginFormBtn}>
+            Consultar Produto
           </button>
-          <button onClick={handleConsultarUsuario} style={styles.loginFormBtn}>
-            Consultar Usuário
-          </button>
+          {/* Mostra o botão "Consultar Usuário" apenas para Administradores */}
+          {userGroup === 1 && (
+            <button onClick={() => navigate("/consulta-usuario")} style={styles.loginFormBtn}>
+              Consultar Usuário
+            </button>
+          )}
         </div>
       </div>
     </div>
@@ -39,7 +38,7 @@ const styles = {
     justifyContent: "center",
     minHeight: "100vh",
     width: "100vw",
-    backgroundColor: "#f0f2f5",
+    backgroundColor: "#484D50",
     fontFamily: "'Nunito', sans-serif",
     margin: 0,
     padding: 0,

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\manipuladores\\usuariologinmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:manipuladores\\usuariologinmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\enums\\enumstatususuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:enums\\enumstatususuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\usuarioentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\enums\\enumgrupousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "UsuarioLoginManipulador.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
+              "RelativeDocumentMoniker": "Manipuladores\\UsuarioLoginManipulador.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
+              "RelativeToolTip": "Manipuladores\\UsuarioLoginManipulador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:03:43.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "20250222192945_CriarTabelasNoBanco.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\20250222192945_CriarTabelasNoBanco.cs",
               "RelativeDocumentMoniker": "Migrations\\20250222192945_CriarTabelasNoBanco.cs",
@@ -66,20 +83,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T23:11:57.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -87,25 +104,24 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAwwB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T23:51:53.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T23:51:53.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAmwIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T22:51:16.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "UsuarioEntidade.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\UsuarioEntidade.cs",
               "RelativeDocumentMoniker": "Entidades\\UsuarioEntidade.cs",
@@ -113,12 +129,11 @@
               "RelativeToolTip": "Entidades\\UsuarioEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T22:56:35.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T22:56:35.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UsuarioDbContext.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\EF\\UsuarioDbContext.cs",
               "RelativeDocumentMoniker": "EF\\UsuarioDbContext.cs",
@@ -126,25 +141,24 @@
               "RelativeToolTip": "EF\\UsuarioDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T23:56:05.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T23:56:05.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EnumStatusUsuario.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Enums\\EnumStatusUsuario.cs",
               "RelativeDocumentMoniker": "Enums\\EnumStatusUsuario.cs",
               "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Enums\\EnumStatusUsuario.cs",
               "RelativeToolTip": "Enums\\EnumStatusUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T18:12:57.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EnumGrupoUsuario.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Enums\\EnumGrupoUsuario.cs",
               "RelativeDocumentMoniker": "Enums\\EnumGrupoUsuario.cs",
@@ -156,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",

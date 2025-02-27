@@ -11,22 +11,23 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+  
     try {
       const response = await authService.login(email, senha); // Usando o serviço de autenticação
       setMensagem("Login realizado com sucesso!");
       console.log("Resposta da API:", response);
+  
+      // Extrai o grupo do usuário da resposta da API
+      const userGroup = response.grupo; // Certifique-se de que a API retorne o grupo
+  
+      // Redireciona para a página home após o login bem-sucedido
+      navigate("/home-site", { state: { userGroup } }); // Passa o grupo como estado
     } catch (error) {
       setMensagem(error);
       console.error("Erro ao fazer login:", error);
     }
   };
-
-  // Função para redirecionar para a tela de alteração de usuário
-  const handleHome = () => {
-    navigate("/home-site"); // Redireciona para a tela de alteração de usuário
-  };
-
+  
   return (
     <div style={styles.container}>
       <div style={styles.formContainer}>
@@ -55,7 +56,7 @@ const Login = () => {
             <span style={styles.focusInput} data-placeholder="Senha"></span>
           </div>
           <div style={styles.containerLoginFormBtn}>
-            <button onClick={handleHome} style={styles.loginFormBtn}>
+            <button type="submit" style={styles.loginFormBtn}>
               Entrar
             </button>
           </div>

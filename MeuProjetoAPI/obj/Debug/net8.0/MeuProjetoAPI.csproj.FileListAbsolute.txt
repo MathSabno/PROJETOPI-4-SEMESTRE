@@ -335,3 +335,4 @@ C:\4 SEMESTRE\PI - DESENVOLVIMENTO WEB\MeuProjetoAPI\obj\Debug\net8.0\MeuProjeto
 C:\4 SEMESTRE\PI - DESENVOLVIMENTO WEB\MeuProjetoAPI\obj\Debug\net8.0\MeuProjetoAPI.genruntimeconfig.cache
 C:\4 SEMESTRE\PI - DESENVOLVIMENTO WEB\MeuProjetoAPI\obj\Debug\net8.0\ref\MeuProjetoAPI.dll
 C:\4 SEMESTRE\PI - DESENVOLVIMENTO WEB\MeuProjetoAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\4 SEMESTRE\PI - DESENVOLVIMENTO WEB\MeuProjetoAPI\obj\Debug\net8.0\MeuProjetoAPI.sourcelink.json
