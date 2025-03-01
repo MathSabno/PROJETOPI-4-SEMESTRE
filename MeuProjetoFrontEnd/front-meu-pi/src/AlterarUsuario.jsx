@@ -57,12 +57,6 @@ const AlterarUsuario = () => {
     return true;
   };
 
-  // Função para validar o email
-  const validarEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  };
-
   const handleAlteracao = async (e) => {
     e.preventDefault();
 
@@ -150,6 +144,15 @@ const AlterarUsuario = () => {
             </button>
           </div>
         </form>
+        {/* Botão de Voltar */}
+        <div style={styles.containerLoginFormBtn}>
+          <button
+            onClick={() => navigate("/consulta-usuario")} // Redireciona para a consulta de usuários
+            style={styles.loginFormBtn}
+          >
+            Voltar
+          </button>
+        </div>
         {erro && <p style={styles.erro}>{erro}</p>}
         {mensagem && <p style={styles.mensagem}>{mensagem}</p>}
       </div>

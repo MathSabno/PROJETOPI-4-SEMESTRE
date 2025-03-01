@@ -26,6 +26,10 @@ const ConsultaUsuarios = () => {
     navigate("/cadastro-usuario");
   };
 
+  const handleHome = () => {
+    navigate("/home-site");
+  };
+
   // Função para alternar a seleção de um usuário
   const toggleSelecaoUsuario = (id) => {
     if (usuariosSelecionados.includes(id)) {
@@ -144,7 +148,7 @@ const ConsultaUsuarios = () => {
                 ALTERAR SENHA
               </button>
               <button onClick={desativarUsuarios} style={styles.loginFormBtn}>
-                DESATIVAR USUÁRIO
+                ATIVAR/DESATIVAR 
               </button>
               <button onClick={handleCadastrarUsuario} style={styles.loginFormBtn}>
                 INCLUIR USUÁRIO

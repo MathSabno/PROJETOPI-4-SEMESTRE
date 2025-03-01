@@ -172,6 +172,15 @@ const CadastroUsuario = () => {
             </button>
           </div>
         </form>
+        {/* Botão de Voltar */}
+        <div style={styles.containerLoginFormBtn}>
+          <button
+            onClick={() => navigate("/consulta-usuario")} // Redireciona para a consulta de usuários
+            style={styles.loginFormBtn}
+          >
+            Voltar
+          </button>
+        </div>
         {erro && <p style={styles.erro}>{erro}</p>}
         {mensagem && <p style={styles.mensagem}>{mensagem}</p>}
       </div>

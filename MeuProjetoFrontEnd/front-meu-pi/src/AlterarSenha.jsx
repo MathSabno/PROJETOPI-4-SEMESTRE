@@ -27,7 +27,7 @@ const AlterarSenha = () => {
     }
 
     setCarregando(true);
-    console.log (novaSenha);
+    console.log(novaSenha);
 
     try {
       // Envia a nova senha para o backend
@@ -78,6 +78,15 @@ const AlterarSenha = () => {
             {carregando ? "Carregando..." : "Salvar Alterações"}
           </button>
         </form>
+        {/* Botão de Voltar */}
+        <div style={styles.containerLoginFormBtn}>
+          <button
+            onClick={() => navigate("/consulta-usuario")} // Redireciona para a consulta de usuários
+            style={styles.botao}
+          >
+            Voltar
+          </button>
+        </div>
         {erro && <p style={styles.erro}>{erro}</p>}
         {mensagem && <p style={styles.mensagem}>{mensagem}</p>}
       </div>
