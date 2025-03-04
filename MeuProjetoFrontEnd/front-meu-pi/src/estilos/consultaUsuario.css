@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f0f2f5;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.formContainer {
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.titulo {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+.carregando {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+}
+  
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+  
+.cabecalho {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+  
+.linha {
+    transition: background-color 0.3s ease;
+}
+  
+.linha:hover {
+    background-color: #f1f1f1;
+}
+  
+.celula {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #555;
+}
+  
+.botoesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.loginFormBtn {
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.loginFormBtn:hover {
+    opacity: 0.9;
+}
+  
+.acaoBtn {
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 1.2;
+    padding: 5px 10px;
+    margin: 2px;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.acaoBtn:hover {
+    opacity: 0.9;
+}

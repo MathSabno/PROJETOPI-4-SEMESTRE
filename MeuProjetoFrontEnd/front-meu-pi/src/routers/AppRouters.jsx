@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "../Login"; 
-import HomeSite from "../HomeSite";
-import CadastroUsuario from "../CadastroUsuario";
-import ConsultaUsuarios from "../ConsultaUsuarios";
-import AlterarUsuario from "../AlterarUsuario";
-import AlterarSenha from "../AlterarSenha"; 
+import Login from "../componentes/Login"; 
+import HomeSite from "../componentes/HomeSite";
+import CadastroUsuario from "../componentes/CadastroUsuario";
+import ConsultaUsuarios from "../componentes/ConsultaUsuarios";
+import AlterarUsuario from "../componentes/AlterarUsuario";
+import AlterarSenha from "../componentes/AlterarSenha"; 
 
 const AppRoutes = () => {
   return (

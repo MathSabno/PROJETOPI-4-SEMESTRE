@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import authService from "../src/services/authService";
+import authService from "../services/authService";
 
 const AlterarSenha = () => {
   const { id } = useParams();
@@ -58,6 +58,7 @@ const AlterarSenha = () => {
               value={novaSenha}
               onChange={(e) => setNovaSenha(e.target.value)}
               style={styles.input}
+              placeholder="Nova senha"
               required
             />
           </div>
@@ -71,6 +72,7 @@ const AlterarSenha = () => {
               value={confirmarSenha}
               onChange={(e) => setConfirmarSenha(e.target.value)}
               style={styles.input}
+              placeholder="Confirmar senha"
               required
             />
           </div>

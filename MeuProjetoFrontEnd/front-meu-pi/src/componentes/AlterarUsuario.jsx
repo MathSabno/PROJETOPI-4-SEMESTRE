@@ -1,21 +1,43 @@
-import React, { useState } from "react";
-import authService from "../src/services/authService"; // Importando o serviço
-import { useNavigate } from "react-router-dom"; // Importando useNavigate para redirecionamento
+import React, { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import authService from "../services/authService";
 
-const CadastroUsuario = () => {
-  const navigate = useNavigate(); // Hook para navegação
+const AlterarUsuario = () => {
+  const { id } = useParams(); // Obtém o ID do usuário da URL
+  const navigate = useNavigate();
 
   const [nome, setNome] = useState("");
   const [cpf, setCpf] = useState("");
-  const [email, setEmail] = useState("");
   const [grupo, setGrupo] = useState("1"); // 1 = Administrador, 2 = Estoquista
   const [senha, setSenha] = useState("");
-  const [confirmarSenha, setConfirmarSenha] = useState("");
+  const [email, setEmail] = useState("");
   const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
-  const [carregando, setCarregando] = useState(false); // Estado para controlar o carregamento
+  const [carregando, setCarregando] = useState(false);
 
-  // Função para validar o CPF
+  // Carrega os dados do usuário ao abrir a tela
+  useEffect(() => {
+    const carregarUsuario = async () => {
+      try {
+        const usuarios = await authService.listarUsuarios();
+        const usuario = usuarios.find((u) => u.id === parseInt(id));
+        if (usuario) {
+          setNome(usuario.name);
+          setCpf(usuario.cpf);
+          setEmail(usuario.email);
+          setSenha(usuario.senha);
+          setGrupo(usuario.grupo.toString());
+        } else {
+          setErro("Usuário não encontrado.");
+        }
+      } catch (error) {
+        setErro("Erro ao carregar dados do usuário.");
+      }
+    };
+
+    carregarUsuario();
+  }, [id]);
+
   const validarCPF = (cpf) => {
     cpf = cpf.replace(/[^\d]+/g, "");
     if (cpf.length !== 11 || !!cpf.match(/(\d)\1{10}/)) return false;
@@ -35,19 +57,12 @@ const CadastroUsuario = () => {
     return true;
   };
 
-  // Função para validar o email
-  const validarEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  };
-
-  // Função para lidar com o envio do formulário
-  const handleCadastro = async (e) => {
+  const handleAlteracao = async (e) => {
     e.preventDefault();
 
     // Validações
-    if (!nome || !cpf || !email || !senha || !confirmarSenha) {
-      setErro("Todos os campos são obrigatórios.");
+    if (!nome || !cpf) {
+      setErro("Nome e CPF são obrigatórios.");
       return;
     }
 
@@ -56,48 +71,38 @@ const CadastroUsuario = () => {
       return;
     }
 
-    if (!validarEmail(email)) {
-      setErro("Email inválido.");
-      return;
-    }
-
-    if (senha !== confirmarSenha) {
-      setErro("As senhas não coincidem.");
-      return;
-    }
-
     // Objeto de usuário para enviar à API
-    const usuario = {
+    const usuarioAtualizado = {
+      id: parseInt(id),
       name: nome,
       cpf,
       email,
       senha,
-      grupo: parseInt(grupo), // Converte para número
-      status: 1, // Status Ativo
+      grupo: parseInt(grupo),
+      status: 1, // Adicione o status (1 = ativo, 2 = inativo)
     };
 
-    console.log("Dados enviados:", usuario); // Log para depuração
+    setCarregando(true);
 
-    setCarregando(true); // Inicia o carregamento
-
+    console.log(usuarioAtualizado);
     try {
-      await authService.cadastrarUsuario(usuario); // Usando o serviço
-      setMensagem("Usuário cadastrado com sucesso!");
+      await authService.atualizarUsuario(usuarioAtualizado); // Usando o serviço
+      setMensagem("Usuário atualizado com sucesso!");
       setErro("");
       setTimeout(() => navigate("/consulta-usuario"), 2000); // Redireciona após 2 segundos
     } catch (error) {
-      setErro(error.message || "Erro ao cadastrar usuário.");
+      setErro(error.message || "Erro ao atualizar usuário.");
       setMensagem("");
     } finally {
-      setCarregando(false); // Finaliza o carregamento
+      setCarregando(false);
     }
   };
 
   return (
     <div style={styles.container}>
       <div style={styles.formContainer}>
-        <h1 style={styles.titulo}>Cadastro de Usuário</h1>
-        <form onSubmit={handleCadastro} style={styles.form}>
+        <h1 style={styles.titulo}>Alterar Usuário</h1>
+        <form onSubmit={handleAlteracao} style={styles.form}>
           <div style={styles.wrapInput}>
             <input
               type="text"
@@ -105,6 +110,7 @@ const CadastroUsuario = () => {
               value={nome}
               onChange={(e) => setNome(e.target.value)}
               style={styles.input}
+              placeholder="Nome"
               required
             />
             <span style={styles.focusInput} data-placeholder="Nome"></span>
@@ -116,20 +122,10 @@ const CadastroUsuario = () => {
               value={cpf}
               onChange={(e) => setCpf(e.target.value)}
               style={styles.input}
+              placeholder="CPF"
               required
             />
             <span style={styles.focusInput} data-placeholder="CPF"></span>
-          </div>
-          <div style={styles.wrapInput}>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              style={styles.input}
-              required
-            />
-            <span style={styles.focusInput} data-placeholder="Email"></span>
           </div>
           <div style={styles.wrapInput}>
             <select
@@ -144,31 +140,9 @@ const CadastroUsuario = () => {
             </select>
             <span style={styles.focusInput} data-placeholder="Grupo"></span>
           </div>
-          <div style={styles.wrapInput}>
-            <input
-              type="password"
-              id="senha"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
-              style={styles.input}
-              required
-            />
-            <span style={styles.focusInput} data-placeholder="Senha"></span>
-          </div>
-          <div style={styles.wrapInput}>
-            <input
-              type="password"
-              id="confirmarSenha"
-              value={confirmarSenha}
-              onChange={(e) => setConfirmarSenha(e.target.value)}
-              style={styles.input}
-              required
-            />
-            <span style={styles.focusInput} data-placeholder="Confirmar Senha"></span>
-          </div>
           <div style={styles.containerLoginFormBtn}>
             <button type="submit" style={styles.loginFormBtn} disabled={carregando}>
-              {carregando ? "Carregando..." : "Cadastrar"}
+              {carregando ? "Carregando..." : "Salvar Alterações"}
             </button>
           </div>
         </form>
@@ -284,4 +258,4 @@ const styles = {
   },
 };
 
-export default CadastroUsuario;
+export default AlterarUsuario;
