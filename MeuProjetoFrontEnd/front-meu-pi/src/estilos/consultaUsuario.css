@@ -1,4 +1,4 @@
-.container {
+.consultaContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@
     padding: 0;
 }
   
-.formContainer {
+.consultaFormContainer {
     width: 100%;
     max-width: 900px;
     padding: 30px;

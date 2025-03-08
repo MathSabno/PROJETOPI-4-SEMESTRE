@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MeuProjetoAPI.Migrations
 {
     [DbContext(typeof(SiteDbContext))]
-    [Migration("20250222192945_CriarTabelasNoBanco")]
-    partial class CriarTabelasNoBanco
+    [Migration("20250307235918_CriandoEntidadeProduto")]
+    partial class CriandoEntidadeProduto
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,40 @@ namespace MeuProjetoAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("MeuProjetoAPI.Entidades.ProdutoEntidade", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Avaliacao")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CaminhoImg")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(2000)");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(2000)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(200)");
+
+                    b.Property<decimal>("Preco")
+                        .HasColumnType("DECIMAL(18, 2)");
+
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("INT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Produto");
+                });
 
             modelBuilder.Entity("MeuProjetoAPI.Entidades.UsuarioEntidade", b =>
                 {

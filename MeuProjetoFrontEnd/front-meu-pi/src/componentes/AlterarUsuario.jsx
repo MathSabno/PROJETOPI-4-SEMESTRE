@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import authService from "../services/authService";
+import "../estilos/alterarUsuario.css"; // Importando o arquivo CSS
 
 const AlterarUsuario = () => {
   const { id } = useParams(); // Obtém o ID do usuário da URL
@@ -99,163 +100,67 @@ const AlterarUsuario = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.formContainer}>
-        <h1 style={styles.titulo}>Alterar Usuário</h1>
-        <form onSubmit={handleAlteracao} style={styles.form}>
-          <div style={styles.wrapInput}>
+    <div className="container">
+      <div className="formContainer">
+        <h1 className="titulo">Alterar Usuário</h1>
+        <form onSubmit={handleAlteracao} className="form">
+          <div className="wrapInput">
             <input
               type="text"
               id="nome"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              style={styles.input}
+              className="input"
               placeholder="Nome"
               required
             />
-            <span style={styles.focusInput} data-placeholder="Nome"></span>
+            <span className="focusInput" data-placeholder="Nome"></span>
           </div>
-          <div style={styles.wrapInput}>
+          <div className="wrapInput">
             <input
               type="text"
               id="cpf"
               value={cpf}
               onChange={(e) => setCpf(e.target.value)}
-              style={styles.input}
+              className="input"
               placeholder="CPF"
               required
             />
-            <span style={styles.focusInput} data-placeholder="CPF"></span>
+            <span className="focusInput" data-placeholder="CPF"></span>
           </div>
-          <div style={styles.wrapInput}>
+          <div className="wrapInput">
             <select
               id="grupo"
               value={grupo}
               onChange={(e) => setGrupo(e.target.value)}
-              style={styles.input}
+              className="input"
               required
             >
               <option value="1">Administrador</option>
               <option value="2">Estoquista</option>
             </select>
-            <span style={styles.focusInput} data-placeholder="Grupo"></span>
+            <span className="focusInput" data-placeholder="Grupo"></span>
           </div>
-          <div style={styles.containerLoginFormBtn}>
-            <button type="submit" style={styles.loginFormBtn} disabled={carregando}>
+          <div className="containerLoginFormBtn">
+            <button type="submit" className="loginFormBtn" disabled={carregando}>
               {carregando ? "Carregando..." : "Salvar Alterações"}
             </button>
           </div>
         </form>
         {/* Botão de Voltar */}
-        <div style={styles.containerLoginFormBtn}>
+        <div className="containerLoginFormBtn">
           <button
             onClick={() => navigate("/consulta-usuario")} // Redireciona para a consulta de usuários
-            style={styles.loginFormBtn}
+            className="loginFormBtn"
           >
             Voltar
           </button>
         </div>
-        {erro && <p style={styles.erro}>{erro}</p>}
-        {mensagem && <p style={styles.mensagem}>{mensagem}</p>}
+        {erro && <p className="erro">{erro}</p>}
+        {mensagem && <p className="mensagem">{mensagem}</p>}
       </div>
     </div>
   );
-};
-
-// Estilos para o formulário
-const styles = {
-  container: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    minHeight: "100vh",
-    width: "100vw",
-    backgroundColor: "#f0f2f5",
-    fontFamily: "'Nunito', sans-serif",
-    margin: 0,
-    padding: 0,
-  },
-  formContainer: {
-    width: "100%",
-    maxWidth: "400px",
-    padding: "30px",
-    backgroundColor: "#fff",
-    borderRadius: "10px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-  },
-  titulo: {
-    display: "block",
-    fontSize: "30px",
-    color: "#333",
-    lineHeight: "1.2",
-    textAlign: "center",
-    marginBottom: "30px",
-  },
-  form: {
-    width: "100%",
-  },
-  wrapInput: {
-    width: "100%",
-    position: "relative",
-    borderBottom: "2px solid #adadad",
-    marginBottom: "37px",
-  },
-  input: {
-    fontSize: "15px",
-    color: "#333",
-    lineHeight: "1.2",
-    border: "none",
-    display: "block",
-    width: "100%",
-    height: "45px",
-    backgroundColor: "transparent",
-    padding: "0 5px",
-    fontFamily: "'Nunito', sans-serif",
-  },
-  focusInput: {
-    position: "absolute",
-    display: "block",
-    width: "100%",
-    height: "100%",
-    top: 0,
-    left: 0,
-    pointerEvents: "none",
-    color: "#adadad",
-    fontFamily: "'Nunito', sans-serif",
-  },
-  containerLoginFormBtn: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    paddingBottom: "13px",
-  },
-  loginFormBtn: {
-    fontSize: "15px",
-    border: "none",
-    borderRadius: "10px",
-    color: "#fff",
-    lineHeight: "1.2",
-    textTransform: "uppercase",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    height: "50px",
-    background: "linear-gradient(to left, #21d4fd, #b721ff)",
-    cursor: "pointer",
-  },
-  erro: {
-    marginTop: "20px",
-    fontSize: "1rem",
-    color: "#d9534f",
-    textAlign: "center",
-  },
-  mensagem: {
-    marginTop: "20px",
-    fontSize: "1rem",
-    color: "#28a745",
-    textAlign: "center",
-  },
 };
 
 export default AlterarUsuario;

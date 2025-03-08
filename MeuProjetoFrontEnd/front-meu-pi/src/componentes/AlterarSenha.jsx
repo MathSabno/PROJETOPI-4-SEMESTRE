@@ -109,7 +109,7 @@ const styles = {
   },
   formContainer: {
     width: "100%",
-    maxWidth: "400px",
+    maxWidth: "400px",add
     padding: "30px",
     backgroundColor: "#fff",
     borderRadius: "10px",

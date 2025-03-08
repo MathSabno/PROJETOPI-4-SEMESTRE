@@ -84,8 +84,8 @@ const ConsultaUsuarios = () => {
   }, []);
 
   return (
-    <div className="container">
-      <div className="formContainer">
+    <div className="consultaContainer">
+      <div className="consultaFormContainer">
         <h1 className="titulo">Consulta de Usuários</h1>
         {carregando ? (
           <div className="carregando">

@@ -16,6 +16,94 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MeuProjetoAPI.Controllers.ProdutoController",
+    "Method": "Create",
+    "RelativePath": "api/Produto/CreateProduto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "produto",
+        "Type": "MeuProjetoAPI.Entidades.ProdutoEntidade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MeuProjetoAPI.Controllers.ProdutoController",
+    "Method": "Delete",
+    "RelativePath": "api/Produto/DeleteProduto",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MeuProjetoAPI.Controllers.ProdutoController",
+    "Method": "List",
+    "RelativePath": "api/Produto/ListarProdutos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MeuProjetoAPI.Entidades.ProdutoEntidade, MeuProjetoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MeuProjetoAPI.Controllers.ProdutoController",
+    "Method": "Update",
+    "RelativePath": "api/Produto/UpdateProduto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarefa",
+        "Type": "MeuProjetoAPI.Entidades.ProdutoEntidade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MeuProjetoAPI.Controllers.UsuarioController",
     "Method": "ChangePassword",
     "RelativePath": "api/Usuario/AlterarSenha/{id}",
