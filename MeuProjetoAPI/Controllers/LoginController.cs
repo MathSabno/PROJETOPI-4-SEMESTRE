@@ -18,7 +18,7 @@ public class LoginController : ControllerBase
         if (usuario == null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(usuario.Email))
             return BadRequest("Email e senha são obrigatórios.");
 
-        using var context = new UsuarioDbContext(); // Criando uma nova instância do DbContext
+        using var context = new SiteDbContext(); // Criando uma nova instância do DbContext
 
         // Busca o usuário pelo email (não compara a senha ainda)
         var usuarioExistente = await context.Usuarios
