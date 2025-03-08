@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import authService from "../services/authService";
+import "../estilos/alterarSenha.css";
 
 const AlterarSenha = () => {
   const { id } = useParams();
@@ -44,12 +45,12 @@ const AlterarSenha = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.formContainer}>
-        <h1 style={styles.titulo}>Alterar Senha</h1>
-        <form onSubmit={handleAlteracao} style={styles.form}>
-          <div style={styles.formGroup}>
-            <label htmlFor="novaSenha" style={styles.label}>
+    <div className="senhaContainer">
+      <div className="senhaFormContainer">
+        <h1 className="titulo">Alterar Senha</h1>
+        <form onSubmit={handleAlteracao} className="form">
+          <div className="formGroup">
+            <label htmlFor="novaSenha" className="label">
               Nova Senha:
             </label>
             <input
@@ -57,13 +58,13 @@ const AlterarSenha = () => {
               id="novaSenha"
               value={novaSenha}
               onChange={(e) => setNovaSenha(e.target.value)}
-              style={styles.input}
+              className="input"
               placeholder="Nova senha"
               required
             />
           </div>
-          <div style={styles.formGroup}>
-            <label htmlFor="confirmarSenha" style={styles.label}>
+          <div className="formGroup">
+            <label htmlFor="confirmarSenha" className="label">
               Confirmar Senha:
             </label>
             <input
@@ -71,30 +72,29 @@ const AlterarSenha = () => {
               id="confirmarSenha"
               value={confirmarSenha}
               onChange={(e) => setConfirmarSenha(e.target.value)}
-              style={styles.input}
+              className="input"
               placeholder="Confirmar senha"
               required
             />
           </div>
-          <button type="submit" style={styles.botao} disabled={carregando}>
+          <button type="submit" className="botao" disabled={carregando}>
             {carregando ? "Carregando..." : "Salvar Alterações"}
           </button>
         </form>
         {/* Botão de Voltar */}
-        <div style={styles.containerLoginFormBtn}>
+        <div className="containerLoginFormBtn">
           <button
             onClick={() => navigate("/consulta-usuario")} // Redireciona para a consulta de usuários
-            style={styles.botao}
+            className="botao"
           >
             Voltar
           </button>
         </div>
-        {erro && <p style={styles.erro}>{erro}</p>}
-        {mensagem && <p style={styles.mensagem}>{mensagem}</p>}
+        {erro && <p className="erro">{erro}</p>}
+        {mensagem && <p className="mensagem">{mensagem}</p>}
       </div>
     </div>
   );
 };
 
-// Estilos (mantidos iguais)
 export default AlterarSenha;

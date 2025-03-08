@@ -6,7 +6,7 @@ namespace MeuProjetoAPI.Entidades;
 
 public class ProdutoEntidade
 {
-    public ProdutoEntidade(int id, string nome, EnumAvaliacaoProduto avaliacao, string descricao, decimal preco, int quantidade, string caminhoImg)
+    public ProdutoEntidade(int id, string nome, EnumAvaliacaoProduto avaliacao, string descricao, decimal preco, int quantidade, string caminhoImg, EnumStatus status)
     {
         Id = id;
         Nome = nome;
@@ -14,6 +14,7 @@ public class ProdutoEntidade
         Descricao = descricao;
         Preco = preco;
         Quantidade = quantidade;
+        Status = status;
         CaminhoImg = caminhoImg;
     }
 
@@ -43,4 +44,7 @@ public class ProdutoEntidade
     [Required]
     [Column(TypeName = "NVARCHAR(2000)")]
     public string CaminhoImg { get; set; } = string.Empty;
+
+    [Required]
+    public EnumStatus Status { get; set; } = 0;
 }

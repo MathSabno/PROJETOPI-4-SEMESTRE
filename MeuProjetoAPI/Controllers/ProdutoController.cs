@@ -47,6 +47,7 @@ public class ProdutoController : ControllerBase
         task.Nome = string.IsNullOrEmpty(tarefa.Nome) ? task.Nome : tarefa.Nome;
         task.Avaliacao = tarefa.Avaliacao;
         task.Descricao = string.IsNullOrEmpty(tarefa.Descricao) ? task.Descricao : tarefa.Descricao;
+        task.Status = tarefa.Status;
         task.Quantidade = tarefa.Quantidade;
 
         context.Produto.Update(task);

@@ -130,6 +130,9 @@ const ConsultaUsuarios = () => {
                       <button onClick={() => alterarUsuario(usuario.id)} className="acaoBtn">
                         Alterar
                       </button>
+                      <button onClick={() => alterarSenha(usuario.id)} className="acaoBtn">
+                        Alterar Senha
+                      </button>
                       <button onClick={() => desativarUsuarios([usuario.id])} className="acaoBtn">
                         {usuario.status === 1 ? "Desativar" : "Ativar"}
                       </button>

@@ -6,6 +6,8 @@ import CadastroUsuario from "../componentes/CadastroUsuario";
 import ConsultaUsuarios from "../componentes/ConsultaUsuarios";
 import AlterarUsuario from "../componentes/AlterarUsuario";
 import AlterarSenha from "../componentes/AlterarSenha"; 
+import ConsultarProduto from "../componentes/ConsultarProduto"; 
+import CadastroProduto from "../componentes/CadastroProduto"; 
 
 const AppRoutes = () => {
   return (
@@ -17,6 +19,8 @@ const AppRoutes = () => {
         <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
         <Route path="/consulta-usuario" element={<ConsultaUsuarios />} />
         <Route path="/alterar-senha/:id" element={<AlterarSenha />} />
+        <Route path="/consultar-produto/" element={<ConsultarProduto />} />
+        <Route path="/cadastro-produto/" element={<CadastroProduto />} />
       </Routes>
     </Router>
   );

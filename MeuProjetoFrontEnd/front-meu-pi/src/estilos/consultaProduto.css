@@ -1,4 +1,6 @@
-.consultaContainer {
+/* consultaProduto.css */
+
+.consultaProduto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,16 +11,16 @@
     margin: 0;
     padding: 0;
 }
-  
-.consultaFormContainer {
+
+.consultaProdutoFormContainer {
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-  
+
 .titulo {
     display: block;
     font-size: 30px;
@@ -27,19 +29,35 @@
     text-align: center;
     margin-bottom: 30px;
 }
-  
+
+.campoBusca {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campoBusca input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: #555;
+}
+
 .carregando {
     font-size: 1.2rem;
     color: #666;
     text-align: center;
 }
-  
+
 .tabela {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
-  
+
 .cabecalho {
     background-color: #007bff;
     color: #fff;
@@ -48,15 +66,15 @@
     font-size: 1.1rem;
     font-weight: 500;
 }
-  
+
 .linha {
     transition: background-color 0.3s ease;
 }
-  
+
 .linha:hover {
     background-color: #f1f1f1;
 }
-  
+
 .celula {
     padding: 12px;
     text-align: left;
@@ -64,14 +82,14 @@
     font-size: 1rem;
     color: #555;
 }
-  
+
 .botoesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
-  
+
 .loginFormBtn {
     font-size: 15px;
     border: none;
@@ -89,11 +107,11 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-  
+
 .loginFormBtn:hover {
     opacity: 0.9;
 }
-  
+
 .acaoBtn {
     font-size: 14px;
     border: none;
@@ -106,7 +124,34 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-  
+
 .acaoBtn:hover {
+    opacity: 0.9;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.paginacao button {
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 1.2;
+    padding: 5px 10px;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.paginacao button.ativo {
+    background: linear-gradient(to left, #b721ff, #21d4fd);
+}
+
+.paginacao button:hover {
     opacity: 0.9;
 }

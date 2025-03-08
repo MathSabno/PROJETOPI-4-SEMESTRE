@@ -6,7 +6,7 @@ namespace MeuProjetoAPI.Entidades;
 
 public class UsuarioEntidade
 {
-    public UsuarioEntidade(int id, string name, string cpf, string email, string senha, EnumGrupoUsuario grupo, EnumStatusUsuario status)
+    public UsuarioEntidade(int id, string name, string cpf, string email, string senha, EnumGrupoUsuario grupo, EnumStatus status)
     {
         Id = id;
         Name = name;
@@ -41,5 +41,5 @@ public class UsuarioEntidade
     public EnumGrupoUsuario Grupo { get; set; } = 0;
 
     [Required]
-    public EnumStatusUsuario Status { get; set; } = 0;
+    public EnumStatus Status { get; set; } = 0;
 }

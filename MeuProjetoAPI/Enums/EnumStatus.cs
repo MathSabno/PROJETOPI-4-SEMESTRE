@@ -1,6 +1,6 @@
 ﻿namespace MeuProjetoAPI.Enums;
 
-public enum EnumStatusUsuario
+public enum EnumStatus
 {
     NaoDefinido = 0,
     Ativo = 1,

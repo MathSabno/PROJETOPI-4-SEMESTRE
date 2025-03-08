@@ -16,7 +16,7 @@ const HomeSite = () => {
       <div className="formContainer">
         <h1 className="titulo">Bem-vindo ao Sistema de Usuários</h1>
         <div className="botoesContainer">
-          <button className="loginFormBtn">
+          <button className="loginFormBtn" onClick={() => navigate("/consultar-produto")}>
             Consultar Produto
           </button>
           {/* Mostra o botão "Consultar Usuário" apenas para Administradores */}

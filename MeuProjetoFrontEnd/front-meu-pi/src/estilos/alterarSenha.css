@@ -1,4 +1,4 @@
-.container {
+.snehaContainer {
     display: flex;
     align-Items: center;
     justify-Content: center;
@@ -8,7 +8,7 @@
     font-Family: 'Arial', sans-serif;
 }
 
-.formContainer {
+.senhaFormContainer {
     width: 100%;
     max-Width: 400px;
     padding: 30px;
