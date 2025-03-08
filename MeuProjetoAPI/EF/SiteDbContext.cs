@@ -9,5 +9,5 @@ public class SiteDbContext : DbContext
     public DbSet<UsuarioEntidade> Usuarios { get; set; } = null!;
     public DbSet<ProdutoEntidade> Produto { get; set; } = null!;
     protected override void OnConfiguring(DbContextOptionsBuilder options)
-    => options.UseSqlServer("Server=(local)\\SQLEXPRESS02;Database=PROJETOPI;Trusted_Connection=True;TrustServerCertificate=True;");
+    => options.UseSqlServer("Server=(local)\\SQLEXPRESS;Database=PROJETOPI;Trusted_Connection=True;TrustServerCertificate=True;");
 }

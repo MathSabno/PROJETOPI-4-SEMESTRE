@@ -1,9 +1,7 @@
 ﻿using MeuProjetoAPI.EF;
 using MeuProjetoAPI.Entidades;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using static MeuProjetoAPI.Controllers.UsuarioController;
 
 namespace MeuProjetoAPI.Controllers;
 [Route("api/[controller]")]
@@ -49,6 +47,7 @@ public class ProdutoController : ControllerBase
         task.Nome = string.IsNullOrEmpty(tarefa.Nome) ? task.Nome : tarefa.Nome;
         task.Avaliacao = tarefa.Avaliacao;
         task.Descricao = string.IsNullOrEmpty(tarefa.Descricao) ? task.Descricao : tarefa.Descricao;
+        task.Quantidade = tarefa.Quantidade;
 
         context.Produto.Update(task);
 
