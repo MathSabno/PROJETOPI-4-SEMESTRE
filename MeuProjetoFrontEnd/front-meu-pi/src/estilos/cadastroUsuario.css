@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
 }
-  
+
 .formContainer {
     width: 100%;
     max-width: 400px;
@@ -18,7 +18,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-  
+
 .titulo {
     display: block;
     font-size: 30px;
@@ -27,18 +27,18 @@
     text-align: center;
     margin-bottom: 30px;
 }
-  
+
 .form {
     width: 100%;
 }
-  
+
 .wrapInput {
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
     margin-bottom: 37px;
 }
-  
+
 .input {
     font-size: 15px;
     color: #333;
@@ -51,7 +51,7 @@
     padding: 0 5px;
     font-family: 'Nunito', sans-serif;
 }
-  
+
 .focusInput {
     position: absolute;
     display: block;
@@ -63,14 +63,14 @@
     color: #adadad;
     font-family: 'Nunito', sans-serif;
 }
-  
+
 .containerLoginFormBtn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 13px;
 }
-  
+
 .loginFormBtn {
     font-size: 15px;
     border: none;
@@ -86,14 +86,14 @@
     background: linear-gradient(to left, #21d4fd, #b721ff);
     cursor: pointer;
 }
-  
+
 .erro {
     margin-top: 20px;
     font-size: 1rem;
     color: #d9534f;
     text-align: center;
 }
-  
+
 .mensagem {
     margin-top: 20px;
     font-size: 1rem;
