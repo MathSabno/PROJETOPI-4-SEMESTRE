@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\033ab6c2-6a5d-490a-8c96-e1115a6c99a6.png",
+      "PackagePath": "staticwebassets\\imagens\\033ab6c2-6a5d-490a-8c96-e1115a6c99a6.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\0be3ee8c-d654-482a-a9bc-97b5f6a69783.jpg",
+      "PackagePath": "staticwebassets\\imagens\\0be3ee8c-d654-482a-a9bc-97b5f6a69783.jpg"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\229cb893-025c-4eb5-89c2-e05f81a5fbc2.png",
+      "PackagePath": "staticwebassets\\imagens\\229cb893-025c-4eb5-89c2-e05f81a5fbc2.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\24cf9280-fa29-4df9-9421-fae86e25360b.png",
+      "PackagePath": "staticwebassets\\imagens\\24cf9280-fa29-4df9-9421-fae86e25360b.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\2aebea84-fba2-412c-b463-a549abaaca27.png",
+      "PackagePath": "staticwebassets\\imagens\\2aebea84-fba2-412c-b463-a549abaaca27.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\2fd7b05d-16ee-4453-b306-10671edd5b31.png",
+      "PackagePath": "staticwebassets\\imagens\\2fd7b05d-16ee-4453-b306-10671edd5b31.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\6744abff-e4c8-452f-a9f1-5af6e1855485.png",
+      "PackagePath": "staticwebassets\\imagens\\6744abff-e4c8-452f-a9f1-5af6e1855485.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\7f200ca2-1939-47dd-be12-d1ad52c60a6b.png",
+      "PackagePath": "staticwebassets\\imagens\\7f200ca2-1939-47dd-be12-d1ad52c60a6b.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\96c30969-54f6-4d51-8a85-1ef4b773bdc2.jpg",
+      "PackagePath": "staticwebassets\\imagens\\96c30969-54f6-4d51-8a85-1ef4b773bdc2.jpg"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\96f90284-2bb3-48db-af78-a4118581c3f6.png",
+      "PackagePath": "staticwebassets\\imagens\\96f90284-2bb3-48db-af78-a4118581c3f6.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\a45bff7d-0250-4b72-84d8-8cb97bc19bd4.png",
+      "PackagePath": "staticwebassets\\imagens\\a45bff7d-0250-4b72-84d8-8cb97bc19bd4.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\b00ce407-6f95-4a1b-b056-d5bb27ebcb4a.png",
+      "PackagePath": "staticwebassets\\imagens\\b00ce407-6f95-4a1b-b056-d5bb27ebcb4a.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\b2fabe1a-ffe7-43d6-a598-ab8041797b33.png",
+      "PackagePath": "staticwebassets\\imagens\\b2fabe1a-ffe7-43d6-a598-ab8041797b33.png"
+    },
+    {
+      "Id": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\c6145d47-28d7-45f5-81d6-cb678cad7331.jpg",
+      "PackagePath": "staticwebassets\\imagens\\c6145d47-28d7-45f5-81d6-cb678cad7331.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MeuProjetoAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MeuProjetoAPI.props",
+      "PackagePath": "build\\MeuProjetoAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MeuProjetoAPI.props",
+      "PackagePath": "buildMultiTargeting\\MeuProjetoAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MeuProjetoAPI.props",
+      "PackagePath": "buildTransitive\\MeuProjetoAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -21,6 +21,31 @@ namespace MeuProjetoAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("MeuProjetoAPI.Entidades.ImagemEntidade", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CaminhoImg")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(2000)");
+
+                    b.Property<bool>("EhPadrao")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Fk_produto")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Fk_produto");
+
+                    b.ToTable("Imagem");
+                });
+
             modelBuilder.Entity("MeuProjetoAPI.Entidades.ProdutoEntidade", b =>
                 {
                     b.Property<int>("Id")
@@ -31,10 +56,6 @@ namespace MeuProjetoAPI.Migrations
 
                     b.Property<int>("Avaliacao")
                         .HasColumnType("int");
-
-                    b.Property<string>("CaminhoImg")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR(2000)");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -91,6 +112,22 @@ namespace MeuProjetoAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("MeuProjetoAPI.Entidades.ImagemEntidade", b =>
+                {
+                    b.HasOne("MeuProjetoAPI.Entidades.ProdutoEntidade", "Produto")
+                        .WithMany("Imagens")
+                        .HasForeignKey("Fk_produto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Produto");
+                });
+
+            modelBuilder.Entity("MeuProjetoAPI.Entidades.ProdutoEntidade", b =>
+                {
+                    b.Navigation("Imagens");
                 });
 #pragma warning restore 612, 618
         }

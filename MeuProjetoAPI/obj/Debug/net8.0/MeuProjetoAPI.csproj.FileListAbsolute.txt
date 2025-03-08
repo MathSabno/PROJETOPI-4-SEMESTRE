@@ -510,3 +510,4 @@ C:\Users\lukas\OneDrive\Área de Trabalho\Lucas\4 SEMESTRE\PI - ESSE VAI\PROJETO
 C:\Users\lukas\OneDrive\Área de Trabalho\Lucas\4 SEMESTRE\PI - ESSE VAI\PROJETOPI-4-SEMESTRE\MeuProjetoAPI\obj\Debug\net8.0\MeuProjetoAPI.pdb
 C:\Users\lukas\OneDrive\Área de Trabalho\Lucas\4 SEMESTRE\PI - ESSE VAI\PROJETOPI-4-SEMESTRE\MeuProjetoAPI\obj\Debug\net8.0\MeuProjetoAPI.genruntimeconfig.cache
 C:\Users\lukas\OneDrive\Área de Trabalho\Lucas\4 SEMESTRE\PI - ESSE VAI\PROJETOPI-4-SEMESTRE\MeuProjetoAPI\obj\Debug\net8.0\ref\MeuProjetoAPI.dll
+C:\4 SEMESTRE\PI - DESENVOLVIMENTO WEB\MeuProjetoAPI\bin\Debug\net8.0\MeuProjetoAPI.staticwebassets.runtime.json

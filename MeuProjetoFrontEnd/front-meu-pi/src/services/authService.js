@@ -63,9 +63,13 @@ const atualizarProduto = async (produto) => {
   }
 };
 
-const cadastrarProduto = async (produto) => {
+const cadastrarProduto = async (formData) => {
   try {
-    const response = await api.post("/Produto/CreateProduto", produto);
+    const response = await api.post("/Produto/CreateProduto", formData, {
+      headers: {
+        "Content-Type": "multipart/form-data", // Define o tipo de conteúdo como FormData
+      },
+    });
     return response.data;
   } catch (error) {
     throw error.response?.data || "Erro ao cadastrar produto.";

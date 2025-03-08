@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MeuProjetoAPI.Manipuladores;
-using BCrypt.Net; // Adicione esta linha para usar o BCrypt
+using BCrypt.Net; 
 
 namespace MeuProjetoAPI.Controllers;
 
@@ -34,7 +34,7 @@ public class LoginController : ControllerBase
         if (!senhaValida)
             return Unauthorized("Usuário não encontrado ou credenciais inválidas.");
 
-        // Se tudo estiver correto, retorna sucesso com o grupo do usuário
+        // Retorna sucesso com o grupo do usuário
         return Ok(new
         {
             Mensagem = "Login realizado com sucesso.",

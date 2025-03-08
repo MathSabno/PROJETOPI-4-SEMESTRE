@@ -6,7 +6,8 @@ namespace MeuProjetoAPI.Entidades;
 
 public class ProdutoEntidade
 {
-    public ProdutoEntidade(int id, string nome, EnumAvaliacaoProduto avaliacao, string descricao, decimal preco, int quantidade, string caminhoImg, EnumStatus status)
+    public ProdutoEntidade() { }
+    public ProdutoEntidade(int id, string nome, EnumAvaliacaoProduto avaliacao, string descricao, decimal preco, int quantidade, EnumStatus status)
     {
         Id = id;
         Nome = nome;
@@ -15,7 +16,6 @@ public class ProdutoEntidade
         Preco = preco;
         Quantidade = quantidade;
         Status = status;
-        CaminhoImg = caminhoImg;
     }
 
     [Key]
@@ -35,16 +35,14 @@ public class ProdutoEntidade
 
     [Required]
     [Column(TypeName = "DECIMAL(18, 2)")]
-    public decimal Preco { get; set; } 
+    public decimal Preco { get; set; }
 
     [Required]
     [Column(TypeName = "INT")]
-    public int Quantidade { get; set; } 
-
-    [Required]
-    [Column(TypeName = "NVARCHAR(2000)")]
-    public string CaminhoImg { get; set; } = string.Empty;
+    public int Quantidade { get; set; }
 
     [Required]
     public EnumStatus Status { get; set; } = 0;
+
+    public ICollection<ImagemEntidade> Imagens { get; set; } = new List<ImagemEntidade>();
 }

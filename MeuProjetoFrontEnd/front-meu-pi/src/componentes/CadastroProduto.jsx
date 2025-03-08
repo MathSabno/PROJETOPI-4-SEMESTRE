@@ -1,30 +1,33 @@
 import React, { useState } from "react";
-import authService from "../services/authService"; // Importando o serviço
-import { useNavigate } from "react-router-dom"; // Importando useNavigate para redirecionamento
-//import "../estilos/cadastroProduto.css"; // Importando o arquivo CSS
+import authService from "../services/authService";
+import { useNavigate } from "react-router-dom";
+import "../estilos/cadastroProduto.css";
 
 const CadastroProduto = () => {
-  const navigate = useNavigate(); // Hook para navegação
+  const navigate = useNavigate();
 
   // Estados para os campos do formulário
   const [nome, setNome] = useState("");
   const [descricao, setDescricao] = useState("");
-  const [avaliacao, setAvaliacao] = useState(1); // Avaliação inicial é 1
-  const [descricaoDetalhada, setDescricaoDetalhada] = useState("");
+  const [avaliacao, setAvaliacao] = useState(1);
   const [preco, setPreco] = useState("");
   const [quantidadeEstoque, setQuantidadeEstoque] = useState("");
   const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
-  const [carregando, setCarregando] = useState(false); // Estado para controlar o carregamento
+  const [carregando, setCarregando] = useState(false);
 
-  // Função para arredondar a avaliação para o menor valor inteiro
+  // Estado para armazenar as imagens selecionadas
+  const [imagens, setImagens] = useState([]);
+  const [imagemPadraoIndex, setImagemPadraoIndex] = useState(null); // Índice da imagem padrão
+
+  // Função para arredondar a avaliação
   const arredondarAvaliacao = (valor) => {
     return Math.floor(valor);
   };
 
   // Função para validar os campos do formulário
   const validarCampos = () => {
-    if (!nome || !descricao || !avaliacao || !descricaoDetalhada || !preco || !quantidadeEstoque) {
+    if (!nome || !descricao || !avaliacao || !preco || !quantidadeEstoque) {
       setErro("Todos os campos são obrigatórios.");
       return false;
     }
@@ -34,7 +37,7 @@ const CadastroProduto = () => {
       return false;
     }
 
-    if (descricaoDetalhada.length > 2000) {
+    if (descricao.length > 2000) {
       setErro("A descrição detalhada deve ter no máximo 2000 caracteres.");
       return false;
     }
@@ -54,7 +57,24 @@ const CadastroProduto = () => {
       return false;
     }
 
+    if (imagens.length === 0) {
+      setErro("Selecione pelo menos uma imagem.");
+      return false;
+    }
+
     return true;
+  };
+
+  // Função para lidar com a seleção de imagens
+  const handleImagensChange = (e) => {
+    const files = Array.from(e.target.files); // Converte FileList para array
+    setImagens(files);
+    setImagemPadraoIndex(null); // Reseta o índice da imagem padrão ao selecionar novas imagens
+  };
+
+  // Função para definir a imagem padrão
+  const handleImagemPadraoChange = (index) => {
+    setImagemPadraoIndex(index);
   };
 
   // Função para lidar com o envio do formulário
@@ -67,28 +87,34 @@ const CadastroProduto = () => {
     // Arredonda a avaliação para o menor valor inteiro
     const avaliacaoArredondada = arredondarAvaliacao(avaliacao);
 
-    const produto = {
-      nome,
-      descricao,
-      avaliacao: avaliacaoArredondada,
-      descricaoDetalhada,
-      preco: parseFloat(preco).toFixed(2), // Formata o preço com 2 casas decimais
-      quantidadeEstoque: parseInt(quantidadeEstoque),
-      status: 1, 
-      caminhoimg: "teste2"
-    };
+    // Cria um objeto FormData para enviar os dados do produto e as imagens
+    const formData = new FormData();
+    formData.append("nome", nome);
+    formData.append("descricao", descricao);
+    formData.append("avaliacao", avaliacaoArredondada);
+    formData.append("preco", parseFloat(preco).toFixed(2));
+    formData.append("quantidadeEstoque", parseInt(quantidadeEstoque));
+    formData.append("status", 1);
 
-    console.log("Dados enviados:", produto); // Log para depuração
+    // Adiciona as imagens ao FormData
+    imagens.forEach((imagem, index) => {
+      formData.append("imagens", imagem); // Adiciona cada imagem
+      if (index === imagemPadraoIndex) {
+        formData.append("imagemPadraoIndex", index); // Define a imagem padrão
+      }
+    });
+
+    console.log("Dados enviados:", formData); // Log para depuração
 
     setCarregando(true); // Inicia o carregamento
 
     try {
-      await authService.cadastrarProduto(produto); // Usando o serviço
+      await authService.cadastrarProduto(formData); // Usando o serviço
       setMensagem("Produto cadastrado com sucesso!");
       setErro("");
       setTimeout(() => navigate("/consultar-produto"), 2000); // Redireciona após 2 segundos
     } catch (error) {
-      setErro(error.message || "Erro ao cadastrar produto.");
+      setErro(error.response?.data || "Erro ao cadastrar produto.");
       setMensagem("");
     } finally {
       setCarregando(false); // Finaliza o carregamento
@@ -99,7 +125,7 @@ const CadastroProduto = () => {
     <div className="container">
       <div className="formContainer">
         <h1 className="titulo">Cadastro de Produto</h1>
-        <form onSubmit={handleCadastro} className="form">
+        <form onSubmit={handleCadastro} className="form" encType="multipart/form-data">
           {/* Campo: Nome */}
           <div className="wrapInput">
             <input
@@ -146,20 +172,6 @@ const CadastroProduto = () => {
             <span className="focusInput" data-placeholder="Avaliação"></span>
           </div>
 
-          {/* Campo: Descrição Detalhada */}
-          <div className="wrapInput">
-            <textarea
-              id="descricaoDetalhada"
-              value={descricaoDetalhada}
-              onChange={(e) => setDescricaoDetalhada(e.target.value)}
-              className="input"
-              placeholder="Descrição Detalhada"
-              maxLength={2000}
-              required
-            />
-            <span className="focusInput" data-placeholder="Descrição Detalhada"></span>
-          </div>
-
           {/* Campo: Preço */}
           <div className="wrapInput">
             <input
@@ -190,6 +202,37 @@ const CadastroProduto = () => {
             <span className="focusInput" data-placeholder="Quantidade em Estoque"></span>
           </div>
 
+          {/* Campo: Upload de Imagens */}
+          <div className="wrapInput">
+            <input
+              type="file"
+              id="imagens"
+              onChange={handleImagensChange}
+              className="input"
+              multiple // Permite selecionar várias imagens
+              required
+            />
+            <span className="focusInput" data-placeholder="Imagens"></span>
+          </div>
+
+          {/* Seleção de Imagem Padrão */}
+          {imagens.length > 0 && (
+            <div className="wrapInput">
+              <label>Selecione a imagem padrão:</label>
+              {imagens.map((imagem, index) => (
+                <div key={index}>
+                  <input
+                    type="radio"
+                    name="imagemPadrao"
+                    value={index}
+                    onChange={() => handleImagemPadraoChange(index)}
+                  />
+                  {imagem.name}
+                </div>
+              ))}
+            </div>
+          )}
+
           {/* Botão de Cadastro */}
           <div className="containerLoginFormBtn">
             <button type="submit" className="loginFormBtn" disabled={carregando}>
@@ -200,10 +243,7 @@ const CadastroProduto = () => {
 
         {/* Botão de Voltar */}
         <div className="containerLoginFormBtn">
-          <button
-            onClick={() => navigate("/consultar-produto")} // Redireciona para a consulta de produtos
-            className="loginFormBtn"
-          >
+          <button onClick={() => navigate("/consultar-produto")} className="loginFormBtn">
             Voltar
           </button>
         </div>
