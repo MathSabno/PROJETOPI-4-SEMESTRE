@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
 }
-
+  
 .consultaFormContainer {
     width: 100%;
     max-width: 900px;
@@ -18,7 +18,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+  
 .titulo {
     display: block;
     font-size: 30px;
@@ -27,19 +27,19 @@
     text-align: center;
     margin-bottom: 30px;
 }
-
+  
 .carregando {
     font-size: 1.2rem;
     color: #666;
     text-align: center;
 }
-
+  
 .tabela {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
-
+  
 .cabecalho {
     background-color: #007bff;
     color: #fff;
@@ -48,15 +48,15 @@
     font-size: 1.1rem;
     font-weight: 500;
 }
-
+  
 .linha {
     transition: background-color 0.3s ease;
 }
-
+  
 .linha:hover {
     background-color: #f1f1f1;
 }
-
+  
 .celula {
     padding: 12px;
     text-align: left;
@@ -64,14 +64,14 @@
     font-size: 1rem;
     color: #555;
 }
-
+  
 .botoesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
-
+  
 .loginFormBtn {
     font-size: 15px;
     border: none;
@@ -89,11 +89,11 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+  
 .loginFormBtn:hover {
     opacity: 0.9;
 }
-
+  
 .acaoBtn {
     font-size: 14px;
     border: none;
@@ -106,7 +106,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+  
 .acaoBtn:hover {
     opacity: 0.9;
 }

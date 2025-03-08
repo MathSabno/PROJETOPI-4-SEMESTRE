@@ -1,50 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\",
+  "WorkspaceRootPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\ef\\usuariodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:ef\\usuariodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\migrations\\20250222192945_criartabelasnobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:migrations\\20250222192945_criartabelasnobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\migrations\\usuariodbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:migrations\\usuariodbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\enums\\enumstatususuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:enums\\enumstatususuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\migrations\\20250307235918_criandoentidadeproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:migrations\\20250307235918_criandoentidadeproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\enums\\enumgrupousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:enums\\enumgrupousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\entidades\\usuarioentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\usuarioentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\usuarioentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\manipuladores\\usuariologinmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:manipuladores\\usuariologinmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\lukas\\onedrive\\\u00E1rea de trabalho\\lucas\\4 semestre\\pi - esse vai\\projetopi-4-semestre\\meuprojetoapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\migrations\\usuariodbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:migrations\\usuariodbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\migrations\\20250222192945_criartabelasnobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:migrations\\20250222192945_criartabelasnobanco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\migrations\\20250222192945_criartabelasnobanco.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:migrations\\20250222192945_criartabelasnobanco.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,145 +50,144 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SiteDbContext.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
+              "RelativeDocumentMoniker": "EF\\SiteDbContext.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
+              "RelativeToolTip": "EF\\SiteDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T23:56:05.557Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutoEntidade.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
+              "RelativeDocumentMoniker": "Entidades\\ProdutoEntidade.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
+              "RelativeToolTip": "Entidades\\ProdutoEntidade.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T23:33:32.152Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioEntidade.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\UsuarioEntidade.cs",
+              "RelativeDocumentMoniker": "Entidades\\UsuarioEntidade.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\UsuarioEntidade.cs",
+              "RelativeToolTip": "Entidades\\UsuarioEntidade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T23:33:37.047Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1666858208:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Migrations\\UsuarioDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\UsuarioDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Migrations\\UsuarioDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\UsuarioDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T17:09:43.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250222192945_CriarTabelasNoBanco.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Migrations\\20250222192945_CriarTabelasNoBanco.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250222192945_CriarTabelasNoBanco.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Migrations\\20250222192945_CriarTabelasNoBanco.cs",
-              "RelativeToolTip": "Migrations\\20250222192945_CriarTabelasNoBanco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T19:29:45.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T23:11:57.961Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
+              "Title": "20250307235918_CriandoEntidadeProduto.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\20250307235918_CriandoEntidadeProduto.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250307235918_CriandoEntidadeProduto.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\20250307235918_CriandoEntidadeProduto.cs",
+              "RelativeToolTip": "Migrations\\20250307235918_CriandoEntidadeProduto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T23:51:53.024Z",
+              "WhenOpened": "2025-03-07T23:59:18.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T22:51:16.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioEntidade.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\UsuarioEntidade.cs",
-              "RelativeDocumentMoniker": "Entidades\\UsuarioEntidade.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\UsuarioEntidade.cs",
-              "RelativeToolTip": "Entidades\\UsuarioEntidade.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T22:56:35.175Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\UsuarioDbContext.cs",
-              "RelativeDocumentMoniker": "EF\\UsuarioDbContext.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\UsuarioDbContext.cs",
-              "RelativeToolTip": "EF\\UsuarioDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T23:56:05.557Z",
+              "WhenOpened": "2025-03-07T23:57:11.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\UsuarioDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\UsuarioDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\UsuarioDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\UsuarioDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T23:56:56.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EnumStatusUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Enums\\EnumStatusUsuario.cs",
-              "RelativeDocumentMoniker": "Enums\\EnumStatusUsuario.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Enums\\EnumStatusUsuario.cs",
-              "RelativeToolTip": "Enums\\EnumStatusUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "20250222192945_CriarTabelasNoBanco.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\20250222192945_CriarTabelasNoBanco.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250222192945_CriarTabelasNoBanco.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\20250222192945_CriarTabelasNoBanco.cs",
+              "RelativeToolTip": "Migrations\\20250222192945_CriarTabelasNoBanco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:12:57.983Z"
+              "WhenOpened": "2025-03-07T23:56:55.261Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "EnumGrupoUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Enums\\EnumGrupoUsuario.cs",
-              "RelativeDocumentMoniker": "Enums\\EnumGrupoUsuario.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Enums\\EnumGrupoUsuario.cs",
-              "RelativeToolTip": "Enums\\EnumGrupoUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250222192945_CriarTabelasNoBanco.Designer.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\20250222192945_CriarTabelasNoBanco.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250222192945_CriarTabelasNoBanco.Designer.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Migrations\\20250222192945_CriarTabelasNoBanco.Designer.cs",
+              "RelativeToolTip": "Migrations\\20250222192945_CriarTabelasNoBanco.Designer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:13:12.069Z"
+              "WhenOpened": "2025-03-07T23:56:35.397Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "UsuarioLoginManipulador.cs",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
-              "RelativeDocumentMoniker": "Manipuladores\\UsuarioLoginManipulador.cs",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
-              "RelativeToolTip": "Manipuladores\\UsuarioLoginManipulador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowGgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T17:03:43.31Z"
+              "WhenOpened": "2025-03-07T23:43:29.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\lukas\\OneDrive\\\u00C1rea de Trabalho\\Lucas\\4 SEMESTRE\\PI - ESSE VAI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-21T23:53:46.289Z"
+              "DocumentIndex": 8,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAawD8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T23:43:53.765Z",
+              "EditorCaption": ""
             }
           ]
         }

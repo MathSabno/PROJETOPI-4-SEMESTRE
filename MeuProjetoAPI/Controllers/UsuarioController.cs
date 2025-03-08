@@ -18,7 +18,7 @@ public class UsuarioController : ControllerBase
             return BadRequest("Dados do usuário inválidos.");
 
         // Verifica se o CPF ou Email já estão cadastrados
-        using var context = new UsuarioDbContext();
+        using var context = new SiteDbContext();
         var usuarioExistente = await context.Usuarios
             .FirstOrDefaultAsync(x => x.Cpf == usuario.Cpf || x.Email == usuario.Email);
 
@@ -42,7 +42,7 @@ public class UsuarioController : ControllerBase
     [Route("ListarUsuários")]
     public async Task<List<UsuarioEntidade>> List()
     {
-        using var context = new UsuarioDbContext();
+        using var context = new SiteDbContext();
 
         // Lê todas as categorias
         return await context.Usuarios.ToListAsync();
@@ -53,7 +53,7 @@ public class UsuarioController : ControllerBase
     public async Task<string> Update(UsuarioEntidade tarefa)
     {
         // Instância do Data Context
-        using var context = new UsuarioDbContext();
+        using var context = new SiteDbContext();
 
         // Recupera a entidade (Re-hidratação)
         var task = await context.Usuarios.FirstOrDefaultAsync(x => x.Id == tarefa.Id);
@@ -81,7 +81,7 @@ public class UsuarioController : ControllerBase
     public async Task<string> Delete(int Id)
     {
         // Instância do Data Context
-        using var context = new UsuarioDbContext();
+        using var context = new SiteDbContext();
 
         // Recupera a entidade (Re-hidratação)
         var task = await context.Usuarios.FirstOrDefaultAsync(x => x.Id == Id);
@@ -102,7 +102,7 @@ public class UsuarioController : ControllerBase
     [Route("AlterarSenha/{id}")]
     public async Task<IActionResult> ChangePassword(int id, [FromBody] AlterarSenhaModel model)
     {
-        using var context = new UsuarioDbContext();
+        using var context = new SiteDbContext();
 
         // Verifica se o usuário existe
         var usuario = await context.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
