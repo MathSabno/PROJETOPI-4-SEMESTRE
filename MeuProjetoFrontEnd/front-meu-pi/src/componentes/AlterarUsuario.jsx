@@ -12,6 +12,7 @@ const AlterarUsuario = () => {
   const [grupo, setGrupo] = useState("1"); // 1 = Administrador, 2 = Estoquista
   const [senha, setSenha] = useState("");
   const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("")
   const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
   const [carregando, setCarregando] = useState(false);
@@ -28,6 +29,7 @@ const AlterarUsuario = () => {
           setEmail(usuario.email);
           setSenha(usuario.senha);
           setGrupo(usuario.grupo.toString());
+          setStatus(usuario.status);
         } else {
           setErro("Usuário não encontrado.");
         }
@@ -80,7 +82,7 @@ const AlterarUsuario = () => {
       email,
       senha,
       grupo: parseInt(grupo),
-      status: 1, // Adicione o status (1 = ativo, 2 = inativo)
+      status,
     };
 
     setCarregando(true);

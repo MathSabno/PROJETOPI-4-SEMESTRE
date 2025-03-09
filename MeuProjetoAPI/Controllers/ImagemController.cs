@@ -22,43 +22,55 @@ public class ImagemController : ControllerBase
     [HttpPost("UploadImagem/{produtoId}")]
     public async Task<IActionResult> UploadImagem(int produtoId, IFormFile file, bool ehPadrao = false)
     {
-        if (file == null || file.Length == 0)
-            return BadRequest("Arquivo inválido.");
-
-        var produto = await _context.Produto.Include(p => p.Imagens).FirstOrDefaultAsync(p => p.Id == produtoId);
-        if (produto == null)
-            return NotFound("Produto não encontrado.");
-
-        var novoNome = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-        var caminhoPasta = Path.Combine(_env.WebRootPath, "imagens");
-        var caminhoCompleto = Path.Combine(caminhoPasta, novoNome);
-
-        if (!Directory.Exists(caminhoPasta))
-            Directory.CreateDirectory(caminhoPasta);
-
-        using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
+        try
         {
-            await file.CopyToAsync(stream);
-        }
+            if (file == null || file.Length == 0)
+                return BadRequest("Arquivo inválido.");
 
-        var imagem = new ImagemEntidade
-        {
-            CaminhoImg = caminhoCompleto,
-            EhPadrao = ehPadrao,
-            Fk_produto = produtoId
-        };
+            var extensoesPermitidas = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var extensao = Path.GetExtension(file.FileName).ToLower();
+            if (!extensoesPermitidas.Contains(extensao))
+                return BadRequest("Tipo de arquivo não suportado. Use JPG, JPEG, PNG ou GIF.");
 
-        if (ehPadrao)
-        {
-            foreach (var img in produto.Imagens)
+            var produto = await _context.Produto.Include(p => p.Imagens).FirstOrDefaultAsync(p => p.Id == produtoId);
+            if (produto == null)
+                return NotFound("Produto não encontrado.");
+
+            var novoNome = Guid.NewGuid().ToString() + extensao;
+            var caminhoPasta = Path.Combine(_env.WebRootPath, "imagens");
+            var caminhoCompleto = Path.Combine(caminhoPasta, novoNome);
+
+            if (!Directory.Exists(caminhoPasta))
+                Directory.CreateDirectory(caminhoPasta);
+
+            using (var stream = new FileStream(caminhoCompleto, FileMode.Create))
             {
-                img.EhPadrao = false;
+                await file.CopyToAsync(stream);
             }
+
+            var imagem = new ImagemEntidade
+            {
+                CaminhoImg = Path.Combine("imagens", novoNome), 
+                EhPadrao = ehPadrao,
+                Fk_produto = produtoId
+            };
+
+            if (ehPadrao)
+            {
+                foreach (var img in produto.Imagens)
+                {
+                    img.EhPadrao = false;
+                }
+            }
+
+            produto.Imagens.Add(imagem);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { caminho = imagem.CaminhoImg });
         }
-
-        produto.Imagens.Add(imagem);
-        await _context.SaveChangesAsync();
-
-        return Ok(new { caminho = caminhoCompleto });
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno ao processar a imagem: {ex.Message}");
+        }
     }
 }

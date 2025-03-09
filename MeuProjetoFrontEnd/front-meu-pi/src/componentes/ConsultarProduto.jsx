@@ -72,7 +72,7 @@ const ConsultarProduto = () => {
   };
 
   const handleEditarProduto = (id) => {
-    navigate(`/editar-produto/${id}`);
+    navigate(`/alterar-produto/${id}`);
   }; 
 
   const handleVisualizarProduto = (id) => {

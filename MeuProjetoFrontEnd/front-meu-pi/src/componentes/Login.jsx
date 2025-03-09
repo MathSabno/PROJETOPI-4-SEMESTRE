@@ -15,6 +15,13 @@ const Login = () => {
   
     try {
       const response = await authService.login(email, senha); // Usando o serviço de autenticação
+      
+      // Verifica o status do usuário
+      if (response.status === 2) {
+        setMensagem("USUÁRIO INATIVO NO SISTEMA");
+        return; // Impede o login e interrompe a execução da função
+      }
+
       setMensagem("Login realizado com sucesso!");
       console.log("Resposta da API:", response);
   
@@ -24,7 +31,7 @@ const Login = () => {
       // Redireciona para a página home após o login bem-sucedido
       navigate("/home-site", { state: { userGroup } }); // Passa o grupo como estado
     } catch (error) {
-      setMensagem(error);
+      setMensagem(error.message || "Erro ao fazer login");
       console.error("Erro ao fazer login:", error);
     }
   };

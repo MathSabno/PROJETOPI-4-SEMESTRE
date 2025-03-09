@@ -38,7 +38,8 @@ public class LoginController : ControllerBase
         return Ok(new
         {
             Mensagem = "Login realizado com sucesso.",
-            Grupo = usuarioExistente.Grupo // Retorna o grupo do usuário
+            Grupo = usuarioExistente.Grupo, // Retorna o grupo do usuário
+            Status = usuarioExistente.Status
         });
     }
 }
