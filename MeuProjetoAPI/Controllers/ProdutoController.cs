@@ -162,5 +162,5 @@ public class ProdutoController : ControllerBase
         public int QuantidadeEstoque { get; set; }
         public List<IFormFile> Imagens { get; set; }
         public int ImagemPadraoIndex { get; set; }
-    }
+    } 
 }

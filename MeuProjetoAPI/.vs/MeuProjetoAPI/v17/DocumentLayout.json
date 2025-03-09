@@ -70,8 +70,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1666858208:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -83,8 +87,7 @@
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T02:36:05.881Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -97,8 +100,7 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T23:33:32.152Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -121,7 +123,7 @@
               "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
               "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAIwJ4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAqwJkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T18:30:57.212Z",
               "IsPinned": true,
@@ -141,10 +143,6 @@
               "IsPinned": true
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1666858208:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ImagemController.cs",
@@ -154,8 +152,7 @@
               "RelativeToolTip": "Controllers\\ImagemController.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAcwGAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:54:51.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:54:51.571Z"
             },
             {
               "$type": "Document",
@@ -191,8 +188,7 @@
               "RelativeToolTip": "DTO\\ImagemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T19:39:46.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T19:39:46.1Z"
             },
             {
               "$type": "Document",
@@ -204,8 +200,7 @@
               "RelativeToolTip": "Entidades\\ImagemEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T16:07:58.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T16:07:58.737Z"
             },
             {
               "$type": "Document",
