@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "MeuProjetoAPI.Controllers.ImagemController",
+    "Method": "ExibirImagem",
+    "RelativePath": "api/Imagem/ExibirImagem/{caminhoRelativo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "caminhoRelativo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MeuProjetoAPI.Controllers.ImagemController",
     "Method": "UploadImagem",
     "RelativePath": "api/Imagem/UploadImagem/{produtoId}",
     "HttpMethod": "POST",

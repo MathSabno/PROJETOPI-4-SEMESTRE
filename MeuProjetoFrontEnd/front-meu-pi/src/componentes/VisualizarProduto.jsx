@@ -9,6 +9,7 @@ const VisualizarProduto = () => {
   const [produto, setProduto] = useState(null);
   const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState("");
+  const [imagemUrl, setImagemUrl] = useState(""); // Estado para armazenar a URL da imagem
 
   const buscarProdutoPorId = async () => {
     try {
@@ -17,6 +18,14 @@ const VisualizarProduto = () => {
 
       if (produtoEncontrado) {
         setProduto(produtoEncontrado);
+
+        // Busca a imagem padrão do produto
+        const imagemPadrao = obterImagemPadrao(produtoEncontrado);
+        if (imagemPadrao) {
+          // Monta a URL completa da imagem usando a rota de GET
+          const urlImagem = `https://localhost:7075/api/Imagem/ExibirImagem/${imagemPadrao}`;
+          setImagemUrl(urlImagem); // Atualiza o estado com a URL da imagem
+        }
       } else {
         setErro("Produto não encontrado.");
       }
@@ -28,17 +37,20 @@ const VisualizarProduto = () => {
     }
   };
 
-  useEffect(() => {
-    buscarProdutoPorId();
-  }, [id]);
-
-  const obterImagemPadrao = () => {
+  const obterImagemPadrao = (produto) => {
     if (produto && produto.imagens && produto.imagens.length > 0) {
       const imagemPadrao = produto.imagens.find((img) => img.ehPadrao);
-      return imagemPadrao ? imagemPadrao.caminhoImg : produto.imagens[0].caminhoImg;
+      const caminhoImg = imagemPadrao
+        ? imagemPadrao.caminhoImg
+        : produto.imagens[0].caminhoImg;
+      console.log("Caminho da imagem recebido do back-end:", caminhoImg); // Log para depuração
+      return caminhoImg; // Retorna apenas o nome do arquivo
     }
     return null;
   };
+  useEffect(() => {
+    buscarProdutoPorId();
+  }, [id]);
 
   if (carregando) {
     return <div className="carregando">Carregando...</div>;
@@ -60,10 +72,10 @@ const VisualizarProduto = () => {
             <p>Quantidade em Estoque: {produto.quantidade}</p>
             <p>Status: {produto.status === 1 ? "Ativo" : "Inativo"}</p>
 
-            {obterImagemPadrao() && (
+            {imagemUrl && (
               <div className="imagemProduto">
                 <img
-                  src={`http://localhost:7075/${obterImagemPadrao()}`}
+                  src={imagemUrl}
                   alt={produto.nome}
                   className="imagem"
                 />

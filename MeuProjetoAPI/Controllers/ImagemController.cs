@@ -50,7 +50,7 @@ public class ImagemController : ControllerBase
 
             var imagem = new ImagemEntidade
             {
-                CaminhoImg = Path.Combine("imagens", novoNome), 
+                CaminhoImg = novoNome, 
                 EhPadrao = ehPadrao,
                 Fk_produto = produtoId
             };
@@ -73,4 +73,37 @@ public class ImagemController : ControllerBase
             return StatusCode(500, $"Erro interno ao processar a imagem: {ex.Message}");
         }
     }
+    [HttpGet("ExibirImagem/{*caminhoRelativo}")]
+    public IActionResult ExibirImagem(string caminhoRelativo)
+    {
+        try
+        {
+            // Combina o caminho base (wwwroot) com o caminho relativo recebido
+            var caminhoCompleto = Path.Combine(_env.WebRootPath, caminhoRelativo);
+
+            // Verifica se o arquivo existe
+            if (!System.IO.File.Exists(caminhoCompleto))
+                return NotFound("Imagem não encontrada.");
+
+            // Obtém a extensão do arquivo para determinar o MIME type
+            var extensao = Path.GetExtension(caminhoRelativo).ToLower();
+            var mimeType = extensao switch
+            {
+                ".jpg" => "image/jpeg",
+                ".jpeg" => "image/jpeg",
+                ".png" => "image/png",
+                ".gif" => "image/gif",
+                _ => "application/octet-stream"
+            };
+
+            // Abre o arquivo como um stream e retorna como resposta
+            var imagemStream = System.IO.File.OpenRead(caminhoCompleto);
+            return File(imagemStream, mimeType);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erro interno ao exibir a imagem: {ex.Message}");
+        }
+    }
+
 }

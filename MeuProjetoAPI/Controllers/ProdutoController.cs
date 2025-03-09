@@ -49,7 +49,6 @@ public class ProdutoController : ControllerBase
                 };
 
                 _context.Imagem.Add(imagemEntidade);
-                Console.WriteLine($"Caminho da imagem salvo no banco: {imagemEntidade.CaminhoImg}");
             }
             
             await _context.SaveChangesAsync();
