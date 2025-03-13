@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GmgLAKcJKo8Ibs5Ei0pw00DKZ8ZXLn09XACEquVas6c=",
+  "Hash": "CcPbeWGU5ZDy1k24R5sqwEAA19JoVvH7oGt2rAob1y0=",
   "Source": "MeuProjetoAPI",
   "BasePath": "_content/MeuProjetoAPI",
   "Mode": "Default",
@@ -10,505 +10,4236 @@
     {
       "Name": "MeuProjetoAPI\\wwwroot",
       "Source": "MeuProjetoAPI",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg",
+      "RelativePath": "imagens/06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "60l5ffbkfk",
+      "Integrity": "akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\0adc5c6b-7703-4947-9657-bae7ca83c084.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\0adc5c6b-7703-4947-9657-bae7ca83c084.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/0adc5c6b-7703-4947-9657-bae7ca83c084.png",
+      "RelativePath": "imagens/0adc5c6b-7703-4947-9657-bae7ca83c084#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\0adc5c6b-7703-4947-9657-bae7ca83c084.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png",
+      "RelativePath": "imagens/0b92d33f-e3be-4f5e-8581-06ccfbf6d19a#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\1c9b2024-2243-4839-a169-c464950cdb39.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\1c9b2024-2243-4839-a169-c464950cdb39.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/1c9b2024-2243-4839-a169-c464950cdb39.png",
+      "RelativePath": "imagens/1c9b2024-2243-4839-a169-c464950cdb39#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\1c9b2024-2243-4839-a169-c464950cdb39.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png",
+      "RelativePath": "imagens/1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\2f556913-70be-4a08-a20e-74b6da06cbd9.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\2f556913-70be-4a08-a20e-74b6da06cbd9.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/2f556913-70be-4a08-a20e-74b6da06cbd9.png",
+      "RelativePath": "imagens/2f556913-70be-4a08-a20e-74b6da06cbd9#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\2f556913-70be-4a08-a20e-74b6da06cbd9.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\41e314c7-0e69-418b-bbaa-ca2eac153491.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\35887073-a299-47cd-a351-6d0ff7d23b41.jpg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/41e314c7-0e69-418b-bbaa-ca2eac153491.png",
+      "RelativePath": "imagens/35887073-a299-47cd-a351-6d0ff7d23b41#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6bldc3ff82",
+      "Integrity": "ItWUyb44zMo5RG+gFENT/IWumNku6ofI63amPdEGSAk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\35887073-a299-47cd-a351-6d0ff7d23b41.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\37752c23-e2ef-470f-a5c4-6fc4e5053c1a.jpeg",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/37752c23-e2ef-470f-a5c4-6fc4e5053c1a#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n74x0qr2a3",
+      "Integrity": "k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\37752c23-e2ef-470f-a5c4-6fc4e5053c1a.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\41e314c7-0e69-418b-bbaa-ca2eac153491.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/41e314c7-0e69-418b-bbaa-ca2eac153491#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\41e314c7-0e69-418b-bbaa-ca2eac153491.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\57bdf226-dc79-4577-97c9-f4ca15c65014.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\504004b4-5f57-418d-823f-61e4175688ca.jpg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/57bdf226-dc79-4577-97c9-f4ca15c65014.png",
+      "RelativePath": "imagens/504004b4-5f57-418d-823f-61e4175688ca#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "lc7j18lq5o",
+      "Integrity": "9TzAyknJU8EgjDiDK5QYORFt1VdiLEBCaVKQDjSee6c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\504004b4-5f57-418d-823f-61e4175688ca.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\57bdf226-dc79-4577-97c9-f4ca15c65014.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/57bdf226-dc79-4577-97c9-f4ca15c65014#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\57bdf226-dc79-4577-97c9-f4ca15c65014.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\62d4bdc4-5917-46e0-b887-5e51aff7c545.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\594cb948-9cc4-4b93-9164-fef7a0f79281.jpg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/62d4bdc4-5917-46e0-b887-5e51aff7c545.png",
+      "RelativePath": "imagens/594cb948-9cc4-4b93-9164-fef7a0f79281#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "98gyxxb30v",
+      "Integrity": "VyResT3AegGhkr1bkAWRZE54ngesIFBYWxJZfHESHUw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\594cb948-9cc4-4b93-9164-fef7a0f79281.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\5e5484a7-668d-4093-a650-0ebdc821f2bb.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/5e5484a7-668d-4093-a650-0ebdc821f2bb#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\5e5484a7-668d-4093-a650-0ebdc821f2bb.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\62d4bdc4-5917-46e0-b887-5e51aff7c545.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/62d4bdc4-5917-46e0-b887-5e51aff7c545#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\62d4bdc4-5917-46e0-b887-5e51aff7c545.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\6a4cdb29-a084-40de-b5e5-ace274776c63.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\66b78b90-1e43-44b6-9c03-b6b7587c2647.jpeg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/6a4cdb29-a084-40de-b5e5-ace274776c63.png",
+      "RelativePath": "imagens/66b78b90-1e43-44b6-9c03-b6b7587c2647#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "n74x0qr2a3",
+      "Integrity": "k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\66b78b90-1e43-44b6-9c03-b6b7587c2647.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\6975a17e-8449-42b0-8d10-7e676e63a59f.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/6975a17e-8449-42b0-8d10-7e676e63a59f#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\6975a17e-8449-42b0-8d10-7e676e63a59f.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\6a4cdb29-a084-40de-b5e5-ace274776c63.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/6a4cdb29-a084-40de-b5e5-ace274776c63#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\6a4cdb29-a084-40de-b5e5-ace274776c63.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\7fcad723-bce7-4327-83f2-75930b4c735d.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\7463adad-76e9-43cc-bb2b-6ce0b50f0639.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/7fcad723-bce7-4327-83f2-75930b4c735d.png",
+      "RelativePath": "imagens/7463adad-76e9-43cc-bb2b-6ce0b50f0639#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\7463adad-76e9-43cc-bb2b-6ce0b50f0639.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\76e91b4e-fada-45eb-ac0e-0926f38cecfa.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/76e91b4e-fada-45eb-ac0e-0926f38cecfa#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\76e91b4e-fada-45eb-ac0e-0926f38cecfa.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\7fcad723-bce7-4327-83f2-75930b4c735d.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/7fcad723-bce7-4327-83f2-75930b4c735d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\7fcad723-bce7-4327-83f2-75930b4c735d.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\88421e56-047a-4a24-a378-fb2a9978b24b.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\88421e56-047a-4a24-a378-fb2a9978b24b.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/88421e56-047a-4a24-a378-fb2a9978b24b.png",
+      "RelativePath": "imagens/88421e56-047a-4a24-a378-fb2a9978b24b#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\88421e56-047a-4a24-a378-fb2a9978b24b.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\893326a0-36c7-4034-afdf-5ed1dfd16cab.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png",
+      "RelativePath": "imagens/893326a0-36c7-4034-afdf-5ed1dfd16cab#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8qu1cbj77i",
+      "Integrity": "MCalKstuscyDACwC569nmlNfak6yLE3RoWYONwsV9eY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\893326a0-36c7-4034-afdf-5ed1dfd16cab.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\93f0d564-f01e-4c73-8486-c04ab5d412b0.jpeg",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/93f0d564-f01e-4c73-8486-c04ab5d412b0#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n74x0qr2a3",
+      "Integrity": "k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\93f0d564-f01e-4c73-8486-c04ab5d412b0.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/94274541-9b87-4fa8-ab85-bfc5ffd51c0a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg",
+      "RelativePath": "imagens/98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "60l5ffbkfk",
+      "Integrity": "akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\9adcef83-e495-46ea-a1e7-7dbd347db2d4.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9989c23c-bfe6-432a-b5df-933e7bad1d84.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/9adcef83-e495-46ea-a1e7-7dbd347db2d4.png",
+      "RelativePath": "imagens/9989c23c-bfe6-432a-b5df-933e7bad1d84#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\9989c23c-bfe6-432a-b5df-933e7bad1d84.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9adcef83-e495-46ea-a1e7-7dbd347db2d4.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/9adcef83-e495-46ea-a1e7-7dbd347db2d4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\9adcef83-e495-46ea-a1e7-7dbd347db2d4.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\9baf30e2-5f89-4551-b3e2-3477018d601b.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9baf30e2-5f89-4551-b3e2-3477018d601b.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/9baf30e2-5f89-4551-b3e2-3477018d601b.png",
+      "RelativePath": "imagens/9baf30e2-5f89-4551-b3e2-3477018d601b#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\9baf30e2-5f89-4551-b3e2-3477018d601b.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png",
+      "RelativePath": "imagens/b1bfcb58-1da0-47d2-a529-3ce9af8e027f#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png",
+      "RelativePath": "imagens/b98b41ea-6492-43ba-a1c0-be783dc3dc0a#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\c2672c99-dcf2-420a-a002-e660fe28bdf3.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png",
+      "RelativePath": "imagens/c2672c99-dcf2-420a-a002-e660fe28bdf3#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\c2672c99-dcf2-420a-a002-e660fe28bdf3.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/c4a40a8e-0773-4f3c-a604-c58883a0b6d6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png",
+      "RelativePath": "imagens/d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\e28d03ce-c65c-4a42-9b48-897948e86356.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\de4d2d00-3655-48bd-9ab6-9b9578b6771a.jpeg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/e28d03ce-c65c-4a42-9b48-897948e86356.png",
+      "RelativePath": "imagens/de4d2d00-3655-48bd-9ab6-9b9578b6771a#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "sx36386igr",
+      "Integrity": "kMOilmrnsUnr5ZfuvNO0DoEXGk5e1EuXHq0QQTTDq+Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\de4d2d00-3655-48bd-9ab6-9b9578b6771a.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e28d03ce-c65c-4a42-9b48-897948e86356.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/e28d03ce-c65c-4a42-9b48-897948e86356#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\e28d03ce-c65c-4a42-9b48-897948e86356.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png",
+      "RelativePath": "imagens/e55fb214-a03a-4fe2-96b9-155ad26bc4d8#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\e69b74f4-123b-465b-8ea9-72561642bfea.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e69b74f4-123b-465b-8ea9-72561642bfea.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/e69b74f4-123b-465b-8ea9-72561642bfea.png",
+      "RelativePath": "imagens/e69b74f4-123b-465b-8ea9-72561642bfea#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\e69b74f4-123b-465b-8ea9-72561642bfea.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\f0470c8b-d005-435d-8e59-44ecce8c2d5a.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\ec973b6a-9a73-413c-aec5-c01c4add1b3f.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/f0470c8b-d005-435d-8e59-44ecce8c2d5a.png",
+      "RelativePath": "imagens/ec973b6a-9a73-413c-aec5-c01c4add1b3f#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\ec973b6a-9a73-413c-aec5-c01c4add1b3f.png"
+    },
+    {
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\f0470c8b-d005-435d-8e59-44ecce8c2d5a.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/f0470c8b-d005-435d-8e59-44ecce8c2d5a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\f0470c8b-d005-435d-8e59-44ecce8c2d5a.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\fc4424e5-94a7-412b-87ac-45ac36224bb3.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\fc4424e5-94a7-412b-87ac-45ac36224bb3.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/fc4424e5-94a7-412b-87ac-45ac36224bb3.png",
+      "RelativePath": "imagens/fc4424e5-94a7-412b-87ac-45ac36224bb3#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\fc4424e5-94a7-412b-87ac-45ac36224bb3.png"
     },
     {
-      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\fe2abc2f-b429-4851-8721-f412475a73ed.png",
+      "Identity": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\fe2abc2f-b429-4851-8721-f412475a73ed.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\",
       "BasePath": "_content/MeuProjetoAPI",
-      "RelativePath": "imagens/fe2abc2f-b429-4851-8721-f412475a73ed.png",
+      "RelativePath": "imagens/fe2abc2f-b429-4851-8721-f412475a73ed#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aorkj3r6oy",
+      "Integrity": "GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\fe2abc2f-b429-4851-8721-f412475a73ed.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "imagens/06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.60l5ffbkfk.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "60l5ffbkfk"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\06d32cf6-dbaa-47dd-bcf2-8d88f6a47f64.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/0adc5c6b-7703-4947-9657-bae7ca83c084.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\0adc5c6b-7703-4947-9657-bae7ca83c084.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/0adc5c6b-7703-4947-9657-bae7ca83c084.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/0adc5c6b-7703-4947-9657-bae7ca83c084.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\0adc5c6b-7703-4947-9657-bae7ca83c084.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\0b92d33f-e3be-4f5e-8581-06ccfbf6d19a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/1c9b2024-2243-4839-a169-c464950cdb39.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\1c9b2024-2243-4839-a169-c464950cdb39.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/1c9b2024-2243-4839-a169-c464950cdb39.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/1c9b2024-2243-4839-a169-c464950cdb39.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\1c9b2024-2243-4839-a169-c464950cdb39.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\1de69d8a-1f29-45b3-8e5d-9dcc33a5a03e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/2f556913-70be-4a08-a20e-74b6da06cbd9.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\2f556913-70be-4a08-a20e-74b6da06cbd9.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/2f556913-70be-4a08-a20e-74b6da06cbd9.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/2f556913-70be-4a08-a20e-74b6da06cbd9.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\2f556913-70be-4a08-a20e-74b6da06cbd9.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/35887073-a299-47cd-a351-6d0ff7d23b41.6bldc3ff82.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\35887073-a299-47cd-a351-6d0ff7d23b41.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ItWUyb44zMo5RG+gFENT/IWumNku6ofI63amPdEGSAk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:13:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6bldc3ff82"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/35887073-a299-47cd-a351-6d0ff7d23b41.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ItWUyb44zMo5RG+gFENT/IWumNku6ofI63amPdEGSAk="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/35887073-a299-47cd-a351-6d0ff7d23b41.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\35887073-a299-47cd-a351-6d0ff7d23b41.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ItWUyb44zMo5RG+gFENT/IWumNku6ofI63amPdEGSAk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:13:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ItWUyb44zMo5RG+gFENT/IWumNku6ofI63amPdEGSAk="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/37752c23-e2ef-470f-a5c4-6fc4e5053c1a.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\37752c23-e2ef-470f-a5c4-6fc4e5053c1a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/37752c23-e2ef-470f-a5c4-6fc4e5053c1a.n74x0qr2a3.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\37752c23-e2ef-470f-a5c4-6fc4e5053c1a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n74x0qr2a3"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/37752c23-e2ef-470f-a5c4-6fc4e5053c1a.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/41e314c7-0e69-418b-bbaa-ca2eac153491.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\41e314c7-0e69-418b-bbaa-ca2eac153491.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/41e314c7-0e69-418b-bbaa-ca2eac153491.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/41e314c7-0e69-418b-bbaa-ca2eac153491.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\41e314c7-0e69-418b-bbaa-ca2eac153491.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/504004b4-5f57-418d-823f-61e4175688ca.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\504004b4-5f57-418d-823f-61e4175688ca.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9TzAyknJU8EgjDiDK5QYORFt1VdiLEBCaVKQDjSee6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9TzAyknJU8EgjDiDK5QYORFt1VdiLEBCaVKQDjSee6c="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/504004b4-5f57-418d-823f-61e4175688ca.lc7j18lq5o.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\504004b4-5f57-418d-823f-61e4175688ca.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9TzAyknJU8EgjDiDK5QYORFt1VdiLEBCaVKQDjSee6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lc7j18lq5o"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/504004b4-5f57-418d-823f-61e4175688ca.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9TzAyknJU8EgjDiDK5QYORFt1VdiLEBCaVKQDjSee6c="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/57bdf226-dc79-4577-97c9-f4ca15c65014.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\57bdf226-dc79-4577-97c9-f4ca15c65014.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/57bdf226-dc79-4577-97c9-f4ca15c65014.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/57bdf226-dc79-4577-97c9-f4ca15c65014.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\57bdf226-dc79-4577-97c9-f4ca15c65014.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/594cb948-9cc4-4b93-9164-fef7a0f79281.98gyxxb30v.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\594cb948-9cc4-4b93-9164-fef7a0f79281.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VyResT3AegGhkr1bkAWRZE54ngesIFBYWxJZfHESHUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:13:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "98gyxxb30v"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/594cb948-9cc4-4b93-9164-fef7a0f79281.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VyResT3AegGhkr1bkAWRZE54ngesIFBYWxJZfHESHUw="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/594cb948-9cc4-4b93-9164-fef7a0f79281.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\594cb948-9cc4-4b93-9164-fef7a0f79281.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VyResT3AegGhkr1bkAWRZE54ngesIFBYWxJZfHESHUw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:13:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VyResT3AegGhkr1bkAWRZE54ngesIFBYWxJZfHESHUw="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/5e5484a7-668d-4093-a650-0ebdc821f2bb.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\5e5484a7-668d-4093-a650-0ebdc821f2bb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/5e5484a7-668d-4093-a650-0ebdc821f2bb.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/5e5484a7-668d-4093-a650-0ebdc821f2bb.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\5e5484a7-668d-4093-a650-0ebdc821f2bb.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/62d4bdc4-5917-46e0-b887-5e51aff7c545.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\62d4bdc4-5917-46e0-b887-5e51aff7c545.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/62d4bdc4-5917-46e0-b887-5e51aff7c545.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/62d4bdc4-5917-46e0-b887-5e51aff7c545.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\62d4bdc4-5917-46e0-b887-5e51aff7c545.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/66b78b90-1e43-44b6-9c03-b6b7587c2647.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\66b78b90-1e43-44b6-9c03-b6b7587c2647.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/66b78b90-1e43-44b6-9c03-b6b7587c2647.n74x0qr2a3.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\66b78b90-1e43-44b6-9c03-b6b7587c2647.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n74x0qr2a3"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/66b78b90-1e43-44b6-9c03-b6b7587c2647.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/6975a17e-8449-42b0-8d10-7e676e63a59f.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\6975a17e-8449-42b0-8d10-7e676e63a59f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/6975a17e-8449-42b0-8d10-7e676e63a59f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/6975a17e-8449-42b0-8d10-7e676e63a59f.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\6975a17e-8449-42b0-8d10-7e676e63a59f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/6a4cdb29-a084-40de-b5e5-ace274776c63.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\6a4cdb29-a084-40de-b5e5-ace274776c63.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/6a4cdb29-a084-40de-b5e5-ace274776c63.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/6a4cdb29-a084-40de-b5e5-ace274776c63.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\6a4cdb29-a084-40de-b5e5-ace274776c63.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/7463adad-76e9-43cc-bb2b-6ce0b50f0639.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\7463adad-76e9-43cc-bb2b-6ce0b50f0639.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/7463adad-76e9-43cc-bb2b-6ce0b50f0639.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/7463adad-76e9-43cc-bb2b-6ce0b50f0639.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\7463adad-76e9-43cc-bb2b-6ce0b50f0639.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/76e91b4e-fada-45eb-ac0e-0926f38cecfa.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\76e91b4e-fada-45eb-ac0e-0926f38cecfa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/76e91b4e-fada-45eb-ac0e-0926f38cecfa.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/76e91b4e-fada-45eb-ac0e-0926f38cecfa.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\76e91b4e-fada-45eb-ac0e-0926f38cecfa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/7fcad723-bce7-4327-83f2-75930b4c735d.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\7fcad723-bce7-4327-83f2-75930b4c735d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/7fcad723-bce7-4327-83f2-75930b4c735d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/7fcad723-bce7-4327-83f2-75930b4c735d.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\7fcad723-bce7-4327-83f2-75930b4c735d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/88421e56-047a-4a24-a378-fb2a9978b24b.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\88421e56-047a-4a24-a378-fb2a9978b24b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/88421e56-047a-4a24-a378-fb2a9978b24b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/88421e56-047a-4a24-a378-fb2a9978b24b.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\88421e56-047a-4a24-a378-fb2a9978b24b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/893326a0-36c7-4034-afdf-5ed1dfd16cab.8qu1cbj77i.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\893326a0-36c7-4034-afdf-5ed1dfd16cab.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MCalKstuscyDACwC569nmlNfak6yLE3RoWYONwsV9eY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8qu1cbj77i"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/893326a0-36c7-4034-afdf-5ed1dfd16cab.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MCalKstuscyDACwC569nmlNfak6yLE3RoWYONwsV9eY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/893326a0-36c7-4034-afdf-5ed1dfd16cab.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\893326a0-36c7-4034-afdf-5ed1dfd16cab.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MCalKstuscyDACwC569nmlNfak6yLE3RoWYONwsV9eY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MCalKstuscyDACwC569nmlNfak6yLE3RoWYONwsV9eY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/93f0d564-f01e-4c73-8486-c04ab5d412b0.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\93f0d564-f01e-4c73-8486-c04ab5d412b0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:09:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/93f0d564-f01e-4c73-8486-c04ab5d412b0.n74x0qr2a3.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\93f0d564-f01e-4c73-8486-c04ab5d412b0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179733"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:09:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n74x0qr2a3"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/93f0d564-f01e-4c73-8486-c04ab5d412b0.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k2sl8fE0gksuOYbPCtVPNHA0iVR21ctjfR9KU7GNgtE="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/94274541-9b87-4fa8-ab85-bfc5ffd51c0a.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\94274541-9b87-4fa8-ab85-bfc5ffd51c0a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.60l5ffbkfk.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "60l5ffbkfk"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\98b9b8c2-ccfa-4e22-a23d-cd01c9b79f36.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-akuaAsKXP3iB6VF4ZpFIuVIXBvTBMhYJvQrpzOLRFsA="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/9989c23c-bfe6-432a-b5df-933e7bad1d84.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9989c23c-bfe6-432a-b5df-933e7bad1d84.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/9989c23c-bfe6-432a-b5df-933e7bad1d84.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/9989c23c-bfe6-432a-b5df-933e7bad1d84.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9989c23c-bfe6-432a-b5df-933e7bad1d84.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/9adcef83-e495-46ea-a1e7-7dbd347db2d4.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9adcef83-e495-46ea-a1e7-7dbd347db2d4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/9adcef83-e495-46ea-a1e7-7dbd347db2d4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/9adcef83-e495-46ea-a1e7-7dbd347db2d4.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9adcef83-e495-46ea-a1e7-7dbd347db2d4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/9baf30e2-5f89-4551-b3e2-3477018d601b.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9baf30e2-5f89-4551-b3e2-3477018d601b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/9baf30e2-5f89-4551-b3e2-3477018d601b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/9baf30e2-5f89-4551-b3e2-3477018d601b.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\9baf30e2-5f89-4551-b3e2-3477018d601b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/b1bfcb58-1da0-47d2-a529-3ce9af8e027f.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/b98b41ea-6492-43ba-a1c0-be783dc3dc0a.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\b98b41ea-6492-43ba-a1c0-be783dc3dc0a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/c2672c99-dcf2-420a-a002-e660fe28bdf3.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\c2672c99-dcf2-420a-a002-e660fe28bdf3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/c2672c99-dcf2-420a-a002-e660fe28bdf3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/c2672c99-dcf2-420a-a002-e660fe28bdf3.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\c2672c99-dcf2-420a-a002-e660fe28bdf3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/c4a40a8e-0773-4f3c-a604-c58883a0b6d6.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\c4a40a8e-0773-4f3c-a604-c58883a0b6d6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\d84ee4e1-8bf6-49a0-9ded-aacbbf24d10c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/de4d2d00-3655-48bd-9ab6-9b9578b6771a.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\de4d2d00-3655-48bd-9ab6-9b9578b6771a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kMOilmrnsUnr5ZfuvNO0DoEXGk5e1EuXHq0QQTTDq+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kMOilmrnsUnr5ZfuvNO0DoEXGk5e1EuXHq0QQTTDq+Q="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/de4d2d00-3655-48bd-9ab6-9b9578b6771a.sx36386igr.jpeg",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\de4d2d00-3655-48bd-9ab6-9b9578b6771a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kMOilmrnsUnr5ZfuvNO0DoEXGk5e1EuXHq0QQTTDq+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 18:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sx36386igr"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/de4d2d00-3655-48bd-9ab6-9b9578b6771a.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kMOilmrnsUnr5ZfuvNO0DoEXGk5e1EuXHq0QQTTDq+Q="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/e28d03ce-c65c-4a42-9b48-897948e86356.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e28d03ce-c65c-4a42-9b48-897948e86356.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/e28d03ce-c65c-4a42-9b48-897948e86356.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/e28d03ce-c65c-4a42-9b48-897948e86356.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e28d03ce-c65c-4a42-9b48-897948e86356.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/e55fb214-a03a-4fe2-96b9-155ad26bc4d8.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/e69b74f4-123b-465b-8ea9-72561642bfea.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e69b74f4-123b-465b-8ea9-72561642bfea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/e69b74f4-123b-465b-8ea9-72561642bfea.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/e69b74f4-123b-465b-8ea9-72561642bfea.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\e69b74f4-123b-465b-8ea9-72561642bfea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/ec973b6a-9a73-413c-aec5-c01c4add1b3f.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\ec973b6a-9a73-413c-aec5-c01c4add1b3f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/ec973b6a-9a73-413c-aec5-c01c4add1b3f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/ec973b6a-9a73-413c-aec5-c01c4add1b3f.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\ec973b6a-9a73-413c-aec5-c01c4add1b3f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/f0470c8b-d005-435d-8e59-44ecce8c2d5a.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\f0470c8b-d005-435d-8e59-44ecce8c2d5a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/f0470c8b-d005-435d-8e59-44ecce8c2d5a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/f0470c8b-d005-435d-8e59-44ecce8c2d5a.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\f0470c8b-d005-435d-8e59-44ecce8c2d5a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fc4424e5-94a7-412b-87ac-45ac36224bb3.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\fc4424e5-94a7-412b-87ac-45ac36224bb3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/fc4424e5-94a7-412b-87ac-45ac36224bb3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fc4424e5-94a7-412b-87ac-45ac36224bb3.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\fc4424e5-94a7-412b-87ac-45ac36224bb3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fe2abc2f-b429-4851-8721-f412475a73ed.aorkj3r6oy.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\fe2abc2f-b429-4851-8721-f412475a73ed.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aorkj3r6oy"
+        },
+        {
+          "Name": "label",
+          "Value": "imagens/fe2abc2f-b429-4851-8721-f412475a73ed.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
+    },
+    {
+      "Route": "imagens/fe2abc2f-b429-4851-8721-f412475a73ed.png",
+      "AssetFile": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\wwwroot\\imagens\\fe2abc2f-b429-4851-8721-f412475a73ed.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 17:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GtiBrB3SgHcHoypnOChTByNB2aL/3VIdAvfpoBAF7yY="
+        }
+      ]
     }
   ]
 }

@@ -170,7 +170,7 @@
       },
       {
         "Name": "model",
-        "Type": "MeuProjetoAPI.Controllers.UsuarioController\u002BAlterarSenhaModel",
+        "Type": "MeuProjetoAPI.Model.UsuarioModel\u002BAlterarSenhaModel",
         "IsRequired": true
       }
     ],

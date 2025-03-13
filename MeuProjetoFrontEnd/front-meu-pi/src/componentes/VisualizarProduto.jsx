@@ -4,12 +4,12 @@ import authService from "../services/authService";
 import "../estilos/visualizarProduto.css";
 
 const VisualizarProduto = () => {
-  const { id } = useParams(); // Obtém o ID da URL
+  const { id } = useParams();
   const navigate = useNavigate();
   const [produto, setProduto] = useState(null);
   const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState("");
-  const [imagemUrl, setImagemUrl] = useState(""); // Estado para armazenar a URL da imagem
+  const [imagemAtual, setImagemAtual] = useState(0);
 
   const buscarProdutoPorId = async () => {
     try {
@@ -18,14 +18,6 @@ const VisualizarProduto = () => {
 
       if (produtoEncontrado) {
         setProduto(produtoEncontrado);
-
-        // Busca a imagem padrão do produto
-        const imagemPadrao = obterImagemPadrao(produtoEncontrado);
-        if (imagemPadrao) {
-          // Monta a URL completa da imagem usando a rota de GET
-          const urlImagem = `https://localhost:7075/api/Imagem/ExibirImagem/${imagemPadrao}`;
-          setImagemUrl(urlImagem); // Atualiza o estado com a URL da imagem
-        }
       } else {
         setErro("Produto não encontrado.");
       }
@@ -37,20 +29,17 @@ const VisualizarProduto = () => {
     }
   };
 
-  const obterImagemPadrao = (produto) => {
-    if (produto && produto.imagens && produto.imagens.length > 0) {
-      const imagemPadrao = produto.imagens.find((img) => img.ehPadrao);
-      const caminhoImg = imagemPadrao
-        ? imagemPadrao.caminhoImg
-        : produto.imagens[0].caminhoImg;
-      console.log("Caminho da imagem recebido do back-end:", caminhoImg); // Log para depuração
-      return caminhoImg; // Retorna apenas o nome do arquivo
-    }
-    return null;
-  };
   useEffect(() => {
     buscarProdutoPorId();
   }, [id]);
+
+  const proximaImagem = () => {
+    setImagemAtual((prev) => (prev + 1) % produto.imagens.length);
+  };
+
+  const imagemAnterior = () => {
+    setImagemAtual((prev) => (prev - 1 + produto.imagens.length) % produto.imagens.length);
+  };
 
   if (carregando) {
     return <div className="carregando">Carregando...</div>;
@@ -67,18 +56,34 @@ const VisualizarProduto = () => {
         {produto && (
           <div className="detalhesProduto">
             <h2>{produto.nome}</h2>
-            <p>{produto.descricao}</p>
+            <p>Código do Produto: {produto.descricao}</p>
             <p>Preço: R$ {produto.preco.toFixed(2)}</p>
             <p>Quantidade em Estoque: {produto.quantidade}</p>
             <p>Status: {produto.status === 1 ? "Ativo" : "Inativo"}</p>
 
-            {imagemUrl && (
-              <div className="imagemProduto">
-                <img
-                  src={imagemUrl}
-                  alt={produto.nome}
-                  className="imagem"
-                />
+            {produto.imagens && produto.imagens.length > 0 && (
+              <div className="slider">
+                <button onClick={imagemAnterior} className="btn-anterior">
+                  &#9664;
+                </button>
+
+                <div className="imagem-container">
+                  <img
+                    src={`https://localhost:7075/api/Imagem/ExibirImagem/${produto.imagens[imagemAtual].caminhoImg}`}
+                    alt={produto.nome}
+                    className="imagem"
+                    onError={(e) => {
+                      e.target.src = "caminho/para/imagem-padrao.jpg"; // Fallback para imagem padrão
+                    }}
+                  />
+                  <div className="contador-imagens">
+                    {imagemAtual + 1} / {produto.imagens.length}
+                  </div>
+                </div>
+
+                <button onClick={proximaImagem} className="btn-proximo">
+                  &#9654;
+                </button>
               </div>
             )}
 

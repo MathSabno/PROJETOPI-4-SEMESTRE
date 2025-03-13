@@ -5,6 +5,79 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Imagem/UploadImagem/{produtoId}": {
+      "post": {
+        "tags": [
+          "Imagem"
+        ],
+        "parameters": [
+          {
+            "name": "produtoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ehPadrao",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Imagem/ExibirImagem/{caminhoRelativo}": {
+      "get": {
+        "tags": [
+          "Imagem"
+        ],
+        "parameters": [
+          {
+            "name": "caminhoRelativo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Login/Login": {
       "post": {
         "tags": [
@@ -29,6 +102,176 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Produto/CreateProduto": {
+      "post": {
+        "tags": [
+          "Produto"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Descricao",
+                  "Nome"
+                ],
+                "type": "object",
+                "properties": {
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "Descricao": {
+                    "type": "string"
+                  },
+                  "Avaliacao": {
+                    "$ref": "#/components/schemas/EnumAvaliacaoProduto"
+                  },
+                  "Preco": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "QuantidadeEstoque": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Imagens": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  },
+                  "ImagemPadraoIndex": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "Nome": {
+                  "style": "form"
+                },
+                "Descricao": {
+                  "style": "form"
+                },
+                "Avaliacao": {
+                  "style": "form"
+                },
+                "Preco": {
+                  "style": "form"
+                },
+                "QuantidadeEstoque": {
+                  "style": "form"
+                },
+                "Imagens": {
+                  "style": "form"
+                },
+                "ImagemPadraoIndex": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Produto/ListarProdutos": {
+      "get": {
+        "tags": [
+          "Produto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProdutoDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProdutoDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProdutoDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Produto/UpdateProduto": {
+      "put": {
+        "tags": [
+          "Produto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoEntidade"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoEntidade"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProdutoEntidade"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Produto/DeleteProduto/{id}": {
+      "delete": {
+        "tags": [
+          "Produto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -238,6 +481,9 @@
   "components": {
     "schemas": {
       "AlterarSenhaModel": {
+        "required": [
+          "novaSenha"
+        ],
         "type": "object",
         "properties": {
           "novaSenha": {
@@ -246,6 +492,17 @@
           }
         },
         "additionalProperties": false
+      },
+      "EnumAvaliacaoProduto": {
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "EnumGrupoUsuario": {
         "enum": [
@@ -256,7 +513,7 @@
         "type": "integer",
         "format": "int32"
       },
-      "EnumStatusUsuario": {
+      "EnumStatus": {
         "enum": [
           0,
           1,
@@ -264,6 +521,137 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "ImagemDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "caminhoImg": {
+            "type": "string",
+            "nullable": true
+          },
+          "ehPadrao": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ImagemEntidade": {
+        "required": [
+          "caminhoImg",
+          "ehPadrao"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "caminhoImg": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "ehPadrao": {
+            "type": "boolean"
+          },
+          "fk_produto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "produto": {
+            "$ref": "#/components/schemas/ProdutoEntidade"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "avaliacaoProduto": {
+            "$ref": "#/components/schemas/EnumAvaliacaoProduto"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "$ref": "#/components/schemas/EnumStatus"
+          },
+          "imagens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImagemDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProdutoEntidade": {
+        "required": [
+          "avaliacao",
+          "descricao",
+          "nome",
+          "preco",
+          "quantidade",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "avaliacao": {
+            "$ref": "#/components/schemas/EnumAvaliacaoProduto"
+          },
+          "descricao": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "$ref": "#/components/schemas/EnumStatus"
+          },
+          "imagens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImagemEntidade"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "UsuarioEntidade": {
         "required": [
@@ -300,7 +688,7 @@
             "$ref": "#/components/schemas/EnumGrupoUsuario"
           },
           "status": {
-            "$ref": "#/components/schemas/EnumStatusUsuario"
+            "$ref": "#/components/schemas/EnumStatus"
           }
         },
         "additionalProperties": false
