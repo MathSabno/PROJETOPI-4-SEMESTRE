@@ -3,6 +3,7 @@ using MeuProjetoAPI.Entidades;
 using MeuProjetoAPI.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static MeuProjetoAPI.Model.UsuarioModel;
 
 namespace MeuProjetoAPI.Controllers;
 [Route("api/[controller]")]
@@ -56,24 +57,34 @@ public class UsuarioController : ControllerBase
         using var context = new SiteDbContext();
 
         // Recupera a entidade (Re-hidratação)
-        var task = await context.Usuarios.FirstOrDefaultAsync(x => x.Id == tarefa.Id);
+        if (await context.Usuarios.FirstOrDefaultAsync(x => x.Id == tarefa.Id) == null)
+            return "Usuário não encontrado";
 
-        if (task is null)
-            return "Usuário não encontrada";
+        var usuarioExiste = await context.Usuarios.FindAsync(tarefa.Id);
 
-        // Altera a entidade
-        task.Name = string.IsNullOrEmpty(tarefa.Name) ? task.Name : tarefa.Name;
-        task.Cpf = string.IsNullOrEmpty(tarefa.Cpf) ? task.Cpf : tarefa.Cpf;
-        task.Grupo = tarefa.Grupo;
-        task.Status = tarefa.Status;
+        if (usuarioExiste is null)
+            Results.NotFound();
 
-        // Atualiza os dados no DataContext
-        context.Usuarios.Update(task);
+        usuarioExiste.Name = string.IsNullOrEmpty(tarefa.Name) ? usuarioExiste.Name : tarefa.Name;
+        usuarioExiste.Email = string.IsNullOrEmpty(tarefa.Email) ? string.Empty : tarefa.Email;
+        usuarioExiste.Cpf = string.IsNullOrEmpty(tarefa.Cpf) ? usuarioExiste.Cpf : tarefa.Cpf;
+        usuarioExiste.Grupo = tarefa.Grupo;
+        usuarioExiste.Status = tarefa.Status;
+
+        try
+        {
+            // Atualiza os dados no DataContext
+            context.Update(usuarioExiste);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Erro ao atualizar os dados no DataContext: ", ex.InnerException);
+        }
 
         // Persiste os dados no banco
-        var t = await context.SaveChangesAsync();
+        return context.SaveChangesAsync().Result > 1 ? "Usuário atualizado com sucesso!" : "Erro ao atualizar usuario";
 
-        return "Usuário atualizado com sucesso!";
+
     }
 
     [HttpDelete]
@@ -106,7 +117,7 @@ public class UsuarioController : ControllerBase
 
         // Verifica se o usuário existe
         var usuario = await context.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
-        if (usuario == null)
+        if (usuario is null)
             return NotFound("Usuário não encontrado.");
 
         // Valida a nova senha
@@ -121,11 +132,5 @@ public class UsuarioController : ControllerBase
         await context.SaveChangesAsync();
 
         return Ok("Senha alterada com sucesso!");
-    }
-
-    // Modelo para a requisição de alteração de senha
-    public class AlterarSenhaModel
-    {
-        public string NovaSenha { get; set; }
     }
 }

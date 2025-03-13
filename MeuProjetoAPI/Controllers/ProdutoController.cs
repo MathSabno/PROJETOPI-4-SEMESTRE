@@ -4,6 +4,7 @@ using MeuProjetoAPI.Entidades;
 using MeuProjetoAPI.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static MeuProjetoAPI.Model.ProdutoModel;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -152,15 +153,4 @@ public class ProdutoController : ControllerBase
 
         return Ok("Produto removido com sucesso!");
     }
-
-    public class ProdutoRequest
-    {
-        public string Nome { get; set; }
-        public string Descricao { get; set; }
-        public EnumAvaliacaoProduto Avaliacao { get; set; }
-        public decimal Preco { get; set; }
-        public int QuantidadeEstoque { get; set; }
-        public List<IFormFile> Imagens { get; set; }
-        public int ImagemPadraoIndex { get; set; }
-    } 
 }

@@ -15,7 +15,7 @@ public class LoginController : ControllerBase
     public async Task<IActionResult> Login([FromBody] UsuarioLoginManipulador usuario)
     {
         // Verifica se os dados do usuário são válidos
-        if (usuario == null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(usuario.Email))
+        if (usuario is null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(usuario.Email))
             return BadRequest("Email e senha são obrigatórios.");
 
         using var context = new SiteDbContext(); // Criando uma nova instância do DbContext

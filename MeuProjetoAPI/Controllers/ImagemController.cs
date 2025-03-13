@@ -70,7 +70,7 @@ public class ImagemController : ControllerBase
         }
         catch (Exception ex)
         {
-            return StatusCode(500, $"Erro interno ao processar a imagem: {ex.Message}");
+            return StatusCode(500, $"Erro interno ao processar a imagem: {ex.InnerException.StackTrace}");
         }
     }
     [HttpGet("ExibirImagem/{*caminhoRelativo}")]
@@ -102,7 +102,7 @@ public class ImagemController : ControllerBase
         }
         catch (Exception ex)
         {
-            return StatusCode(500, $"Erro interno ao exibir a imagem: {ex.Message}");
+            return StatusCode(500, $"Erro interno ao exibir a imagem: {ex.InnerException.StackTrace}");
         }
     }
 

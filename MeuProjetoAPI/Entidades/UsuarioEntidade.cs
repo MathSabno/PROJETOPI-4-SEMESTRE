@@ -6,6 +6,11 @@ namespace MeuProjetoAPI.Entidades;
 
 public class UsuarioEntidade
 {
+    //Sempre ter um contrudo inicializando um objeto, para melhor tratamento.
+    public UsuarioEntidade()
+    {
+    }
+
     public UsuarioEntidade(int id, string name, string cpf, string email, string senha, EnumGrupoUsuario grupo, EnumStatus status)
     {
         Id = id;
