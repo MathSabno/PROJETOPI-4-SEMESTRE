@@ -6,7 +6,7 @@ namespace MeuProjetoAPI.Entidades;
 
 public class UsuarioEntidade
 {
-    //Sempre ter um contrudo inicializando um objeto, para melhor tratamento.
+    //Sempre ter um contrutor inicializando um objeto, para melhor tratamento.
     public UsuarioEntidade()
     {
     }

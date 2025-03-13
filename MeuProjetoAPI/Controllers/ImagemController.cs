@@ -78,14 +78,11 @@ public class ImagemController : ControllerBase
     {
         try
         {
-            // Combina o caminho base (wwwroot) com o caminho relativo recebido
             var caminhoCompleto = Path.Combine(_env.WebRootPath, caminhoRelativo);
 
-            // Verifica se o arquivo existe
             if (!System.IO.File.Exists(caminhoCompleto))
                 return NotFound("Imagem não encontrada.");
 
-            // Obtém a extensão do arquivo para determinar o MIME type
             var extensao = Path.GetExtension(caminhoRelativo).ToLower();
             var mimeType = extensao switch
             {
@@ -96,7 +93,6 @@ public class ImagemController : ControllerBase
                 _ => "application/octet-stream"
             };
 
-            // Abre o arquivo como um stream e retorna como resposta
             var imagemStream = System.IO.File.OpenRead(caminhoCompleto);
             return File(imagemStream, mimeType);
         }

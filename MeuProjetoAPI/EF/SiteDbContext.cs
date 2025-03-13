@@ -15,7 +15,7 @@ public class SiteDbContext : DbContext
     {
         if (!options.IsConfigured)
         {
-            options.UseSqlServer("Server=(LocalDb)\\MSSQLLocalDB;Database=PROJETOPI;Trusted_Connection=True;");
+            options.UseSqlServer("Server=(local)\\SQLEXPRESS;Database=PROJETOPI;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
