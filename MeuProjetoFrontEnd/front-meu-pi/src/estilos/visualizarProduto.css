@@ -1,70 +1,134 @@
+/* Estilos gerais */
 .visualizarProduto {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .visualizarProdutoContainer {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .titulo {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .detalhesProduto {
-    margin-bottom: 20px;
-  }
-  
-  .detalhesProduto h2 {
-    margin-bottom: 10px;
-  }
-  
-  .detalhesProduto p {
-    margin: 5px 0;
-  }
-  
-  .imagemProduto {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .imagemProduto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .botaoVoltar {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .botaoVoltar:hover {
-    background-color: #0056b3;
-  }
-  
-  .carregando {
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  
-  .erro {
-    color: red;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 20px;
-  }
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.visualizarProdutoContainer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.detalhesProduto {
+  margin-bottom: 20px;
+}
+
+.detalhesProduto h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #007bff;
+}
+
+.detalhesProduto p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Estilos para o slider de imagens */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.imagem-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #e0e0e0; /* Cor de fundo para o contêiner da imagem */
+}
+
+.imagem {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.contador-imagens {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-anterior,
+.btn-proximo {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-anterior:hover,
+.btn-proximo:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para o botão de voltar */
+.botaoVoltar {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to left, #21d4fd, #b721ff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.botaoVoltar:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para mensagens de carregamento e erro */
+.carregando {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.erro {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}

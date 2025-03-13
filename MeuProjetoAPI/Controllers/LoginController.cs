@@ -21,7 +21,7 @@ public class LoginController : ControllerBase
         using var context = new SiteDbContext(); // Criando uma nova instância do DbContext
 
         // Busca o usuário pelo email (não compara a senha ainda)
-        var usuarioExistente = await context.Usuarios
+        var usuarioExistente = await context.Usuario
             .FirstOrDefaultAsync(x => x.Email == usuario.Email);
 
         // Verifica se o usuário existe

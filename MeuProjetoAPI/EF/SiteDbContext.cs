@@ -7,7 +7,7 @@ public class SiteDbContext : DbContext
 {
     public SiteDbContext() { }
     public SiteDbContext(DbContextOptions<SiteDbContext> options) : base(options) { }
-    public DbSet<UsuarioEntidade> Usuarios { get; set; } = null!;
+    public DbSet<UsuarioEntidade> Usuario { get; set; } = null!;
     public DbSet<ProdutoEntidade> Produto { get; set; } = null!;
     public DbSet<ImagemEntidade> Imagem { get; set; } = null!;
 

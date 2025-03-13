@@ -20,7 +20,7 @@ public class UsuarioController : ControllerBase
 
         // Verifica se o CPF ou Email já estão cadastrados
         using var context = new SiteDbContext();
-        var usuarioExistente = await context.Usuarios
+        var usuarioExistente = await context.Usuario   
             .FirstOrDefaultAsync(x => x.Cpf == usuario.Cpf || x.Email == usuario.Email);
 
         if (usuarioExistente != null)
@@ -30,7 +30,7 @@ public class UsuarioController : ControllerBase
         usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
 
         // Adiciona o usuário ao contexto
-        await context.Usuarios.AddAsync(usuario);
+        await context.Usuario.AddAsync(usuario);
 
         // Persiste as mudanças no banco de dados
         await context.SaveChangesAsync();
@@ -46,7 +46,7 @@ public class UsuarioController : ControllerBase
         using var context = new SiteDbContext();
 
         // Lê todas as categorias
-        return await context.Usuarios.ToListAsync();
+        return await context.Usuario.ToListAsync();
     }
 
     [HttpPut]
@@ -57,10 +57,10 @@ public class UsuarioController : ControllerBase
         using var context = new SiteDbContext();
 
         // Recupera a entidade (Re-hidratação)
-        if (await context.Usuarios.FirstOrDefaultAsync(x => x.Id == tarefa.Id) == null)
+        if (await context.Usuario.FirstOrDefaultAsync(x => x.Id == tarefa.Id) == null)
             return "Usuário não encontrado";
 
-        var usuarioExiste = await context.Usuarios.FindAsync(tarefa.Id);
+        var usuarioExiste = await context.Usuario.FindAsync(tarefa.Id);
 
         if (usuarioExiste is null)
             Results.NotFound();
@@ -95,13 +95,13 @@ public class UsuarioController : ControllerBase
         using var context = new SiteDbContext();
 
         // Recupera a entidade (Re-hidratação)
-        var task = await context.Usuarios.FirstOrDefaultAsync(x => x.Id == Id);
+        var task = await context.Usuario.FirstOrDefaultAsync(x => x.Id == Id);
 
         if (task is null)
             return "Usuário não encontrado";
 
         // Remove ela do DataContext
-        context.Usuarios.Remove(task);
+        context.Usuario.Remove(task);
 
         // Persiste os dados no banco
         await context.SaveChangesAsync();
@@ -116,7 +116,7 @@ public class UsuarioController : ControllerBase
         using var context = new SiteDbContext();
 
         // Verifica se o usuário existe
-        var usuario = await context.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
+        var usuario = await context.Usuario.FirstOrDefaultAsync(x => x.Id == id);
         if (usuario is null)
             return NotFound("Usuário não encontrado.");
 
@@ -128,7 +128,7 @@ public class UsuarioController : ControllerBase
         usuario.Senha = BCrypt.Net.BCrypt.HashPassword(model.NovaSenha);
 
         // Atualiza o usuário no banco de dados
-        context.Usuarios.Update(usuario);
+        context.Usuario.Update(usuario);
         await context.SaveChangesAsync();
 
         return Ok("Senha alterada com sucesso!");
