@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +27,8 @@
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:enums\\enumavaliacaoproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\usuarioentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\usuarioentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsuarioEntidade.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\UsuarioEntidade.cs",
               "RelativeDocumentMoniker": "Entidades\\UsuarioEntidade.cs",
@@ -91,12 +91,11 @@
               "ViewState": "AgIAABoAAAAAAAAAAAApwCgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T02:36:05.881Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ProdutoDto.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\DTO\\ProdutoDto.cs",
               "RelativeDocumentMoniker": "DTO\\ProdutoDto.cs",
@@ -116,7 +115,7 @@
               "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
               "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAgwKMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAmwNwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T18:30:57.212Z",
               "IsPinned": true,
@@ -124,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -142,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "EnumAvaliacaoProduto.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Enums\\EnumAvaliacaoProduto.cs",
               "RelativeDocumentMoniker": "Enums\\EnumAvaliacaoProduto.cs",
@@ -150,12 +149,11 @@
               "RelativeToolTip": "Enums\\EnumAvaliacaoProduto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T00:50:43.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T00:50:43.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ProdutoEntidade.cs",
               "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
               "RelativeDocumentMoniker": "Entidades\\ProdutoEntidade.cs",
@@ -163,8 +161,7 @@
               "RelativeToolTip": "Entidades\\ProdutoEntidade.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T23:33:32.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T23:33:32.152Z"
             },
             {
               "$type": "Document",
@@ -174,7 +171,7 @@
               "RelativeDocumentMoniker": "Model\\ProdutoModel.cs",
               "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\ProdutoModel.cs",
               "RelativeToolTip": "Model\\ProdutoModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwA8AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwAkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T23:26:13.502Z",
               "EditorCaption": ""
@@ -189,8 +186,7 @@
               "RelativeToolTip": "Model\\UsuarioModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T23:28:35.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T23:28:35.857Z"
             },
             {
               "$type": "Document",
@@ -202,8 +198,7 @@
               "RelativeToolTip": "Controllers\\LoginController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAiwBoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:49:39.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:49:39.774Z"
             },
             {
               "$type": "Document",
@@ -215,8 +210,7 @@
               "RelativeToolTip": "EF\\SiteDbContext.cs",
               "ViewState": "AgIAAAUAAAAAzczMzKw/wBEAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:59:41.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:59:41.21Z"
             },
             {
               "$type": "Document",
@@ -228,8 +222,7 @@
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAUwIcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T20:57:11.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T20:57:11.585Z"
             },
             {
               "$type": "Document",
@@ -241,8 +234,7 @@
               "RelativeToolTip": "Controllers\\ImagemController.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAcwGAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:54:51.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:54:51.571Z"
             },
             {
               "$type": "Document",

@@ -23,6 +23,7 @@ const AlterarProduto = () => {
   const [imagens, setImagens] = useState([]);
   const [imagensExistentes, setImagensExistentes] = useState([]);
   const [imagemPadraoIndex, setImagemPadraoIndex] = useState(null);
+  const [imagensParaRemover, setImagensParaRemover] = useState([]); // Estado para imagens marcadas para remoção
 
   const userGroup = location.state?.userGroup; // Acessa o grupo do usuário
 
@@ -41,6 +42,7 @@ const AlterarProduto = () => {
           setDescricao(produto.descricao);
           setPreco(produto.preco.toString());
           setQuantidadeEstoque(produto.quantidade.toString());
+          setAvaliacao(produto.avaliacaoProduto);
           setImagensExistentes(produto.imagens);
         } else {
           setErro("Produto não encontrado.");
@@ -105,16 +107,25 @@ const AlterarProduto = () => {
     setImagemPadraoIndex(index);
   };
 
+  // Função para marcar/desmarcar imagens para remoção
+  const handleRemoverImagem = (imagemId) => {
+    setImagensParaRemover((prev) =>
+      prev.includes(imagemId)
+        ? prev.filter((id) => id !== imagemId) // Desmarca a imagem
+        : [...prev, imagemId] // Marca a imagem para remoção
+    );
+  };
+
   // Função para atualizar o produto
   const handleAtualizar = async (e) => {
     e.preventDefault();
-  
+
     // Valida os campos
     if (!validarCampos()) return;
-  
+
     // Cria um objeto FormData
     const formData = new FormData();
-  
+
     // Adiciona os campos ao FormData
     formData.append("id", id); // ID do produto
     formData.append("nome", nome);
@@ -123,7 +134,7 @@ const AlterarProduto = () => {
     formData.append("preco", preco.replace("R$", "").replace(/\./g, "").replace(",", "."));
     formData.append("quantidadeEstoque", quantidadeEstoque);
     formData.append("status", 1); // Mantém o status como ativo
-  
+
     // Adiciona as novas imagens ao FormData
     imagens.forEach((imagem, index) => {
       formData.append("imagens", imagem);
@@ -131,14 +142,19 @@ const AlterarProduto = () => {
         formData.append("imagemPadraoIndex", index);
       }
     });
-  
+
+    // Adiciona as imagens para remoção ao FormData
+    imagensParaRemover.forEach((imagemId) => {
+      formData.append("imagensParaRemover", imagemId);
+    });
+
     setCarregando(true);
-  
+
     try {
       await authService.atualizarProduto(formData); // Usando o serviço
       setMensagem("Produto atualizado com sucesso!");
       setErro("");
-      setTimeout(() => navigate("/consultar-produto"), { state: { userGroup } }, 2000);
+      setTimeout(() => navigate("/consultar-produto", { state: { userGroup } }), 2000);
     } catch (error) {
       setErro(error.response?.data || "Erro ao atualizar produto.");
     } finally {
@@ -249,12 +265,20 @@ const AlterarProduto = () => {
                     style={{ width: '50px', height: '50px', marginRight: '10px' }}
                   />
                   <input
+                    type="checkbox"
+                    checked={imagensParaRemover.includes(imagem.id)}
+                    onChange={() => handleRemoverImagem(imagem.id)}
+                    disabled={isGrupo2} // Desabilita se o grupo for 2
+                  />
+                  <label>Remover</label>
+                  <input
                     type="radio"
                     name="imagemPadrao"
                     value={index}
                     onChange={() => handleImagemPadraoChange(index)}
                     disabled={isGrupo2} // Desabilita se o grupo for 2
                   />
+                  <label>Padrão</label>
                 </div>
               ))}
               {imagens.map((imagem, index) => (
@@ -280,6 +304,12 @@ const AlterarProduto = () => {
           <div className="containerLoginFormBtn">
             <button type="submit" className="loginFormBtn">
               {carregando ? "Carregando..." : "Atualizar"}
+            </button>
+          </div>
+
+          <div className="containerLoginFormBtn">
+            <button  onClick={() => navigate("/consultar-produto", { state: { userGroup } })} type="submit" className="loginFormBtn">
+              {"Voltar"}
             </button>
           </div>
         </form>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q4Foz3PRH6hC9+6YCHDqBnB8+pHSsTOS39leJCokmNQ=",
+  "Hash": "DuMw0c/+1v714a1QDDh/pqQhg1Tpvs0ZSBZBuVtSWOQ=",
   "Source": "MeuProjetoAPI",
   "BasePath": "_content/MeuProjetoAPI",
   "Mode": "Default",
@@ -397,6 +397,25 @@
       "OriginalItemSpec": "wwwroot\\imagens\\62d4bdc4-5917-46e0-b887-5e51aff7c545.png"
     },
     {
+      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\633ee255-be43-49fd-9a3d-bf2846e6061e.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/633ee255-be43-49fd-9a3d-bf2846e6061e.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\633ee255-be43-49fd-9a3d-bf2846e6061e.png"
+    },
+    {
       "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\66b78b90-1e43-44b6-9c03-b6b7587c2647.jpeg",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
@@ -701,6 +720,25 @@
       "OriginalItemSpec": "wwwroot\\imagens\\acc650f9-9f55-4117-b06a-a448f1feeade.png"
     },
     {
+      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\af79df46-0677-4f49-a59a-8c339211e834.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/af79df46-0677-4f49-a59a-8c339211e834.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\af79df46-0677-4f49-a59a-8c339211e834.png"
+    },
+    {
       "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\b1bfcb58-1da0-47d2-a529-3ce9af8e027f.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
@@ -756,6 +794,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\bcdcaa0d-8375-40e9-ad28-fbdde5fbc055.png"
+    },
+    {
+      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\be768531-33eb-4880-95db-0cdb753c96d9.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/be768531-33eb-4880-95db-0cdb753c96d9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\be768531-33eb-4880-95db-0cdb753c96d9.png"
     },
     {
       "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\c2672c99-dcf2-420a-a002-e660fe28bdf3.png",
@@ -872,6 +929,25 @@
       "OriginalItemSpec": "wwwroot\\imagens\\de4d2d00-3655-48bd-9ab6-9b9578b6771a.jpeg"
     },
     {
+      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\dfc5e0e3-d87e-48f9-8d22-c28b23e35219.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/dfc5e0e3-d87e-48f9-8d22-c28b23e35219.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\dfc5e0e3-d87e-48f9-8d22-c28b23e35219.png"
+    },
+    {
       "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\e28d03ce-c65c-4a42-9b48-897948e86356.png",
       "SourceId": "MeuProjetoAPI",
       "SourceType": "Discovered",
@@ -889,6 +965,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\e28d03ce-c65c-4a42-9b48-897948e86356.png"
+    },
+    {
+      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\e344fc26-79b6-4132-8366-ac42af355ab7.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/e344fc26-79b6-4132-8366-ac42af355ab7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\e344fc26-79b6-4132-8366-ac42af355ab7.png"
     },
     {
       "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\e55fb214-a03a-4fe2-96b9-155ad26bc4d8.png",
@@ -1060,6 +1155,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\fc4424e5-94a7-412b-87ac-45ac36224bb3.png"
+    },
+    {
+      "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\fd315ea1-d155-4d25-86b9-ca1d2bb4486e.png",
+      "SourceId": "MeuProjetoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\",
+      "BasePath": "_content/MeuProjetoAPI",
+      "RelativePath": "imagens/fd315ea1-d155-4d25-86b9-ca1d2bb4486e.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\fd315ea1-d155-4d25-86b9-ca1d2bb4486e.png"
     },
     {
       "Identity": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\wwwroot\\imagens\\fe2abc2f-b429-4851-8721-f412475a73ed.png",

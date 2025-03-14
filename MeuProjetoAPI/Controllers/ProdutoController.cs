@@ -173,7 +173,20 @@ public class ProdutoController : ControllerBase
         produtoExistente.Quantidade = produtoRequest.QuantidadeEstoque;
         produtoExistente.Status = (EnumStatus)produtoRequest.Status;
 
-        // Atualiza as imagens apenas se forem fornecidas
+        // Remove as imagens marcadas para remoção
+        if (produtoRequest.ImagensParaRemover != null && produtoRequest.ImagensParaRemover.Any())
+        {
+            var imagensParaRemover = produtoExistente.Imagens
+                .Where(i => produtoRequest.ImagensParaRemover.Contains(i.Id))
+                .ToList();
+
+            foreach (var imagem in imagensParaRemover)
+            {
+                _context.Imagem.Remove(imagem);
+            }
+        }
+
+        // Adiciona novas imagens
         if (produtoRequest.Imagens != null && produtoRequest.Imagens.Any())
         {
             foreach (var imagem in produtoRequest.Imagens)

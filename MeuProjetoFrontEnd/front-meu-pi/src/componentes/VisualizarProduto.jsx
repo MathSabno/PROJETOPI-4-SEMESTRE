@@ -59,7 +59,7 @@ const VisualizarProduto = () => {
             <p>Código do Produto: {produto.descricao}</p>
             <p>Preço: R$ {produto.preco.toFixed(2)}</p>
             <p>Quantidade em Estoque: {produto.quantidade}</p>
-            <p>Avaliação: {produto.avaliacao}</p>
+            <p>Avaliação: {produto.avaliacaoProduto}</p>
 
             {produto.imagens && produto.imagens.length > 0 && (
               <div className="slider">

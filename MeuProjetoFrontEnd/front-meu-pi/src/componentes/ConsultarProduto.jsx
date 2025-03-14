@@ -28,22 +28,8 @@
       }
     };
 
-    const obterDescricaoAvaliacao = (avaliacao) => {
-      switch (avaliacao) {
-        case 1:
-          return "Muito Ruim";
-        case 2:
-          return "Ruim";
-        case 3:
-          return "Mediano";
-        case 4:
-          return "Bom";
-        case 5:
-          return "Muito Bom";
-        default:
-          return "Sem Avaliação";
-      }
-    };
+    console.log("Produtos passado:", produtos); // Depuração
+
     const handleCadastrarProduto = () => {
       navigate("/cadastro-produto");
     };
@@ -81,6 +67,7 @@
               formData.append("nome", produto.nome);
               formData.append("descricao", produto.descricao);
               formData.append("preco", produto.preco);
+              formData.append('avaliacao', produto.avaliacaoProduto);
               formData.append("quantidadeEstoque", produto.quantidade);
               formData.append("status", produto.status === 1 ? 2 : 1); // Alterna o status
     
@@ -163,7 +150,7 @@
                       key={produto.id}
                       className="linha"
                       style={{
-                        textDecoration: produto.status === "Inativo" ? "line-through" : "none",
+                        textDecoration: produto.status === 2 ? "line-through" : "none",
                       }}
                     >
                       <td className="celula">

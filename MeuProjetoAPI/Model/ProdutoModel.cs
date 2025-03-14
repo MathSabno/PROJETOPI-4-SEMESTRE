@@ -15,6 +15,7 @@ namespace MeuProjetoAPI.Model
             public int Status {  get; set; }
             public List<IFormFile> Imagens { get; set; } = new List<IFormFile>();
             public int? ImagemPadraoIndex { get; set; }
+            public List<int> ImagensParaRemover { get; set; } = new List<int>();
         }
     }
 }
