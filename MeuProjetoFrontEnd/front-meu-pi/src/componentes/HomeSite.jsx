@@ -10,13 +10,13 @@ const HomeSite = () => {
 
   console.log("Estado passado:", location.state); // Depuração
   console.log("Grupo do usuário:", userGroup); // Depuração
-
+  
   return (
     <div className="container">
       <div className="formContainer">
         <h1 className="titulo">Bem-vindo ao Sistema de Usuários</h1>
         <div className="botoesContainer">
-          <button className="loginFormBtn" onClick={() => navigate("/consultar-produto")}>
+          <button className="loginFormBtn" onClick={() => navigate("/consultar-produto", { state: { userGroup } })}>
             Consultar Produto
           </button>
           {/* Mostra o botão "Consultar Usuário" apenas para Administradores */}

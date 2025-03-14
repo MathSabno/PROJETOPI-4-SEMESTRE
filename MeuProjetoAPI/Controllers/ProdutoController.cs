@@ -27,7 +27,7 @@ public class ProdutoController : ControllerBase
         {
             Nome = produtoRequest.Nome,
             Descricao = produtoRequest.Descricao,
-            Avaliacao = produtoRequest.Avaliacao,
+            Avaliacao = (EnumAvaliacaoProduto)produtoRequest.Avaliacao,
             Preco = produtoRequest.Preco,
             Quantidade = produtoRequest.QuantidadeEstoque,
             Status = EnumStatus.Ativo
@@ -106,6 +106,7 @@ public class ProdutoController : ControllerBase
                 Descricao = p.Descricao,
                 Preco = p.Preco,
                 Quantidade = p.Quantidade,
+                AvaliacaoProduto = p.Avaliacao,
                 Status = p.Status,
                 Imagens = p.Imagens.Select(i => new ImagemDto
                 {
@@ -119,20 +120,75 @@ public class ProdutoController : ControllerBase
         return Ok(produtos);
     }
 
-    [HttpPut("UpdateProduto")]
-    public async Task<IActionResult> Update([FromBody] ProdutoEntidade produto)
+    [HttpGet("BuscarProdutoPorId/{id}")]
+    public async Task<ActionResult<ProdutoDto>> BuscarPorId(int id)
     {
-        var produtoExistente = await _context.Produto.Include(p => p.Imagens).FirstOrDefaultAsync(p => p.Id == produto.Id);
+        var produto = await _context.Produto
+            .Include(p => p.Imagens)
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (produto == null)
+            return NotFound("Produto não encontrado.");
+
+        var produtoDto = new ProdutoDto
+        {
+            Id = produto.Id,
+            Nome = produto.Nome,
+            Descricao = produto.Descricao,
+            Preco = produto.Preco,
+            Quantidade = produto.Quantidade,
+            AvaliacaoProduto = produto.Avaliacao,
+            Status = produto.Status,
+            Imagens = produto.Imagens.Select(i => new ImagemDto
+            {
+                Id = i.Id,
+                CaminhoImg = i.CaminhoImg,
+                EhPadrao = i.EhPadrao
+            }).ToList()
+        };
+
+        return Ok(produtoDto);
+    }
+
+    [HttpPut("UpdateProduto")]
+    public async Task<IActionResult> Update([FromForm] ProdutoRequest produtoRequest)
+    {
+        if (produtoRequest == null)
+        {
+            return BadRequest("Dados do produto inválidos.");
+        }
+
+        var produtoExistente = await _context.Produto
+            .Include(p => p.Imagens)
+            .FirstOrDefaultAsync(p => p.Id == produtoRequest.Id);
 
         if (produtoExistente == null)
             return NotFound("Produto não localizado");
 
-        produtoExistente.Nome = produto.Nome;
-        produtoExistente.Avaliacao = produto.Avaliacao;
-        produtoExistente.Descricao = produto.Descricao;
-        produtoExistente.Preco = produto.Preco;
-        produtoExistente.Quantidade = produto.Quantidade;
-        produtoExistente.Status = produto.Status;
+        // Atualiza os campos do produto
+        produtoExistente.Nome = produtoRequest.Nome;
+        produtoExistente.Descricao = produtoRequest.Descricao;
+        produtoExistente.Avaliacao = (EnumAvaliacaoProduto)produtoRequest.Avaliacao;
+        produtoExistente.Preco = produtoRequest.Preco;
+        produtoExistente.Quantidade = produtoRequest.QuantidadeEstoque;
+        produtoExistente.Status = (EnumStatus)produtoRequest.Status;
+
+        // Atualiza as imagens apenas se forem fornecidas
+        if (produtoRequest.Imagens != null && produtoRequest.Imagens.Any())
+        {
+            foreach (var imagem in produtoRequest.Imagens)
+            {
+                var caminhoImagem = await SalvarImagem(imagem);
+                var imagemEntidade = new ImagemEntidade
+                {
+                    CaminhoImg = caminhoImagem,
+                    EhPadrao = produtoRequest.ImagemPadraoIndex == produtoRequest.Imagens.IndexOf(imagem),
+                    Fk_produto = produtoExistente.Id
+                };
+
+                _context.Imagem.Add(imagemEntidade);
+            }
+        }
 
         _context.Produto.Update(produtoExistente);
         await _context.SaveChangesAsync();

@@ -54,10 +54,14 @@ const listarProdutos = async () => {
   }
 };
 
-const atualizarProduto = async (produto) => {
+const atualizarProduto = async (formData) => {
   try {
-    const response = await api.put("/Produto/UpdateProduto", produto);
-    return response.data;
+    const response = await api.put("/Produto/UpdateProduto", formData, {
+      headers: {
+        "Content-Type": "multipart/form-data", // Define o tipo de conteúdo como FormData
+      },
+    });
+    return response.data; 
   } catch (error) {
     throw error.response?.data || "Erro ao atualizar produto.";
   }
