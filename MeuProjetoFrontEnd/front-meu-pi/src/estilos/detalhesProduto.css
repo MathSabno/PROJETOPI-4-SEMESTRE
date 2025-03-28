@@ -1,0 +1,160 @@
+/* detalheProduto.css */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #474747;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 20px 0;
+    color: gree;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.voltarBtn {
+    margin-bottom: 20px;
+    width: auto;
+    padding: 0 20px;
+    background: linear-gradient(to left, #6c757d, #495057);
+}
+
+.detalheProduto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.galeria {
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagemPrincipal {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.imagemPrincipal img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.miniaturas {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.miniaturas img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.miniaturas img.ativo {
+    border-color: #b721ff;
+}
+
+.infoProduto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.titulo {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.avaliacao {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #ffc107;
+    gap: 5px;
+}
+
+.avaliacao .cheia {
+    color: #ffc107;
+}
+
+.avaliacao .vazia {
+    color: #ccc;
+}
+
+.preco {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    margin-bottom: 30px;
+}
+
+.descricao h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.descricao p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.quantidade {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade label {
+    font-weight: bold;
+    color: black;
+}
+
+.quantidade input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .detalheProduto {
+        flex-direction: column;
+    }
+
+    .galeria,
+    .infoProduto {
+        min-width: 100%;
+    }
+}
+
+.estoque{
+    color: green;
+}

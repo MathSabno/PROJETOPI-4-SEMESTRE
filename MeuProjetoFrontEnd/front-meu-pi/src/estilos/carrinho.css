@@ -1,0 +1,284 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #474747;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mensagem {
+    text-align: center;
+    color: #6c757d;
+    font-size: 18px;
+    padding: 30px 0;
+}
+
+.erro {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.listaItens {
+    margin-bottom: 30px;
+}
+
+.itemCarrinho {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.itemCarrinho:hover {
+    background-color: #f9f9f9;
+}
+
+.imagemItem img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.infoItem {
+    flex: 1;
+}
+
+.infoItem h3 {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.precoItem {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 18px;
+}
+
+.controleQuantidade {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.botaoQuantidade {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to left, #6c757d, #495057);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.botaoQuantidade:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.botaoRemover {
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 0 20px;
+    height: 40px;
+    background: linear-gradient(to left, #dc3545, #c82333);
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoRemover:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.resumoCarrinho {
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.resumoCarrinho h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.linhaResumo {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0;
+    font-size: 17px;
+    color: #555;
+}
+
+.linhaResumo.total {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.loginFormBtn {
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+
+.loginFormBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voltarBtn {
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(to left, #6c757d, #495057);
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.voltarBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+    .itemCarrinho {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .imagemItem img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 25px 20px;
+    }
+
+    .itemCarrinho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .imagemItem img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto 15px;
+    }
+
+    .infoItem {
+        width: 100%;
+    }
+
+    .controleQuantidade {
+        margin-top: 15px;
+    }
+
+    .botaoRemover {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 26px;
+    }
+
+    .precoItem {
+        font-size: 18px;
+    }
+
+    .linhaResumo {
+        font-size: 15px;
+    }
+
+    .loginFormBtn,
+    .voltarBtn {
+        height: 50px;
+        font-size: 15px;
+    }
+}

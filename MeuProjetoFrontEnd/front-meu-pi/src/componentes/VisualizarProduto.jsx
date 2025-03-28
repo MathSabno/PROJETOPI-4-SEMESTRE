@@ -56,7 +56,7 @@ const VisualizarProduto = () => {
         {produto && (
           <div className="detalhesProduto">
             <h2>{produto.nome}</h2>
-            <p>Código do Produto: {produto.descricao}</p>
+            <p>Descrição: {produto.descricao}</p>
             <p>Preço: R$ {produto.preco.toFixed(2)}</p>
             <p>Quantidade em Estoque: {produto.quantidade}</p>
             <p>Avaliação: {produto.avaliacaoProduto}</p>
