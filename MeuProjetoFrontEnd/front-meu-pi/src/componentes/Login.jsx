@@ -29,7 +29,7 @@ const Login = () => {
       const userGroup = response.grupo; // Certifique-se de que a API retorne o grupo
   
       // Redireciona para a página home após o login bem-sucedido
-      navigate("/listagem-de-produtos", { state: { userGroup } }); // Passa o grupo como estado
+      navigate("/home-site", { state: { userGroup } }); // Passa o grupo como estado
     } catch (error) {
       setMensagem(error.message || "Erro ao fazer login");
       console.error("Erro ao fazer login:", error);

@@ -36,7 +36,7 @@ const ListaProdutos = () => {
             {/* Cabeçalho com logo e ícones */}
             <header className="header">
                 <div className="logo">
-                    <img src="/caminho/para/logo.png" alt="Logo da Loja" />
+                    <img src="../logosite.png" alt="Logo da Loja" /> 
                 </div>
                 <div className="icones-direita">
                     <button className="botao-login" onClick={() => navigate("/login")}>

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../estilos/carrinho.css";
@@ -18,15 +19,24 @@ const gerenciarCarrinho = {
   },
   adicionarItem: (produto, quantidade = 1) => {
     const itens = gerenciarCarrinho.get();
-    const itemExistente = itens.find(item => item.id === produto.id);
+    const itemExistenteIndex = itens.findIndex(item => item.id === produto.id);
 
-    if (itemExistente) {
-      itemExistente.quantidade += quantidade;
+    if (itemExistenteIndex !== -1) {
+      // Soma a nova quantidade à existente
+      itens[itemExistenteIndex].quantidade += quantidade;
+      
+      // Garante que não ultrapasse o estoque máximo (se aplicável)
+      if (produto.quantidade) {
+        itens[itemExistenteIndex].quantidade = Math.min(
+          itens[itemExistenteIndex].quantidade, 
+          produto.quantidade
+        );
+      }
     } else {
+      // Adiciona novo item
       itens.push({
         ...produto,
-        quantidade,
-        // Garante que temos um array de imagens
+        quantidade: Math.min(quantidade, produto.quantidade || Infinity),
         imagens: produto.imagens || []
       });
     }
@@ -48,12 +58,20 @@ const gerenciarCarrinho = {
   }
 };
 
+// Opções de frete
+const opcoesFrete = [
+  { id: 1, nome: "Envio rápido", valor: 20.00 },
+  { id: 2, nome: "Envio normal", valor: 30.00 },
+  { id: 3, nome: "Data agendada", valor: 25.00 }
+];
+
 const Carrinho = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [itens, setItens] = useState([]);
   const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState("");
+  const [freteSelecionado, setFreteSelecionado] = useState(opcoesFrete[0]); // Define o primeiro frete como padrão
 
   // Atualiza o contador do carrinho no cabeçalho
   const atualizarContadorCarrinho = () => {
@@ -104,12 +122,23 @@ const Carrinho = () => {
     atualizarContadorCarrinho();
   };
 
-  const calcularTotal = () => {
+  const calcularSubtotal = () => {
     return itens.reduce((total, item) => total + (item.preco * item.quantidade), 0);
   };
 
+  const calcularTotal = () => {
+    const subtotal = calcularSubtotal();
+    return subtotal + freteSelecionado.valor;
+  };
+
+  const handleFreteChange = (event) => {
+    const freteId = parseInt(event.target.value);
+    const frete = opcoesFrete.find(f => f.id === freteId);
+    setFreteSelecionado(frete || opcoesFrete[0]);
+  };
+
   const finalizarCompra = () => {
-    navigate("/checkout", { state: { itens } });
+    navigate("/checkout", { state: { itens, frete: freteSelecionado } });
   };
 
   if (carregando) {
@@ -217,8 +246,35 @@ const Carrinho = () => {
               <h3>Resumo do Pedido</h3>
               <div className="linhaResumo">
                 <span>Subtotal ({itens.reduce((acc, item) => acc + item.quantidade, 0)} itens)</span>
+                <span>R$ {calcularSubtotal().toFixed(2)}</span>
+              </div>
+              
+              <div className="selecaoFrete">
+                <label htmlFor="frete">Opção de Frete:</label>
+                <select 
+                  id="frete" 
+                  value={freteSelecionado.id}
+                  onChange={handleFreteChange}
+                  className="comboFrete"
+                >
+                  {opcoesFrete.map((frete) => (
+                    <option key={frete.id} value={frete.id}>
+                      {frete.nome} - R$ {frete.valor.toFixed(2)}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              
+              <div className="linhaResumo">
+                <span>Frete:</span>
+                <span>R$ {freteSelecionado.valor.toFixed(2)}</span>
+              </div>
+              
+              <div className="linhaResumo total">
+                <span>Total:</span>
                 <span>R$ {calcularTotal().toFixed(2)}</span>
               </div>
+              
               <button
                 onClick={finalizarCompra}
                 className="botaoFinalizarCompra"
