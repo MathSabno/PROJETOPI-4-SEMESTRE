@@ -147,7 +147,7 @@ const CadastroUsuario = () => {
               <option value="2">Estoquista</option>
             </select>
             <span className="focusInput" data-placeholder="Grupo"></span>
-          </div>
+          </div>  
           <div className="wrapInput">
             <input
               type="password"

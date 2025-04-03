@@ -19,7 +19,7 @@ const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<ListagemDeProdutos />} />
         <Route path="/home-site" element={<HomeSite />} />
         <Route path="/alterar-usuario/:id" element={<AlterarUsuario />} />
         <Route path="/cadastro-usuario" element={<CadastroUsuario />} />

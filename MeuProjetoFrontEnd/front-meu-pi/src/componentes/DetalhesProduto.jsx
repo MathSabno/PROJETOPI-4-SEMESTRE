@@ -207,20 +207,6 @@ const DetalheProduto = () => {
                         )}
                     </div>
                 </div>
-
-                {/* Detalhes adicionais */}
-                <div className="detalhesAdicionais">
-                    <h3>Informações adicionais</h3>
-                    <div className="infoItem">
-                        <strong>Código do produto:</strong> {produto.id}
-                    </div>
-                    <div className="infoItem">
-                        <strong>Categoria:</strong> {produto.categoria || "Não especificada"}
-                    </div>
-                    <div className="infoItem">
-                        <strong>Status:</strong> {produto.status === 1 ? "Ativo" : "Inativo"}
-                    </div>
-                </div>
             </div>
         </div>
     );

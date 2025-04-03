@@ -35,8 +35,13 @@ const ListaProdutos = () => {
         <div className="container">
             {/* Cabeçalho com logo e ícones */}
             <header className="header">
-                <div className="logo">
-                    <img src="../logosite.png" alt="Logo da Loja" /> 
+                <div className="logo-container"> {/* Nova div container */}
+                    <div className="logo">
+                        <img src="../logosite.png" alt="Logo da Loja" /> 
+                    </div>
+                    <div className="nome-empresa">
+                        <h2>Os D de DEV</h2>
+                    </div>
                 </div>
                 <div className="icones-direita">
                     <button className="botao-login" onClick={() => navigate("/login")}>

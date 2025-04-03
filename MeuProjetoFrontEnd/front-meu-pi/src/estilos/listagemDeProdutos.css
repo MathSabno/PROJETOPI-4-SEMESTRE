@@ -66,10 +66,22 @@
     align-items: center;
     gap: 1rem;
   }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .nome-empresa h2 {
+    margin: 0;
+    white-space: nowrap;
+    color: var(--dark-color)
+  }
   
   .botao-login {
     padding: 0.75rem 1.5rem;
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: white;
     border: none;
     border-radius: var(--border-radius);
@@ -90,7 +102,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: white;
     border: none;
     font-size: 1.25rem;

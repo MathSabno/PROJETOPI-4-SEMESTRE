@@ -14,7 +14,7 @@ public class SiteDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         if (!options.IsConfigured)
-        {
+        {   
             options.UseSqlServer("Server=(local)\\SQLEXPRESS;Database=PROJETOPI;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }

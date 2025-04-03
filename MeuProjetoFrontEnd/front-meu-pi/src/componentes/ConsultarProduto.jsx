@@ -113,6 +113,7 @@
 
     // Calcula o número total de páginas
     const totalPaginas = Math.ceil(produtosFiltrados.length / produtosPorPagina);
+    const isGrupo2 = userGroup === 1;
 
     return (
       <div className="consultaProduto">
@@ -169,12 +170,16 @@
                         <button onClick={() => handleAlterarProduto(produto.id)} className="acaoBtn">
                           Alterar
                         </button>
-                        <button onClick={() => desativarProdutos([produto.id])} className="acaoBtn">
-                        {produto.status === 1 ? "Desativar" : "Ativar"}
-                        </button>
-                        <button onClick={() => handleVisualizarProduto(produto.id)} className="acaoBtn">
-                          Visualizar
-                        </button>
+                        {userGroup === 1 &&(
+                          <button onClick={() => desativarProdutos([produto.id])} className="acaoBtn">
+                            {produto.status === 1 ? "Desativar" : "Ativar"}
+                          </button>                          
+                        )}
+                        {userGroup === 1 && (
+                          <button onClick={() => handleVisualizarProduto(produto.id)} className="acaoBtn">
+                            Visualizar
+                          </button>
+                        )}
                       </td>
                     </tr>
                   ))}
