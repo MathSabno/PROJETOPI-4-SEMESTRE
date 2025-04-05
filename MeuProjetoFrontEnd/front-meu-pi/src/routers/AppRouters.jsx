@@ -13,7 +13,8 @@ import AlterarProduto from "../componentes/AlterarProduto";
 import ListagemDeProdutos from "../componentes/ListagemDeProdutos";
 import DetalhesProduto from "../componentes/DetalhesProduto";
 import Carrinho from "../componentes/Carrinho";
-
+import AlterarDadosCliente from "../componentes/AlterarDadosCliente";
+import CadastroCliente from "../componentes/CadastroCliente";
 
 const AppRoutes = () => {
   return (
@@ -32,6 +33,8 @@ const AppRoutes = () => {
         <Route path="/listagem-de-produtos" element={<ListagemDeProdutos />} />
         <Route path="/detalhes-produto/:id" element={<DetalhesProduto />} />
         <Route path="/carrinho/" element={<Carrinho />} />
+        <Route path="/alterar-dados-cliente/" element={<AlterarDadosCliente />} />
+        <Route path="/cadastro-cliente/" element={<CadastroCliente />} />
       </Routes>
     </Router>
   );

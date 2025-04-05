@@ -1,0 +1,161 @@
+.dadosContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #474747;
+    font-family: 'Arial', sans-serif;
+    padding: 20px 0;
+}
+
+.dadosFormContainer {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formSection {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.formSection h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.input {
+    width: 94%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+select.input {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.enderecoEntregaGroup {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.enderecoEntregaGroup h3 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.botao {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+.botaoAdicionar {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+.botaoAdicionar:hover {
+    background-color: #218838;
+}
+
+.botaoRemover {
+    background-color: #dc3545;
+    margin-top: 10px;
+}
+
+.botaoRemover:hover {
+    background-color: #c82333;
+}
+
+.containerLoginFormBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.erro {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #d9534f;
+    text-align: center;
+}
+
+.mensagem {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #28a745;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .dadosFormContainer {
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    .formSection {
+        padding: 15px;
+    }
+}
