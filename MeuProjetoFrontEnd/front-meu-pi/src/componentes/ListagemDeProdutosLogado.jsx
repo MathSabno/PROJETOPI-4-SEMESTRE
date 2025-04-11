@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom"; // Adicione useLocation
 import authService from "../services/authService";
-import "../estilos/listagemDeProdutos.css";
+import "../estilos/listagemDeProdutosLogado.css";
 
 const ListaProdutos = () => {
     const navigate = useNavigate();
+    const location = useLocation(); // Adicione esta linha para acessar o estado
     const [produtos, setProdutos] = useState([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState("");
+    
+    const userId = location.state?.userId;
+    const userNome = location.state?.name;
 
     useEffect(() => {
         const buscarProdutos = async () => {
             try {
                 const produtosAPI = await authService.listarProdutos();
-                // Filtrar apenas produtos ativos (status 1)
                 const produtosAtivos = produtosAPI.filter(produto => produto.status === 1);
                 setProdutos(produtosAtivos);
                 setCarregando(false);
@@ -27,13 +30,40 @@ const ListaProdutos = () => {
         buscarProdutos();
     }, []);
 
+
+    const handleAlterarCliente = () => {
+        // Passa o ID diretamente na rota
+        navigate(`/alterar-dados-cliente/${userId}`, {
+            state: {
+                userId,
+                userNome: userNome
+            }
+        });
+    };
+
+    const handleAlterarSenhaCliente = () => {
+        // Passa o ID diretamente na rota
+        navigate(`/alterar-senha-cliente/${userId}`, {
+            state: {
+                userId,
+                userNome: userNome
+            }
+        });
+    };
+
     const handleDetalheProduto = (id) => {
         navigate(`/detalhes-produto/${id}`);
     };
 
+    const handleLogout = () => {
+        if (window.confirm("Deseja realmente sair da sua sessão?")) {
+            authService.logout();
+            navigate("/listagem-de-produtos");
+        }
+    };
+
     return (
         <div className="container">
-            {/* Cabeçalho com logo e ícones */}
             <header className="header">
                 <div className="logo-container"> {/* Nova div container */}
                     <div className="logo">
@@ -43,9 +73,16 @@ const ListaProdutos = () => {
                         <h2>Os D de DEV</h2>
                     </div>
                 </div>
+                {/* ... outros elementos ... */}
                 <div className="icones-direita">
-                    <button className="botao-login" onClick={() => navigate("/login-cliente")}>
-                        Faça login/Crie seu login
+                    <button className="botao-alterarDados" onClick={handleAlterarCliente}>
+                        Alterar meus dados
+                    </button>
+                    <button className="botao-alterarSenha" onClick={handleAlterarSenhaCliente}>
+                        Alterar senha
+                    </button>
+                    <button className="botao-sair" onClick={handleLogout}>
+                        Sair
                     </button>
                     <button className="botao-carrinho" onClick={() => navigate("/carrinho")}>
                         🛒

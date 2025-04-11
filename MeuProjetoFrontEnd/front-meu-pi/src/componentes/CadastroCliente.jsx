@@ -7,22 +7,20 @@ const CadastroCliente = () => {
   const navigate = useNavigate();
 
   const [cliente, setCliente] = useState({
-    nomeCompleto: "",
+    name: "",
     email: "",
     cpf: "",
-    dataNascimento: "",
+    dt_nascimento: "",
     genero: "",
     senha: "",
     confirmarSenha: "",
-    enderecoFaturamento: {
-      cep: "",
-      logradouro: "",
-      numero: "",
-      complemento: "",
-      bairro: "",
-      cidade: "",
-      uf: ""
-    },
+    cepFaturamento: "",
+    logradouroFaturamento: "",
+    numeroFaturamento: "",
+    complementoFaturamento: "",
+    bairroFaturamento: "",
+    cidadeFaturamento: "",
+    ufFaturamento: "",
     enderecosEntrega: [{
       cep: "",
       logradouro: "",
@@ -48,10 +46,7 @@ const CadastroCliente = () => {
     const { name, value } = e.target;
     setCliente(prev => ({
       ...prev,
-      enderecoFaturamento: {
-        ...prev.enderecoFaturamento,
-        [name]: value
-      }
+      [name]: value
     }));
   };
 
@@ -60,7 +55,16 @@ const CadastroCliente = () => {
     const newEnderecos = [...cliente.enderecosEntrega];
     
     if (name === "copiarFaturamento" && checked) {
-      newEnderecos[index] = { ...cliente.enderecoFaturamento, copiarFaturamento: true };
+      newEnderecos[index] = { 
+        cep: cliente.cepFaturamento,
+        logradouro: cliente.logradouroFaturamento,
+        numero: cliente.numeroFaturamento,
+        complemento: cliente.complementoFaturamento,
+        bairro: cliente.bairroFaturamento,
+        cidade: cliente.cidadeFaturamento,
+        uf: cliente.ufFaturamento,
+        copiarFaturamento: true
+      };
     } else if (type === "checkbox") {
       newEnderecos[index] = { ...newEnderecos[index], [name]: checked };
     } else {
@@ -82,13 +86,10 @@ const CadastroCliente = () => {
       if (tipoEndereco === "faturamento") {
         setCliente(prev => ({
           ...prev,
-          enderecoFaturamento: {
-            ...prev.enderecoFaturamento,
-            logradouro: data.logradouro,
-            bairro: data.bairro,
-            cidade: data.localidade,
-            uf: data.uf
-          }
+          logradouroFaturamento: data.logradouro,
+          bairroFaturamento: data.bairro,
+          cidadeFaturamento: data.localidade,
+          ufFaturamento: data.uf
         }));
       } else {
         const newEnderecos = [...cliente.enderecosEntrega];
@@ -132,9 +133,26 @@ const CadastroCliente = () => {
   };
 
   const validarCPF = (cpf) => {
-    // Implementação da validação de CPF
-    // (adicionar lógica de validação real aqui)
-    return cpf.length === 11;
+    cpf = cpf.replace(/[^\d]+/g, '');
+    if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) return false;
+
+    let soma = 0;
+    for (let i = 0; i < 9; i++) {
+      soma += parseInt(cpf.charAt(i)) * (10 - i);
+    }
+    let resto = (soma * 10) % 11;
+    if (resto === 10 || resto === 11) resto = 0;
+    if (resto !== parseInt(cpf.charAt(9))) return false;
+
+    soma = 0;
+    for (let i = 0; i < 10; i++) {
+      soma += parseInt(cpf.charAt(i)) * (11 - i);
+    }
+    resto = (soma * 10) % 11;
+    if (resto === 10 || resto === 11) resto = 0;
+    if (resto !== parseInt(cpf.charAt(10))) return false;
+
+    return true;
   };
 
   const validarNome = (nome) => {
@@ -148,7 +166,7 @@ const CadastroCliente = () => {
     setMensagem("");
 
     // Validações
-    if (!validarNome(cliente.nomeCompleto)) {
+    if (!validarNome(cliente.name)) {
       setErro("O nome deve conter pelo menos 2 palavras com mínimo de 3 letras cada");
       return;
     }
@@ -168,22 +186,70 @@ const CadastroCliente = () => {
       return;
     }
 
-    if (!cliente.enderecoFaturamento.cep || 
-        !cliente.enderecoFaturamento.logradouro || 
-        !cliente.enderecoFaturamento.numero || 
-        !cliente.enderecoFaturamento.bairro || 
-        !cliente.enderecoFaturamento.cidade || 
-        !cliente.enderecoFaturamento.uf) {
+    if (!cliente.cepFaturamento || 
+        !cliente.logradouroFaturamento || 
+        !cliente.numeroFaturamento || 
+        !cliente.bairroFaturamento || 
+        !cliente.cidadeFaturamento || 
+        !cliente.ufFaturamento) {
       setErro("Endereço de faturamento incompleto");
       return;
+    }
+
+    // Validar endereços de entrega
+    for (const endereco of cliente.enderecosEntrega) {
+      if (!endereco.copiarFaturamento && 
+          (!endereco.cep || 
+           !endereco.logradouro || 
+           !endereco.numero || 
+           !endereco.bairro || 
+           !endereco.cidade || 
+           !endereco.uf)) {
+        setErro("Todos os endereços de entrega devem estar completos");
+        return;
+      }
     }
 
     setCarregando(true);
 
     try {
-      await authService.cadastrarCliente(cliente);
+      const generoMap = {
+        Masculino: 1,
+        Feminino: 2,
+        Outro: 3
+      };
+      
+      const dadosCliente = {
+        ...cliente,
+        genero: generoMap[cliente.genero] || 3, 
+        dt_nascimento: new Date(cliente.dt_nascimento).toISOString(),
+        enderecosEntrega: cliente.enderecosEntrega.map(endereco => ({
+          ...(endereco.copiarFaturamento ? {
+            cep: cliente.cepFaturamento,
+            logradouro: cliente.logradouroFaturamento,
+            numero: cliente.numeroFaturamento,
+            complemento: cliente.complementoFaturamento,
+            bairro: cliente.bairroFaturamento,
+            cidade: cliente.cidadeFaturamento,
+            uf: cliente.ufFaturamento
+          } : {
+            cep: endereco.cep,
+            logradouro: endereco.logradouro,
+            numero: endereco.numero,
+            complemento: endereco.complemento,
+            bairro: endereco.bairro,
+            cidade: endereco.cidade,
+            uf: endereco.uf
+          })
+        }))
+      };
+
+      
+      delete dadosCliente.confirmarSenha;
+
+      await authService.cadastrarCliente(dadosCliente);
       setMensagem("Cadastro realizado com sucesso! Redirecionando para login...");
-      setTimeout(() => navigate("/login"), 2000);
+      setTimeout(() => navigate("/login-cliente"), 2000);
     } catch (error) {
       setErro(error.message || "Erro ao cadastrar cliente. Verifique se o email ou CPF já estão cadastrados.");
     } finally {
@@ -200,14 +266,14 @@ const CadastroCliente = () => {
           <div className="formSection">
             <h2>Dados Pessoais</h2>
             <div className="formGroup">
-              <label htmlFor="nomeCompleto" className="label">
+              <label htmlFor="name" className="label">
                 Nome Completo*:
               </label>
               <input
                 type="text"
-                id="nomeCompleto"
-                name="nomeCompleto"
-                value={cliente.nomeCompleto}
+                id="name"
+                name="name"
+                value={cliente.name}
                 onChange={handleChange}
                 className="input"
                 placeholder="Nome e sobrenome"
@@ -245,14 +311,14 @@ const CadastroCliente = () => {
               />
             </div>
             <div className="formGroup">
-              <label htmlFor="dataNascimento" className="label">
+              <label htmlFor="dt_nascimento" className="label">
                 Data de Nascimento*:
               </label>
               <input
                 type="date"
-                id="dataNascimento"
-                name="dataNascimento"
-                value={cliente.dataNascimento}
+                id="dt_nascimento"
+                name="dt_nascimento"
+                value={cliente.dt_nascimento}
                 onChange={handleChange}
                 className="input"
                 required
@@ -271,9 +337,9 @@ const CadastroCliente = () => {
                 required
               >
                 <option value="">Selecione</option>
-                <option value="M">Masculino</option>
-                <option value="F">Feminino</option>
-                <option value="O">Prefiro não informar</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Prefiro não informar</option>
               </select>
             </div>
             <div className="formGroup">
@@ -318,8 +384,8 @@ const CadastroCliente = () => {
               <input
                 type="text"
                 id="cepFaturamento"
-                name="cep"
-                value={cliente.enderecoFaturamento.cep}
+                name="cepFaturamento"
+                value={cliente.cepFaturamento}
                 onChange={handleEnderecoFaturamentoChange}
                 onBlur={(e) => buscarCep(e.target.value, "faturamento")}
                 className="input"
@@ -334,8 +400,8 @@ const CadastroCliente = () => {
               <input
                 type="text"
                 id="logradouroFaturamento"
-                name="logradouro"
-                value={cliente.enderecoFaturamento.logradouro}
+                name="logradouroFaturamento"
+                value={cliente.logradouroFaturamento}
                 onChange={handleEnderecoFaturamentoChange}
                 className="input"
                 placeholder="Rua/Avenida"
@@ -349,8 +415,8 @@ const CadastroCliente = () => {
               <input
                 type="text"
                 id="numeroFaturamento"
-                name="numero"
-                value={cliente.enderecoFaturamento.numero}
+                name="numeroFaturamento"
+                value={cliente.numeroFaturamento}
                 onChange={handleEnderecoFaturamentoChange}
                 className="input"
                 placeholder="Número"
@@ -364,8 +430,8 @@ const CadastroCliente = () => {
               <input
                 type="text"
                 id="complementoFaturamento"
-                name="complemento"
-                value={cliente.enderecoFaturamento.complemento}
+                name="complementoFaturamento"
+                value={cliente.complementoFaturamento}
                 onChange={handleEnderecoFaturamentoChange}
                 className="input"
                 placeholder="Apto/Casa"
@@ -378,8 +444,8 @@ const CadastroCliente = () => {
               <input
                 type="text"
                 id="bairroFaturamento"
-                name="bairro"
-                value={cliente.enderecoFaturamento.bairro}
+                name="bairroFaturamento"
+                value={cliente.bairroFaturamento}
                 onChange={handleEnderecoFaturamentoChange}
                 className="input"
                 placeholder="Bairro"
@@ -393,8 +459,8 @@ const CadastroCliente = () => {
               <input
                 type="text"
                 id="cidadeFaturamento"
-                name="cidade"
-                value={cliente.enderecoFaturamento.cidade}
+                name="cidadeFaturamento"
+                value={cliente.cidadeFaturamento}
                 onChange={handleEnderecoFaturamentoChange}
                 className="input"
                 placeholder="Cidade"
@@ -408,12 +474,13 @@ const CadastroCliente = () => {
               <input
                 type="text"
                 id="ufFaturamento"
-                name="uf"
-                value={cliente.enderecoFaturamento.uf}
+                name="ufFaturamento"
+                value={cliente.ufFaturamento}
                 onChange={handleEnderecoFaturamentoChange}
                 className="input"
                 placeholder="Estado"
                 required
+                maxLength={2}
               />
             </div>
           </div>
@@ -541,6 +608,7 @@ const CadastroCliente = () => {
                         className="input"
                         placeholder="Estado"
                         required
+                        maxLength={2}
                       />
                     </div>
                   </>
@@ -575,7 +643,7 @@ const CadastroCliente = () => {
         {/* Botão de Voltar */}
         <div className="containerLoginFormBtn">
           <button
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/login-cliente")}
             className="botao"
           >
             Voltar para Login
@@ -590,4 +658,3 @@ const CadastroCliente = () => {
 };
 
 export default CadastroCliente;
-

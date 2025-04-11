@@ -1,0 +1,91 @@
+.senhaContainer {
+    display: flex;
+    align-Items: center;
+    justify-Content: center;
+    min-height: 100hv;
+    width: 100vw;
+    background-color: #474747;
+    font-Family: 'Arial', sans-serif;
+}
+
+.senhaFormContainer {
+    width: 100%;
+    max-Width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.input {
+    width: 94%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.botao {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+}
+
+
+.erro {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #d9534f;
+    text-align: center;
+}
+
+.mensagem {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #28a745;
+    text-align: center;
+}
+
+;

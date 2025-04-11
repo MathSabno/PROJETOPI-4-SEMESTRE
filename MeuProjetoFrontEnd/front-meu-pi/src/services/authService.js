@@ -9,6 +9,15 @@ const login = async (email, senha) => {
   }
 };
 
+const loginCliente = async (email, senha) => {
+  try {
+    const response = await api.post("/Login/LoginCliente", { email, senha });
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao realizar o login. Tente novamente.";
+  }
+};
+
 const listarUsuarios = async () => {
   try {
     const response = await api.get("/Usuario/ListarUsuários");
@@ -80,4 +89,46 @@ const cadastrarProduto = async (formData) => {
   }
 };
 
-export default { login, listarUsuarios, cadastrarUsuario, atualizarUsuario, alterarSenha, listarProdutos, atualizarProduto, cadastrarProduto };
+const cadastrarCliente = async (cliente) => {
+  try {
+    const response = await api.post("/Cliente/CreateCliente", cliente); // 👈 Rota correta
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao cadastrar cliente.";
+  }
+};
+
+// No arquivo authService.js
+const listarClientes = async () => {
+  try {
+    const response = await api.get("/Cliente/ListarUsuários");
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao listar clientes";
+  }
+};
+
+const atualizarCliente = async (dados) => {
+  try {
+    const response = await api.put("/Cliente/UpdateCliente", dados);
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao atualizar cliente";
+  }
+};
+
+const alterarSenhaCliente = async (id, novaSenha) => {
+  try {
+    const response = await api.put(`/Cliente/AlterarSenha/${id}`, { NovaSenha: novaSenha });
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao alterar a senha.";
+  }
+};
+
+const logout = () => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("userData");
+};
+
+export default { login, listarUsuarios, cadastrarUsuario, atualizarUsuario, alterarSenha, listarProdutos, atualizarProduto, cadastrarProduto, cadastrarCliente, atualizarCliente, listarClientes, loginCliente, logout, alterarSenhaCliente};
