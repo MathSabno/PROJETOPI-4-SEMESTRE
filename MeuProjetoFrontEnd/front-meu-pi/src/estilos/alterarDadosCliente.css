@@ -1,253 +1,265 @@
- 
-    /* Variáveis de cores e estilos */
-    :root {
-        --primary-color: #2563eb;
-        --primary-hover: #1d4ed8;
-        --secondary-color: #f59e0b;
-        --dark-color: #1e293b;
-        --light-color: #f8fafc;
-        --gray-color: #94a3b8;
-        --danger-color: #dc2626;
-        --success-color: #16a34a;
-        --border-radius: 12px;
-        --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  .dadosContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        width: 100vw;
-        background-color: #474747;
-        font-family: 'Nunito', sans-serif;
-        padding: 20px 0;
-    }
+/* Variáveis de cores e estilos */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary-color: #f59e0b;
+    --dark-color: #1e293b;
+    --light-color: #f8fafc;
+    --gray-color: #94a3b8;
+    --danger-color: #dc2626;
+    --success-color: #16a34a;
+    --border-radius: 12px;
+    --input-border: #e0e0e0;
+    --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .dadosFormContainer {
-        width: 100%;
-        max-width: 800px;
-        padding: 30px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-    }
+/* Reset completo para evitar fundos pretos */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
 
-    .titulo {
-        display: block;
-        font-size: 30px;
-        color: #333;
-        line-height: 1.2;
-        text-align: center;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-    }
+/* Container principal */
+.dadosContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #474747;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px 0;
+}
 
-    .formSection {
-        margin-bottom: 40px;
-        padding: 20px;
-        background-color: #f8f9fa;
-        border-radius: 8px;
-        border: 1px solid #e9ecef;
-    }
+/* Form container */
+.dadosFormContainer {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
 
-    .formSection h2 {
-        font-size: 1.5rem;
-        color: #495057;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-bottom: 2px solid #dee2e6;
-    }
+/* Títulos */
+.titulo {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
 
-    .formGroup {
-        position: relative;
-        margin-bottom: 30px;
-    }
+/* Seções do formulário */
+.formSection {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
 
-    .formGroup label {
-        display: block;
-        font-size: 14px;
-        color: #6c757d;
-        margin-bottom: 5px;
-        font-weight: 600;
-    }
+.formSection h2 {
+    font-size: 1.5rem;
+    color: #495057;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dee2e6;
+    background-color: transparent;
+}
 
-    .wrapInput {
-        width: 100%;
-        position: relative;
-        border-bottom: 2px solid #adadad;
-        margin-bottom: 25px;
-    }
+/* Grupos de formulário */
+.formGroup {
+    position: relative;
+    margin-bottom: 25px;
+}
 
-    .input {
-        font-size: 15px;
-        color: #333;
-        line-height: 1.2;
-        border: none;
-        display: block;
-        width: 100%;
-        height: 45px;
-        background-color: transparent;
-        padding: 0 5px;
-        font-family: 'Nunito', sans-serif;
-    }
+/* ESTILOS CORRIGIDOS PARA TODOS OS LABELS */
+.formGroup label,
+.enderecoEntregaGroup .formGroup label,
+.enderecoEntregaGroup label {
+    display: block;
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 8px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
 
-    .input:focus {
-        outline: none;
-    }
+/* Inputs estilizados */
+.formGroup input[type="text"],
+.formGroup input[type="date"],
+.formGroup input[type="password"],
+.formGroup input[type="email"],
+.formGroup select,
+.formGroup textarea {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.2;
+    border: 1px solid var(--input-border);
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    padding: 0 15px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 25px;
+    transition: var(--transition);
+}
 
-    .focusInput {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        color: #adadad;
-    }
+.formGroup input:focus,
+.formGroup select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
 
-    .focusInput::before {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: #6a7dfe;
-        transition: all 0.4s;
-    }
+/* Seção de endereços - ESTILO CORRIGIDO */
+.enderecoEntregaGroup {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    position: relative;
+}
 
-    .focusInput::after {
-        content: attr(data-placeholder);
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 15px;
-        left: 5px;
-        font-size: 15px;
-        color: #666;
-        line-height: 1.2;
-        transition: all 0.4s;
-    }
+.enderecoExistente {
+    background-color: #f8f9fa;
+    opacity: 0.8;
+}
 
-    .input:focus + .focusInput::after {
-        top: -15px;
-        font-size: 13px;
-    }
+.enderecoEntregaGroup h3 {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: transparent;
+}
 
-    .input:focus + .focusInput::before {
-        width: 100%;
-    }
+/* CORREÇÃO DEFINITIVA PARA LABELS DE ENDEREÇO */
+.enderecoEntregaGroup .formGroup label,
+.enderecoEntregaGroup label {
+    background-color: transparent !important;
+    color: #6c757d !important;
+    -webkit-text-fill-color: #6c757d !important;
+}
 
-    /* Estilos específicos para endereços */
-    .enderecoEntregaGroup {
-        margin-bottom: 25px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        border: 1px solid #e9ecef;
-        position: relative;
-    }
+.enderecoEntregaGroup *:not(input):not(select):not(textarea):not(button) {
+    background-color: transparent !important;
+}
 
-    .enderecoExistente {
-        background-color: #f8f9fa;
-        opacity: 0.8;
-    }
+/* Botões */
+.containerLoginFormBtn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+}
 
-    .enderecoEntregaGroup h3 {
-        font-size: 1.1rem;
-        color: #495057;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #dee2e6;
-    }
+.botaooRemover,
+.botoes {
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+    padding: 0.75rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
 
-    /* Botões */
-    .containerLoginFormBtn {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
-        margin-top: 40px;
-    }
+.botoes:hover {
+    opacity: 0.9;
+}
 
-    .loginFormBtn:hover {
-        opacity: 0.9;
-        transform: translateY(-1px);
-    }
+.botaooRemover:hover {
+    background: linear-gradient(to right, #dc3545, #c82333);
+    transform: translateY(-2px);
+}
 
-    .botaooRemover,
-    .botoes {
-        background: var(--dark-color);
-        padding: 0.75rem 1.5rem;
-        background-color: var(--dark-color);
-        color: white;
-        border: none;
-        border-radius: var(--border-radius);
-        font-weight: 600;
-        cursor: pointer;
-        transition: var(--transition);
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
+/* Mensagens */
+.erro {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #d9534f;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+
+.mensagem {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #28a745;
+    text-align: center;
+    padding: 10px;
+    background-color: #d4edda;
+    border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .dadosContainer {
+        padding: 10px 0;
     }
     
-    .botoes:hover{
-        background: var(--primary-hover);
-        background-color: var(--primary-hover);
-        transform: translateY(-2px);
+    .dadosFormContainer {
+        padding: 20px;
+        margin: 10px;
     }
+    
+    .formSection {
+        padding: 15px;
+    }
+    
+    .enderecoEntregaGroup {
+        padding: 15px;
+    }
+}
 
-    .botaooRemover:hover{
-        background: linear-gradient(to right, #dc3545, #c82333);
-        background-color: var(--primary-hover);
-        transform: translateY(-2px);
-    }
+/* Remoção de estilos antigos */
+.wrapInput,
+.focusInput,
+.focusInput::before,
+.focusInput::after {
+    display: none;
+}
 
-    /* Mensagens */
-    .erro {
-        margin-top: 20px;
-        font-size: 1rem;
-        color: #d9534f;
-        text-align: center;
-        padding: 10px;
-        background-color: #f8d7da;
-        border-radius: 4px;
-    }
+/* Estilo para radio buttons */
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    accent-color: var(--primary-color);
+}
 
-    .mensagem {
-        margin-top: 20px;
-        font-size: 1rem;
-        color: #28a745;
-        text-align: center;
-        padding: 10px;
-        background-color: #d4edda;
-        border-radius: 4px;
-    }
+/* Garantia extra para labels de radio */
+.formGroup label > input[type="radio"] {
+    vertical-align: middle;
+    margin-top: -2px;
+}
 
-    @media (max-width: 768px) {
-        .dadosFormContainer {
-            padding: 20px;
-            margin: 10px;
-        }
-        
-        .formSection {
-            padding: 15px;
-        }
-        
-        .enderecoEntregaGroup {
-            padding: 15px;
-        }
+/* Correção final para WebKit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .enderecoEntregaGroup label {
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
     }
-
-    /* Radio buttons ajustados */
-    .formGroup input[type="radio"] {
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
-        accent-color: #6a7dfe;
-    }
+}

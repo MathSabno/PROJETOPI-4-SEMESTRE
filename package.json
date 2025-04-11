@@ -1,0 +1,20 @@
+{
+  "name": "projetopi-4-semestre",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathSabno/PROJETOPI-4-SEMESTRE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathSabno/PROJETOPI-4-SEMESTRE/issues"
+  },
+  "homepage": "https://github.com/MathSabno/PROJETOPI-4-SEMESTRE#readme",
+  "description": ""
+}
