@@ -18,3 +18,20 @@ build/
 .env.local
 .idea/
 .vscode/
+*.dll
+*.exe
+*.pdb
+*.suo
+
+# .NET build folders
+bin/
+obj/
+.vs/
+
+# Frontend build
+node_modules/
+dist/
+build/
+
+# Outros arquivos temporários
+*.log
