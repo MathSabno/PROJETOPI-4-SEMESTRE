@@ -32,7 +32,7 @@ public class UsuarioController : ControllerBase
         // Adiciona o usuário ao contexto
         await context.Usuario.AddAsync(usuario);
 
-        // Persiste as mudanças no banco de dados
+        // Salva o novo usuário no banco de dados
         await context.SaveChangesAsync();
 
         // Retorna uma resposta de sucesso com o objeto criado
