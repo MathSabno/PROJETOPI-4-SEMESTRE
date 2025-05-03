@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2uEmAtPan4k=",
+  "dgSpecHash": "c0P/lzlJBSw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\munch\\Desktop\\ATUAL PI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
+  "projectFilePath": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\munch\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\munch\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

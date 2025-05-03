@@ -276,7 +276,7 @@ const Carrinho = () => {
               </div>
               
               <button
-                onClick={finalizarCompra}
+                onClick={() => navigate("/checkout")}
                 className="botaoFinalizarCompra"
               >
                 Finalizar Compra

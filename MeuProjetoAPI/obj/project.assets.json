@@ -5222,11 +5222,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\munch\\Desktop\\ATUAL PI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
+      "projectUniqueName": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
       "projectName": "MeuProjetoAPI",
-      "projectPath": "C:\\Users\\munch\\Desktop\\ATUAL PI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
+      "projectPath": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
       "packagesPath": "C:\\Users\\munch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\munch\\Desktop\\ATUAL PI\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\obj\\",
+      "outputPath": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
