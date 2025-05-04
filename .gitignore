@@ -32,6 +32,4 @@ obj/
 node_modules/
 dist/
 build/
-
-# Outros arquivos temporários
 *.log
