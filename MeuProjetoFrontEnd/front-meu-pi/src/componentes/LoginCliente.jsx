@@ -1,82 +1,84 @@
-  import React, { useState } from "react";
-  import authService from "../services/authService"; // Importando o serviço de autenticação
-  import { useNavigate } from "react-router-dom"; // Importando useNavigate para redirecionamento
-  import "../estilos/login.css"; // Importando o arquivo CSS
+import React, { useState } from "react";
+import authService from "../services/authService";
+import { useNavigate } from "react-router-dom";
+import "../estilos/loginCliente.css"; // Importando o arquivo CSS
 
-  const LoginCliente = () => {
-    const navigate = useNavigate();
+const LoginCliente = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [mensagem, setMensagem] = useState("");
 
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
-    const [mensagem, setMensagem] = useState("");
-
-    // No arquivo LoginCliente.js
   const handleLogin = async (e) => {
-      e.preventDefault();
-      
-      try {
-        const response = await authService.loginCliente(email, senha);    
-    
-        const userNome = response.name; 
-        const userId = response.id;
-    
-        setMensagem("Login realizado com sucesso!");
-        console.log("Resposta da API:", response);
-      
-        navigate("/listagem-de-produtos-logado", { 
-          state: { 
-            userNome: userNome,
-            userId: userId
-          } 
-        }); 
-      } catch (error) {
-        setMensagem(error.message || "Erro ao fazer login");
-        console.error("Erro ao fazer login:", error);
-      }
-    };
-    
-    return (
-      <div className="container">
-        <div className="formContainer">
-          <h1 className="titulo">Bem vindo</h1>
-          <form onSubmit={handleLogin} className="form">
-            <div className="wrapInput">
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="input"
-                placeholder="E-mail"
-                required
-              />
-              <span className="focusInput"></span>
-            </div>
-            <div className="wrapInput">
-              <input
-                type="password"
-                id="senha"
-                value={senha}
-                onChange={(e) => setSenha(e.target.value)}
-                className="input"
-                placeholder="Senha"
-                required
-              />
-              <span className="focusInput"></span>
-            </div>
-            <div className="containerLoginFormBtn">
-              <button type="submit" className="loginFormBtn">
-                Entrar
-              </button>
-              <button type="submit" className="loginFormBtn" onClick={() => navigate("/cadastro-cliente")}>
-                Cadastrar
-              </button>
-            </div>
-          </form>
-          {mensagem && <p className="mensagem">{mensagem}</p>}
-        </div>
-      </div>
-    );
+    e.preventDefault();
+
+    try {
+      const response = await authService.loginCliente(email, senha);
+
+      const userNome = response.nome;
+      const userId = response.id;
+
+      setMensagem("Login realizado com sucesso!");
+      console.log("Resposta da API:", response);
+
+      navigate("/listagem-de-produtos-logado", {
+        state: {
+          userId: userId,
+          userNome: userNome
+        },
+      });
+    } catch (error) {
+      setMensagem(error.message || "Erro ao fazer login");
+      console.error("Erro ao fazer login:", error);
+    }
   };
 
-  export default LoginCliente;
+  const redirecionarCadastro = () => {
+    navigate("/cadastro-cliente");
+  };
+
+  return (
+    <div className="login-container">
+      <div className="login-box">
+        <h2 className="login-title">Login</h2>
+        <form onSubmit={handleLogin}>
+          <div className="form-group">
+            <label htmlFor="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="senha">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              placeholder="Digite sua senha"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
+              required
+            />
+          </div>
+          {mensagem && <p className="mensagem">{mensagem}</p>}
+          <button type="submit" className="login-button">
+            Entrar
+          </button>
+          <button
+            type="button"
+            className="login-button cadastro"
+            onClick={redirecionarCadastro}
+          >
+            Cadastrar
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default LoginCliente;

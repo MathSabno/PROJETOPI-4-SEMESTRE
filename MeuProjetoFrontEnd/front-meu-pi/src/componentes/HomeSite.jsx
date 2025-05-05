@@ -10,7 +10,7 @@ const HomeSite = () => {
 
   console.log("Estado passado:", location.state); // Depuração
   console.log("Grupo do usuário:", userGroup); // Depuração
-  
+
   return (
     <div className="container">
       <div className="formContainer">

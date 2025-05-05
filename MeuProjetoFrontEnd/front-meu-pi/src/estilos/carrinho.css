@@ -377,4 +377,26 @@
         padding: 10px 12px;
         font-size: 15px;
     }
+
+    /* Adicione estas regras no final do arquivo */
+.usuarioNaoLogado {
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid #ff6b6b;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .usuarioNaoLogado .mensagem {
+    font-size: 1.2rem;
+    color: #d9534f;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  
+  .loginFormBtn {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 250px;
+  }
 }

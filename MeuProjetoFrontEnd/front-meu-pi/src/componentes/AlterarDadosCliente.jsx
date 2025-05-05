@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import authService from "../services/authService";
-import {  } from "react-router-dom";
+import { } from "react-router-dom";
 import "../estilos/alterarDadosCliente.css";
 
 const AlterarDadosCliente = () => {
@@ -12,14 +12,14 @@ const AlterarDadosCliente = () => {
     const userId = location.state?.userId;
     const userNome = location.state?.userNome;
 
-    
+
     const [cliente, setCliente] = useState({
         nomeCompleto: "",
         dataNascimento: "",
         genero: null,
         enderecosEntrega: []
     });
-    
+
     const [enderecoPadraoIndex, setEnderecoPadraoIndex] = useState(0);
     const [mensagem, setMensagem] = useState("");
     const [erro, setErro] = useState("");
@@ -31,16 +31,16 @@ const AlterarDadosCliente = () => {
                 setCarregando(true);
                 const clientes = await authService.listarClientes();
                 const clienteEncontrado = clientes.find(c => c.id === parseInt(id));
-                
+
                 if (!clienteEncontrado) {
                     throw new Error("Cliente não encontrado");
                 }
 
-                console.log("Dados do cliente:", clienteEncontrado); 
+                console.log("Dados do cliente:", clienteEncontrado);
 
                 const enderecos = clienteEncontrado.enderecosEntrega || [];
                 const padraoIndex = enderecos.findIndex(e => e.isPadrao) || 0;
-                
+
                 setCliente({
                     nomeCompleto: clienteEncontrado.name,
                     dataNascimento: clienteEncontrado.dt_Nascimento?.split('T')[0] || "",
@@ -61,17 +61,17 @@ const AlterarDadosCliente = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        const valorFinal = name === 'genero' 
+        const valorFinal = name === 'genero'
             ? (value === "" ? null : parseInt(value))
             : value;
-        
+
         setCliente(prev => ({ ...prev, [name]: valorFinal }));
     };
 
     const handleEnderecoEntregaChange = (index, e) => {
         const endereco = cliente.enderecosEntrega[index];
-        if (endereco.id) return; 
-        
+        if (endereco.id) return;
+
         const { name, value } = e.target;
         const newEnderecos = [...cliente.enderecosEntrega];
         newEnderecos[index] = { ...newEnderecos[index], [name]: value };
@@ -81,13 +81,13 @@ const AlterarDadosCliente = () => {
     const buscarCep = async (cep, index) => {
         const endereco = cliente.enderecosEntrega[index];
         if (endereco.id) return;
-        
+
         try {
             const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
             const data = await response.json();
-            
+
             if (data.erro) throw new Error("CEP não encontrado");
-            
+
             const newEnderecos = [...cliente.enderecosEntrega];
             newEnderecos[index] = {
                 ...newEnderecos[index],
@@ -126,17 +126,17 @@ const AlterarDadosCliente = () => {
         if (cliente.genero && ![1, 2, 3].includes(cliente.genero)) return "Selecione um gênero válido";
         if (cliente.novaSenha && cliente.novaSenha.length < 6) return "A senha deve ter pelo menos 6 caracteres";
         if (cliente.novaSenha !== cliente.confirmarSenha) return "As senhas não coincidem";
-        
+
         // Valida novos endereços
         for (const [index, endereco] of cliente.enderecosEntrega.entries()) {
             if (!endereco.id) { // Apenas valida novos endereços
-                if (!endereco.cep || !endereco.logradouro || !endereco.numero || 
+                if (!endereco.cep || !endereco.logradouro || !endereco.numero ||
                     !endereco.bairro || !endereco.cidade || !endereco.uf) {
                     return "Preencha todos os campos obrigatórios dos novos endereços";
                 }
             }
         }
-        
+
         return null;
     };
 
@@ -165,10 +165,10 @@ const AlterarDadosCliente = () => {
             await authService.atualizarCliente(dadosAtualizacao);
             setMensagem("Dados atualizados com sucesso!");
             setTimeout(() => navigate("/listagem-de-produtos-logado", {
-                state: { 
+                state: {
                     userNome: userNome,
                     userId: userId
-                } 
+                }
             }), 2000);
         } catch (error) {
             setErro(error.response?.data?.message || error.message || "Erro ao atualizar dados");
@@ -224,7 +224,7 @@ const AlterarDadosCliente = () => {
                         {cliente.enderecosEntrega.map((endereco, index) => (
                             <div key={index} className={`enderecoEntregaGroup ${endereco.id ? 'enderecoExistente' : ''}`}>
                                 <h3>Endereço {index + 1} {endereco.id && "(Existente)"}</h3>
-                                
+
                                 <div className="formGroup">
                                     <label>CEP</label>
                                     <input
@@ -235,7 +235,7 @@ const AlterarDadosCliente = () => {
                                         readOnly={!!endereco.id}
                                     />
                                 </div>
-                                
+
                                 {['logradouro', 'numero', 'complemento', 'bairro', 'cidade', 'uf'].map((campo) => (
                                     <div className="formGroup" key={campo}>
                                         <label>{campo.charAt(0).toUpperCase() + campo.slice(1)}</label>
@@ -273,7 +273,7 @@ const AlterarDadosCliente = () => {
                                 )}
                             </div>
                         ))}
-                        
+
                         <button
                             type="button"
                             onClick={adicionarEnderecoEntrega}
@@ -285,20 +285,20 @@ const AlterarDadosCliente = () => {
                             {carregando ? "Salvando..." : "Salvar Alterações"}
                         </button>
                         <button className="botaooRemover" onClick={() => navigate("/listagem-de-produtos-logado", {
-                            state: { 
+                            state: {
                                 userNome: userNome,
                                 userId: userId
-                            } 
+                            }
                         })}>
                             Voltar
-                        </button>  
-                    </div>                    
+                        </button>
+                    </div>
                 </form>
 
                 {erro && <p className="erro">{erro}</p>}
                 {mensagem && <p className="mensagem">{mensagem}</p>}
 
-                   
+
             </div>
         </div>
     );

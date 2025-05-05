@@ -10,8 +10,21 @@ const ListaProdutos = () => {
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState("");
     
-    const userId = location.state?.userId;
-    const userNome = location.state?.name;
+    // Extrair dados do usuário do state de navegação
+    const { userId, userNome: userNome } = location.state || {};
+
+    useEffect(() => {
+        console.log("Dados recebidos no Carrinho:", location.state);
+      }, [location.state]);
+
+     // Efeito para persistir dados no localStorage
+     useEffect(() => {
+        if(userId && userNome) {
+            localStorage.setItem("userId", userId);
+            localStorage.setItem("userNome", userNome);
+        }
+    }, [userId, userNome]); // Executa sempre que os dados mudarem
+
 
     useEffect(() => {
         const buscarProdutos = async () => {
@@ -62,6 +75,15 @@ const ListaProdutos = () => {
         }
     };
 
+    const handleAbrirCarrinho = () => {
+        navigate("/carrinho", { 
+            state: { 
+                userId: userId, 
+                userNome: userNome // Mantenha o mesmo nome de chave usado no Carrinho
+            }
+        });
+    };
+
     return (
         <div className="container">
             <header className="header">
@@ -84,9 +106,13 @@ const ListaProdutos = () => {
                     <button className="botao-sair" onClick={handleLogout}>
                         Sair
                     </button>
-                    <button className="botao-carrinho" onClick={() => navigate("/carrinho")}>
+                    <button
+                        className="botao-carrinho"
+                        onClick={handleAbrirCarrinho} // Usando a nova função
+                    >
                         🛒
                     </button>
+
                 </div>
             </header>
 

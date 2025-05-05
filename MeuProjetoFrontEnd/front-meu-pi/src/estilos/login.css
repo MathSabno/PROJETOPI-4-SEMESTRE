@@ -43,6 +43,8 @@
 .input {
     font-size: 15px;
     color: #333;
+    position: relative; /* Adicione isso */
+    z-index: 2; /* Garante que o input fique acima do .focusInput */
     line-height: 1.2;
     border: none;
     display: block;
@@ -57,6 +59,7 @@
     position: absolute;
     display: block;
     width: 100%;
+    z-index: 2; /* Define uma camada abaixo do input */
     height: 100%;
     top: 0;
     left: 0;

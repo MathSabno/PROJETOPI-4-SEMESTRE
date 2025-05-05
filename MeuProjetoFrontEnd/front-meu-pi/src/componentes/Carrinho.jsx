@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../estilos/carrinho.css";
@@ -24,11 +23,11 @@ const gerenciarCarrinho = {
     if (itemExistenteIndex !== -1) {
       // Soma a nova quantidade à existente
       itens[itemExistenteIndex].quantidade += quantidade;
-      
+
       // Garante que não ultrapasse o estoque máximo (se aplicável)
       if (produto.quantidade) {
         itens[itemExistenteIndex].quantidade = Math.min(
-          itens[itemExistenteIndex].quantidade, 
+          itens[itemExistenteIndex].quantidade,
           produto.quantidade
         );
       }
@@ -50,7 +49,7 @@ const gerenciarCarrinho = {
     return itens;
   },
   atualizarQuantidade: (id, quantidade) => {
-    const itens = gerenciarCarrinho.get().map(item => 
+    const itens = gerenciarCarrinho.get().map(item =>
       item.id === id ? { ...item, quantidade } : item
     );
     gerenciarCarrinho.set(itens);
@@ -73,6 +72,37 @@ const Carrinho = () => {
   const [erro, setErro] = useState("");
   const [freteSelecionado, setFreteSelecionado] = useState(opcoesFrete[0]); // Define o primeiro frete como padrão
 
+  // Nova validação do usuário
+  const userId = location.state?.userId;
+  const userNome = location.state?.userNome;
+
+  // Dentro do componente Carrinho
+  useEffect(() => {
+    console.log("Dados recebidos no Carrinho:", location.state);
+  }, [location.state]);
+
+  // Verificação ANTES de carregar o carrinho
+  if (!userId || !userNome) {
+    return (
+      <div className="container">
+        <div className="formContainer">
+          <h1 className="titulo">Meu Carrinho</h1>
+          <div className="usuarioNaoLogado">
+            <p className="mensagem">
+              Para acessar o carrinho, faça seu cadastro!
+            </p>
+            <button
+              onClick={() => navigate("/cadastro-cliente")}
+              className="loginFormBtn"
+            >
+              Cadastrar Agora
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // Atualiza o contador do carrinho no cabeçalho
   const atualizarContadorCarrinho = () => {
     const totalItens = gerenciarCarrinho.get().reduce((acc, item) => acc + item.quantidade, 0);
@@ -94,7 +124,7 @@ const Carrinho = () => {
         } else {
           setItens(gerenciarCarrinho.get());
         }
-        
+
         setCarregando(false);
       } catch (error) {
         setErro("Erro ao carregar carrinho");
@@ -248,11 +278,11 @@ const Carrinho = () => {
                 <span>Subtotal ({itens.reduce((acc, item) => acc + item.quantidade, 0)} itens)</span>
                 <span>R$ {calcularSubtotal().toFixed(2)}</span>
               </div>
-              
+
               <div className="selecaoFrete">
                 <label htmlFor="frete">Opção de Frete:</label>
-                <select 
-                  id="frete" 
+                <select
+                  id="frete"
                   value={freteSelecionado.id}
                   onChange={handleFreteChange}
                   className="comboFrete"
@@ -264,17 +294,17 @@ const Carrinho = () => {
                   ))}
                 </select>
               </div>
-              
+
               <div className="linhaResumo">
                 <span>Frete:</span>
                 <span>R$ {freteSelecionado.valor.toFixed(2)}</span>
               </div>
-              
+
               <div className="linhaResumo total">
                 <span>Total:</span>
                 <span>R$ {calcularTotal().toFixed(2)}</span>
               </div>
-              
+
               <button
                 onClick={() => navigate("/checkout")}
                 className="botaoFinalizarCompra"

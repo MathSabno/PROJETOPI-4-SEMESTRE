@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #2e2e2e;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #21d4fd, #b721ff);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 12px;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+.login-button.cadastro {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+
+.mensagem {
+  color: #d9534f;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
