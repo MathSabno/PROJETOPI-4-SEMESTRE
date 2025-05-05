@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import authService from "../services/authService";
 import "../estilos/detalhesProduto.css";
 
 const DetalheProduto = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const { id } = useParams();
     const [produto, setProduto] = useState(null);
     const [carregando, setCarregando] = useState(true);
@@ -12,12 +13,19 @@ const DetalheProduto = () => {
     const [imagemSelecionada, setImagemSelecionada] = useState(0);
     const [quantidade, setQuantidade] = useState(1);
 
+    // Extrair dados do usuário do state de navegação
+    const { userId, userNome: userNome } = location.state || {};
+
+    useEffect(() => {
+        console.log("Dados recebidos no Carrinho:", location.state);
+    }, [location.state]);
+
     useEffect(() => {
         const buscarProduto = async () => {
             try {
                 const produtos = await authService.listarProdutos();
                 const produtoEncontrado = produtos.find(p => p.id === parseInt(id));
-                
+
                 if (produtoEncontrado) {
                     setProduto({
                         ...produtoEncontrado,
@@ -39,21 +47,22 @@ const DetalheProduto = () => {
     }, [id]);
 
     const adicionarAoCarrinho = () => {
-        navigate("/carrinho", { 
-            state: { 
-                produto, 
-                quantidade 
-            } 
+        navigate("/carrinho", {
+            state: {
+                produto,
+                quantidade
+            }
         });
     };
 
     const handleComprarAgora = () => {
-        navigate("/carrinho", { 
-            state: { 
-                produto, 
+        navigate("/carrinho", {
+            state: {
+                produto,
                 quantidade,
-                compraRapida: true 
-            } 
+                compraRapida: true,
+                userId
+            }
         });
     };
 
@@ -116,9 +125,9 @@ const DetalheProduto = () => {
                                     }}
                                 />
                             ) : (
-                                <img 
-                                    src="https://via.placeholder.com/600x400" 
-                                    alt="Produto sem imagem" 
+                                <img
+                                    src="https://via.placeholder.com/600x400"
+                                    alt="Produto sem imagem"
                                 />
                             )}
                         </div>

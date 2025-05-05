@@ -9,17 +9,17 @@ const ListaProdutos = () => {
     const [produtos, setProdutos] = useState([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState("");
-    
+
     // Extrair dados do usuário do state de navegação
     const { userId, userNome: userNome } = location.state || {};
 
     useEffect(() => {
         console.log("Dados recebidos no Carrinho:", location.state);
-      }, [location.state]);
+    }, [location.state]);
 
-     // Efeito para persistir dados no localStorage
-     useEffect(() => {
-        if(userId && userNome) {
+    // Efeito para persistir dados no localStorage
+    useEffect(() => {
+        if (userId && userNome) {
             localStorage.setItem("userId", userId);
             localStorage.setItem("userNome", userNome);
         }
@@ -65,7 +65,12 @@ const ListaProdutos = () => {
     };
 
     const handleDetalheProduto = (id) => {
-        navigate(`/detalhes-produto/${id}`);
+        navigate(`/detalhes-produto/${id}`, {
+            state: {
+                userId: userId,
+                userNome: userNome
+            }
+        });
     };
 
     const handleLogout = () => {
@@ -76,9 +81,9 @@ const ListaProdutos = () => {
     };
 
     const handleAbrirCarrinho = () => {
-        navigate("/carrinho", { 
-            state: { 
-                userId: userId, 
+        navigate("/carrinho", {
+            state: {
+                userId: userId,
                 userNome: userNome // Mantenha o mesmo nome de chave usado no Carrinho
             }
         });
@@ -89,7 +94,7 @@ const ListaProdutos = () => {
             <header className="header">
                 <div className="logo-container"> {/* Nova div container */}
                     <div className="logo">
-                        <img src="../logosite.png" alt="Logo da Loja" /> 
+                        <img src="../logosite.png" alt="Logo da Loja" />
                     </div>
                     <div className="nome-empresa">
                         <h2>Os D de DEV</h2>
@@ -130,8 +135,8 @@ const ListaProdutos = () => {
                             <div key={produto.id} className="card-produto">
                                 <div className="imagem-produto">
                                     {produto.imagens && produto.imagens.length > 0 ? (
-                                        <img 
-                                            src={`https://localhost:7075/api/Imagem/ExibirImagem/${produto.imagens[0].caminhoImg}`} 
+                                        <img
+                                            src={`https://localhost:7075/api/Imagem/ExibirImagem/${produto.imagens[0].caminhoImg}`}
                                             alt={produto.nome}
                                             onError={(e) => {
                                                 e.target.src = "https://via.placeholder.com/150";

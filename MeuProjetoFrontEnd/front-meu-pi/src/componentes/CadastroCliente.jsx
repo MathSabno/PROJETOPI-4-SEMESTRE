@@ -53,9 +53,9 @@ const CadastroCliente = () => {
   const handleEnderecoEntregaChange = (index, e) => {
     const { name, value, type, checked } = e.target;
     const newEnderecos = [...cliente.enderecosEntrega];
-    
+
     if (name === "copiarFaturamento" && checked) {
-      newEnderecos[index] = { 
+      newEnderecos[index] = {
         cep: cliente.cepFaturamento,
         logradouro: cliente.logradouroFaturamento,
         numero: cliente.numeroFaturamento,
@@ -70,7 +70,7 @@ const CadastroCliente = () => {
     } else {
       newEnderecos[index] = { ...newEnderecos[index], [name]: value };
     }
-    
+
     setCliente(prev => ({ ...prev, enderecosEntrega: newEnderecos }));
   };
 
@@ -78,11 +78,11 @@ const CadastroCliente = () => {
     try {
       const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
       const data = await response.json();
-      
+
       if (data.erro) {
         throw new Error("CEP não encontrado");
       }
-      
+
       if (tipoEndereco === "faturamento") {
         setCliente(prev => ({
           ...prev,
@@ -186,25 +186,25 @@ const CadastroCliente = () => {
       return;
     }
 
-    if (!cliente.cepFaturamento || 
-        !cliente.logradouroFaturamento || 
-        !cliente.numeroFaturamento || 
-        !cliente.bairroFaturamento || 
-        !cliente.cidadeFaturamento || 
-        !cliente.ufFaturamento) {
+    if (!cliente.cepFaturamento ||
+      !cliente.logradouroFaturamento ||
+      !cliente.numeroFaturamento ||
+      !cliente.bairroFaturamento ||
+      !cliente.cidadeFaturamento ||
+      !cliente.ufFaturamento) {
       setErro("Endereço de faturamento incompleto");
       return;
     }
 
     // Validar endereços de entrega
     for (const endereco of cliente.enderecosEntrega) {
-      if (!endereco.copiarFaturamento && 
-          (!endereco.cep || 
-           !endereco.logradouro || 
-           !endereco.numero || 
-           !endereco.bairro || 
-           !endereco.cidade || 
-           !endereco.uf)) {
+      if (!endereco.copiarFaturamento &&
+        (!endereco.cep ||
+          !endereco.logradouro ||
+          !endereco.numero ||
+          !endereco.bairro ||
+          !endereco.cidade ||
+          !endereco.uf)) {
         setErro("Todos os endereços de entrega devem estar completos");
         return;
       }
@@ -218,10 +218,10 @@ const CadastroCliente = () => {
         Feminino: 2,
         Outro: 3
       };
-      
+
       const dadosCliente = {
         ...cliente,
-        genero: generoMap[cliente.genero] || 3, 
+        genero: generoMap[cliente.genero] || 3,
         dt_nascimento: new Date(cliente.dt_nascimento).toISOString(),
         enderecosEntrega: cliente.enderecosEntrega.map(endereco => ({
           ...(endereco.copiarFaturamento ? {
@@ -244,7 +244,7 @@ const CadastroCliente = () => {
         }))
       };
 
-      
+
       delete dadosCliente.confirmarSenha;
 
       await authService.cadastrarCliente(dadosCliente);
@@ -502,7 +502,7 @@ const CadastroCliente = () => {
                     Copiar do endereço de faturamento
                   </label>
                 </div>
-                
+
                 {!endereco.copiarFaturamento && (
                   <>
                     <div className="formGroup">
@@ -613,7 +613,7 @@ const CadastroCliente = () => {
                     </div>
                   </>
                 )}
-                
+
                 {index > 0 && (
                   <button
                     type="button"
@@ -625,7 +625,7 @@ const CadastroCliente = () => {
                 )}
               </div>
             ))}
-            
+
             <button
               type="button"
               onClick={adicionarEnderecoEntrega}

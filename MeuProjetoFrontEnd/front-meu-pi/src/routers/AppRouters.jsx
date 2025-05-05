@@ -19,6 +19,7 @@ import AlterarDadosCliente from "../componentes/AlterarDadosCliente";
 import CadastroCliente from "../componentes/CadastroCliente";
 import AlterarSenhaCliente from "../componentes/AlterarSenhaCliente";
 import Checkout from "../componentes/Checkout";
+import CheckoutCarrinho from "../componentes/CheckoutCarrinho";
 
 const AppRoutes = () => {
   return (
@@ -41,9 +42,10 @@ const AppRoutes = () => {
         <Route path="/alterar-dados-cliente/:id" element={<AlterarDadosCliente />} />
         <Route path="/cadastro-cliente" element={<CadastroCliente />} />
         <Route path="/alterar-senha-cliente/:id" element={<AlterarSenhaCliente />} />
-        <Route path="/login-cliente" element={<LoginCliente/>} />
-        <Route path="/checkout" element={<Checkout/>} />
-       
+        <Route path="/login-cliente" element={<LoginCliente />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/checkout-carrinho" element={<CheckoutCarrinho />} />
+
       </Routes>
     </Router>
   );
