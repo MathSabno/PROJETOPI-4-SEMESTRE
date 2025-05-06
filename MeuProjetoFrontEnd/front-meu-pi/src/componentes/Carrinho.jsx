@@ -168,7 +168,14 @@ const Carrinho = () => {
   };
 
   const finalizarCompra = () => {
-    navigate("/checkout", { state: { itens, frete: freteSelecionado } });
+    navigate("/checkout", { 
+      state: { 
+        itens, 
+        frete: freteSelecionado, 
+        userId: userId, 
+        userNome: userNome 
+      } 
+    });
   };
 
   if (carregando) {
@@ -306,7 +313,7 @@ const Carrinho = () => {
               </div>
 
               <button
-                onClick={() => navigate("/checkout")}
+                onClick={finalizarCompra}
                 className="botaoFinalizarCompra"
               >
                 Finalizar Compra

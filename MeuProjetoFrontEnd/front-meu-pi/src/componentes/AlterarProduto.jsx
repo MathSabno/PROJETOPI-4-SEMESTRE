@@ -237,7 +237,7 @@ const AlterarProduto = () => {
               placeholder="Quantidade em Estoque"
               min={0}
               required
-              // O campo de quantidade NÃO é desabilitado, mesmo para o grupo 2
+            // O campo de quantidade NÃO é desabilitado, mesmo para o grupo 2
             />
             <span className="focusInput" data-placeholder="Quantidade em Estoque"></span>
           </div>
@@ -308,7 +308,7 @@ const AlterarProduto = () => {
           </div>
 
           <div className="containerLoginFormBtn">
-            <button  onClick={() => navigate("/consultar-produto", { state: { userGroup } })} type="submit" className="loginFormBtn">
+            <button onClick={() => navigate("/consultar-produto", { state: { userGroup } })} type="submit" className="loginFormBtn">
               {"Voltar"}
             </button>
           </div>

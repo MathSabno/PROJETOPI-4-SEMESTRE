@@ -50,7 +50,9 @@ const DetalheProduto = () => {
         navigate("/carrinho", {
             state: {
                 produto,
-                quantidade
+                quantidade,
+                userId: location.state?.userId,    // Acesso seguro
+                userNome: location.state?.userNome
             }
         });
     };
@@ -61,7 +63,8 @@ const DetalheProduto = () => {
                 produto,
                 quantidade,
                 compraRapida: true,
-                userId
+                userId: location.state?.userId,
+                userNome: location.state?.userNome
             }
         });
     };
