@@ -1,0 +1,210 @@
+/* Variáveis baseadas na estilização fornecida */
+:root {
+    --cor-primaria: #21d4fd;
+    --cor-secundaria: #b721ff;
+    --cor-texto: #333;
+    --cor-texto-claro: #6c757d;
+    --cor-fundo: #474747;
+    --cor-fundo-container: #fff;
+    --cor-borda: #f0f0f0;
+    --cor-destaque: #e63946;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --fonte-principal: 'Nunito', sans-serif;
+  }
+  
+  /* Estilos gerais */
+  .resumoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  .resumoFormContainer {
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    background-color: var(--cor-fundo-container);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+  }
+  
+  .resumoTitulo {
+    display: block;
+    font-size: 30px;
+    color: var(--cor-texto);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .resumoSubtitulo {
+    font-size: 22px;
+    color: var(--cor-texto);
+    margin: 25px 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cor-borda);
+  }
+  
+  /* Tabela de produtos */
+  .tabelaProdutos {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  .tabelaCabecalho, .tabelaLinha {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 12px 15px;
+  }
+  
+  .tabelaCabecalho {
+    font-weight: bold;
+    border-bottom: 2px solid var(--cor-borda);
+  }
+  
+  .tabelaLinha {
+    border-bottom: 1px solid var(--cor-borda);
+  }
+  
+  .tabelaLinha:last-child {
+    border-bottom: none;
+  }
+  
+  /* Seção de valores */
+  .resumoValores {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .resumoValorItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .resumoValorItem.destaque {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--cor-destaque);
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid var(--cor-borda);
+  }
+  
+  /* Seção de endereço e pagamento */
+  .resumoEnderecoInfo, .resumoPagamentoInfo {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: var(--cor-texto-claro);
+    line-height: 1.6;
+  }
+  
+  .resumoEnderecoInfo p, .resumoPagamentoInfo p {
+    margin: 5px 0;
+  }
+  
+  /* Botões */
+  .resumoBotoes {
+    margin-top: 30px;
+  }
+  
+  .resumoBtnPrimario {
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(to left, var(--cor-primaria), var(--cor-secundaria));
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .resumoBtnPrimario:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resumoBtnSecundario {
+    font-size: 16px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    color: var(--cor-primaria);
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+  
+  .resumoBtnSecundario:hover {
+    background-color: rgba(33, 212, 253, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .resumoFormContainer {
+      padding: 25px 20px;
+    }
+  
+    .tabelaCabecalho, .tabelaLinha {
+      grid-template-columns: 1.5fr 1fr 0.8fr 1fr;
+      gap: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .tabelaCabecalho, .tabelaLinha {
+      grid-template-columns: 2fr 1fr;
+    }
+  
+    .tabelaCabecalho span:nth-child(3),
+    .tabelaCabecalho span:nth-child(4),
+    .tabelaLinha span:nth-child(3),
+    .tabelaLinha span:nth-child(4) {
+      text-align: right;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resumoTitulo {
+      font-size: 26px;
+    }
+  
+    .resumoBtnPrimario,
+    .resumoBtnSecundario {
+      height: 50px;
+      font-size: 15px;
+    }
+  }

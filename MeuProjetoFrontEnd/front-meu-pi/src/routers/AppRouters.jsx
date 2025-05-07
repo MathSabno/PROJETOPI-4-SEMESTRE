@@ -20,6 +20,7 @@ import CadastroCliente from "../componentes/CadastroCliente";
 import AlterarSenhaCliente from "../componentes/AlterarSenhaCliente";
 import Checkout from "../componentes/Checkout";
 import CheckoutCarrinho from "../componentes/CheckoutCarrinho";
+import ResumoPedido from "../componentes/ResumoPedido";
 
 const AppRoutes = () => {
   return (
@@ -45,6 +46,7 @@ const AppRoutes = () => {
         <Route path="/login-cliente" element={<LoginCliente />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/checkout-carrinho" element={<CheckoutCarrinho />} />
+        <Route path="/resumo-pedido" element={<ResumoPedido />} />
 
       </Routes>
     </Router>

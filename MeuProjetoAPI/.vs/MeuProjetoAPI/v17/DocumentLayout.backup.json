@@ -1,32 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\munch\\desktop\\nova pasta\\projetopi-4-semestre\\meuprojetoapi\\ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\atualizarclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\atualizarclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\munch\\desktop\\nova pasta\\projetopi-4-semestre\\meuprojetoapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\munch\\desktop\\nova pasta\\projetopi-4-semestre\\meuprojetoapi\\model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\enderecoentregamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\munch\\desktop\\nova pasta\\projetopi-4-semestre\\meuprojetoapi\\model\\atualizarclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\atualizarclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\munch\\desktop\\nova pasta\\projetopi-4-semestre\\meuprojetoapi\\model\\enderecoentregamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\enderecoentregamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\munch\\desktop\\nova pasta\\projetopi-4-semestre\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\munch\\desktop\\nova pasta\\projetopi-4-semestre\\meuprojetoapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -37,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,25 +49,37 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-06T03:05:30.053Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SiteDbContext.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
               "RelativeDocumentMoniker": "EF\\SiteDbContext.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
+              "ToolTip": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
               "RelativeToolTip": "EF\\SiteDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T22:44:34.138Z",
+              "WhenOpened": "2025-05-06T03:01:12.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PhysicalFileProvider.cs",
               "DocumentMoniker": "C:\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
               "ToolTip": "C:\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs [Somente Leitura]",
-              "RelativeToolTip": "..\\..\\..\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs [Somente Leitura]",
               "ViewState": "AgIAAEwAAAAAAAAAAAAhwGsAAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T01:19:54.432Z",
@@ -71,11 +87,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EnderecoEntregaModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
+              "DocumentMoniker": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
               "RelativeDocumentMoniker": "Model\\EnderecoEntregaModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
+              "ToolTip": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
               "RelativeToolTip": "Model\\EnderecoEntregaModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -83,11 +99,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AtualizarClienteModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
               "RelativeDocumentMoniker": "Model\\AtualizarClienteModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
+              "ToolTip": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
               "RelativeToolTip": "Model\\AtualizarClienteModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,21 +113,21 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ClienteModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\ClienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\ClienteModel.cs",
               "RelativeDocumentMoniker": "Model\\ClienteModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\ClienteModel.cs",
+              "ToolTip": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\ClienteModel.cs",
               "RelativeToolTip": "Model\\ClienteModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T18:09:11.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "Controllers\\ClienteController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAqwDEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -119,11 +135,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\munch\\Desktop\\Nova pasta\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAiwDUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
