@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
-import authService from "../services/authService";
-import "../estilos/alterarSenhaCliente.css";
+import { useNavigate, useParams } from "react-router-dom";
+import authService from "../../services/authService";
+import "../../estilos/alterarSenha.css";
 
 const AlterarSenha = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-
-  const location = useLocation();
-  const userId = location.state?.userId;
-  const userNome = location.state?.userNome;
 
   const [novaSenha, setNovaSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");
@@ -34,22 +30,12 @@ const AlterarSenha = () => {
     setCarregando(true);
     console.log(novaSenha);
 
-
-    <button onClick={() => navigate("/listagem-de-produtos-logado", {
-      state: { 
-          userNome: userNome,
-          userId: userId
-      } 
-  })}>
-      Voltar
-  </button>  
-
     try {
       // Envia a nova senha para o backend
-      await authService.alterarSenhaCliente(id, novaSenha);
+      await authService.alterarSenha(id, novaSenha);
       setMensagem("Senha alterada com sucesso!");
       setErro("");
-      setTimeout(() => navigate("/listagem-de-produtos-logado", {state: {userNome: userNome, userId: userId}}), 2000); // Redireciona após 2 segundos
+      setTimeout(() => navigate("/consulta-usuario"), 2000); // Redireciona após 2 segundos
     } catch (error) {
       setErro(error.message || "Erro ao alterar a senha.");
       setMensagem("");
@@ -97,14 +83,12 @@ const AlterarSenha = () => {
         </form>
         {/* Botão de Voltar */}
         <div className="containerLoginFormBtn">
-          <button onClick={() => navigate("/listagem-de-produtos-logado", {
-                    state: { 
-                        userNome: userNome,
-                        userId: userId
-                    } 
-                })}>
-                    Voltar
-                </button>  
+          <button
+            onClick={() => navigate("/consulta-usuario")} // Redireciona para a consulta de usuários
+            className="botao"
+          >
+            Voltar
+          </button>
         </div>
         {erro && <p className="erro">{erro}</p>}
         {mensagem && <p className="mensagem">{mensagem}</p>}
@@ -114,4 +98,3 @@ const AlterarSenha = () => {
 };
 
 export default AlterarSenha;
-

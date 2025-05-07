@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../estilos/checkoutCarrinho.css";
+import "../../estilos/checkoutCarrinho.css";
 
 const CheckoutCarrinho = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   const { itens = [], frete = { nome: "", valor: 0 }, enderecoEntrega } = location.state || {};
   const [metodoPagamento, setMetodoPagamento] = useState("");
   const [dadosCartao, setDadosCartao] = useState({
@@ -28,43 +28,43 @@ const CheckoutCarrinho = () => {
 
   const validarCartao = () => {
     const novosErros = {};
-    
+
     if (!dadosCartao.numero || dadosCartao.numero.replace(/\s/g, '').length !== 16) {
       novosErros.numero = "Número do cartão inválido";
     }
-    
+
     if (!dadosCartao.nome || dadosCartao.nome.trim().split(" ").length < 2) {
       novosErros.nome = "Nome completo no cartão";
     }
-    
+
     if (!dadosCartao.validade || !/^(0[1-9]|1[0-2])\/?([0-9]{2})$/.test(dadosCartao.validade)) {
       novosErros.validade = "Validade inválida (MM/AA)";
     }
-    
+
     if (!dadosCartao.cvv || dadosCartao.cvv.length !== 3) {
       novosErros.cvv = "CVV inválido";
     }
-    
+
     return novosErros;
   };
 
   const validarFormulario = () => {
     const errosValidacao = {};
-    
+
     if (!metodoPagamento) {
       errosValidacao.metodoPagamento = "Selecione uma forma de pagamento";
     }
-    
+
     if (metodoPagamento === "cartao") {
       Object.assign(errosValidacao, validarCartao());
     }
-    
+
     return errosValidacao;
   };
 
   const handleChangeCartao = (e) => {
     const { name, value } = e.target;
-    
+
     // Formatação do número do cartão
     if (name === "numero") {
       const formatted = value.replace(/\D/g, '')
@@ -73,7 +73,7 @@ const CheckoutCarrinho = () => {
       setDadosCartao(prev => ({ ...prev, [name]: formatted }));
       return;
     }
-    
+
     // Formatação da validade
     if (name === "validade") {
       const formatted = value.replace(/\D/g, '')
@@ -82,51 +82,33 @@ const CheckoutCarrinho = () => {
       setDadosCartao(prev => ({ ...prev, [name]: formatted }));
       return;
     }
-    
+
     // Limitação do CVV
     if (name === "cvv") {
       setDadosCartao(prev => ({ ...prev, [name]: value.replace(/\D/g, '').substring(0, 3) }));
       return;
     }
-    
+
     setDadosCartao(prev => ({ ...prev, [name]: value }));
   };
 
-  const finalizarPedido = async () => {
+  const finalizarPedido = () => {
     const errosValidacao = validarFormulario();
-    
+
     if (Object.keys(errosValidacao).length > 0) {
       setErros(errosValidacao);
       return;
     }
-    
-    setCarregando(true);
-    
-    try {
-      // Aqui você faria a chamada para a API para processar o pagamento
-      // const response = await api.post("/pedidos", { ... });
-      
-      // Simulando uma requisição assíncrona
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Redireciona para a tela de confirmação
-      navigate("/confirmacao-pedido", {
-        state: {
-          pedido: {
-            itens,
-            frete,
-            enderecoEntrega,
-            metodoPagamento,
-            total: calcularTotal(),
-            numeroPedido: Math.floor(Math.random() * 1000000) // Número fictício
-          }
-        }
-      });
-    } catch (error) {
-      setErros({ geral: "Erro ao processar pedido. Tente novamente." });
-    } finally {
-      setCarregando(false);
-    }
+
+    // Navega para ResumoPedido com todos os dados necessários
+    navigate("/resumo-pedido", {
+      state: {
+        ...location.state,    // Mantém itens, frete, enderecoEntrega
+        metodoPagamento,
+        dadosCartao,
+        total: calcularTotal()
+      }
+    });
   };
 
   if (!itens || itens.length === 0) {
@@ -193,9 +175,9 @@ const CheckoutCarrinho = () => {
 
         <div className="pagamentoSection">
           <h3>Forma de Pagamento</h3>
-          
+
           {erros.geral && <p className="erro">{erros.geral}</p>}
-          
+
           <div className="metodosPagamento">
             <label className="metodoPagamento">
               <input
@@ -207,7 +189,7 @@ const CheckoutCarrinho = () => {
               />
               <span>Boleto Bancário</span>
             </label>
-            
+
             <label className="metodoPagamento">
               <input
                 type="radio"
@@ -218,7 +200,7 @@ const CheckoutCarrinho = () => {
               />
               <span>Cartão de Crédito</span>
             </label>
-            
+
             {erros.metodoPagamento && <p className="erro">{erros.metodoPagamento}</p>}
           </div>
 
@@ -236,7 +218,7 @@ const CheckoutCarrinho = () => {
                 />
                 {erros.numero && <p className="erro">{erros.numero}</p>}
               </div>
-              
+
               <div className="formGroup">
                 <label>Nome no Cartão</label>
                 <input
@@ -248,7 +230,7 @@ const CheckoutCarrinho = () => {
                 />
                 {erros.nome && <p className="erro">{erros.nome}</p>}
               </div>
-              
+
               <div className="formGroupLinha">
                 <div className="formGroup">
                   <label>Validade (MM/AA)</label>
@@ -262,7 +244,7 @@ const CheckoutCarrinho = () => {
                   />
                   {erros.validade && <p className="erro">{erros.validade}</p>}
                 </div>
-                
+
                 <div className="formGroup">
                   <label>CVV</label>
                   <input
@@ -276,7 +258,7 @@ const CheckoutCarrinho = () => {
                   {erros.cvv && <p className="erro">{erros.cvv}</p>}
                 </div>
               </div>
-              
+
               <div className="formGroup">
                 <label>Parcelas</label>
                 <select
@@ -295,12 +277,11 @@ const CheckoutCarrinho = () => {
           )}
         </div>
 
-        <button 
-          onClick={finalizarPedido} 
+        <button
+          onClick={finalizarPedido}
           className="botaoFinalizarCompra"
-          disabled={carregando}
         >
-          {carregando ? "Processando..." : "Confirmar Pedido"}
+          Confirmar Pedido
         </button>
       </div>
     </div>

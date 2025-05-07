@@ -1,26 +1,27 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "../componentes/Login";
-import LoginCliente from "../componentes/LoginCliente";
+import Login from "../componentes/usuarios/Login";
+import LoginCliente from "../componentes/clientes/LoginCliente";
 import HomeSite from "../componentes/HomeSite";
-import CadastroUsuario from "../componentes/CadastroUsuario";
-import ConsultaUsuarios from "../componentes/ConsultaUsuarios";
-import AlterarUsuario from "../componentes/AlterarUsuario";
-import AlterarSenha from "../componentes/AlterarSenha";
-import ConsultarProduto from "../componentes/ConsultarProduto";
-import CadastroProduto from "../componentes/CadastroProduto";
-import VisualizarProduto from "../componentes/VisualizarProduto";
-import AlterarProduto from "../componentes/AlterarProduto";
-import ListagemDeProdutos from "../componentes/ListagemDeProdutos";
-import ListagemDeProdutosLogado from "../componentes/ListagemDeProdutosLogado";
-import DetalhesProduto from "../componentes/DetalhesProduto";
-import Carrinho from "../componentes/Carrinho";
-import AlterarDadosCliente from "../componentes/AlterarDadosCliente";
-import CadastroCliente from "../componentes/CadastroCliente";
-import AlterarSenhaCliente from "../componentes/AlterarSenhaCliente";
-import Checkout from "../componentes/Checkout";
-import CheckoutCarrinho from "../componentes/CheckoutCarrinho";
-import ResumoPedido from "../componentes/ResumoPedido";
+import CadastroUsuario from "../componentes/usuarios/CadastroUsuario";
+import ConsultaUsuarios from "../componentes/usuarios/ConsultaUsuarios";
+import AlterarUsuario from "../componentes/usuarios/AlterarUsuario";
+import AlterarSenha from "../componentes/usuarios/AlterarSenha";
+import ConsultarProduto from "../componentes/produtos/ConsultarProduto";
+import CadastroProduto from "../componentes/produtos/CadastroProduto";
+import VisualizarProduto from "../componentes/produtos/VisualizarProduto";
+import AlterarProduto from "../componentes/produtos/AlterarProduto";
+import ListagemDeProdutos from "../componentes/produtos/ListagemDeProdutos";
+import ListagemDeProdutosLogado from "../componentes/produtos/ListagemDeProdutosLogado";
+import DetalhesProduto from "../componentes/produtos/DetalhesProduto";
+import Carrinho from "../componentes/checkout/Carrinho";
+import AlterarDadosCliente from "../componentes/clientes/AlterarDadosCliente";
+import CadastroCliente from "../componentes/clientes/CadastroCliente";
+import AlterarSenhaCliente from "../componentes/clientes/AlterarSenhaCliente";
+import Checkout from "../componentes/checkout/Checkout";
+import CheckoutCarrinho from "../componentes/checkout/CheckoutCarrinho";
+import ResumoPedido from "../componentes/checkout/ResumoPedido";
+import PedidoCliente from "../componentes/clientes/PedidoCliente";
 
 const AppRoutes = () => {
   return (
@@ -47,6 +48,7 @@ const AppRoutes = () => {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/checkout-carrinho" element={<CheckoutCarrinho />} />
         <Route path="/resumo-pedido" element={<ResumoPedido />} />
+        <Route path="/pedido-cliente" element={<PedidoCliente />} />
 
       </Routes>
     </Router>

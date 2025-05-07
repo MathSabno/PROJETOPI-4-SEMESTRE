@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import authService from "../services/authService";
-import "../estilos/detalhesProduto.css";
+import authService from "../../services/authService";
+import "../../estilos/detalhesProduto.css";
 
 const DetalheProduto = () => {
     const navigate = useNavigate();

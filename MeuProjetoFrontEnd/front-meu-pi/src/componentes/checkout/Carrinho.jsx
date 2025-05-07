@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import "../estilos/carrinho.css";
+import "../../estilos/carrinho.css";
 
 // Função para gerenciar o carrinho no localStorage
 const gerenciarCarrinho = {
@@ -168,13 +168,13 @@ const Carrinho = () => {
   };
 
   const finalizarCompra = () => {
-    navigate("/checkout", { 
-      state: { 
-        itens, 
-        frete: freteSelecionado, 
-        userId: userId, 
-        userNome: userNome 
-      } 
+    navigate("/checkout", {
+      state: {
+        itens,
+        frete: freteSelecionado,
+        userId: userId,
+        userNome: userNome
+      }
     });
   };
 
@@ -319,7 +319,12 @@ const Carrinho = () => {
                 Finalizar Compra
               </button>
               <button
-                onClick={() => navigate("/listagem-de-produtos")}
+                onClick={() => navigate("/listagem-de-produtos-logado", {
+                  state: {
+                    userId: userId,
+                    userNome: userNome
+                  },
+                })}
                 className="botaoContinuarComprando"
               >
                 Continuar Comprando

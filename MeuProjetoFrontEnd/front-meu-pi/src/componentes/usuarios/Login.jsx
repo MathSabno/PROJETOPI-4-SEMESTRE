@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import authService from "../services/authService"; // Importando o serviço de autenticação
+import authService from "../../services/authService"; // Importando o serviço de autenticação
 import { useNavigate } from "react-router-dom"; // Importando useNavigate para redirecionamento
-import "../estilos/login.css"; // Importando o arquivo CSS
+import "../../estilos/login.css"; // Importando o arquivo CSS
 
 const Login = () => {
   const navigate = useNavigate();
@@ -12,10 +12,10 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-  
+
     try {
       const response = await authService.login(email, senha); // Usando o serviço de autenticação
-      
+
       // Verifica o status do usuário
       if (response.status === 2) {
         setMensagem("USUÁRIO INATIVO NO SISTEMA");
@@ -24,10 +24,10 @@ const Login = () => {
 
       setMensagem("Login realizado com sucesso!");
       console.log("Resposta da API:", response);
-  
+
       // Extrai o grupo do usuário da resposta da API
       const userGroup = response.grupo; // Certifique-se de que a API retorne o grupo
-  
+
       // Redireciona para a página home após o login bem-sucedido
       navigate("/home-site", { state: { userGroup } }); // Passa o grupo como estado
     } catch (error) {
@@ -35,7 +35,7 @@ const Login = () => {
       console.error("Erro ao fazer login:", error);
     }
   };
-  
+
   return (
     <div className="container">
       <div className="formContainer">

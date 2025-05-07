@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import authService from "../services/authService";
+import authService from "../../services/authService";
 import { useNavigate } from "react-router-dom";
-import "../estilos/loginCliente.css"; // Importando o arquivo CSS
+import "../../estilos/loginCliente.css"; // Importando o arquivo CSS
 
 const LoginCliente = () => {
   const navigate = useNavigate();

@@ -12,12 +12,14 @@ public class SiteDbContext : DbContext
     public DbSet<ImagemEntidade> Imagem { get; set; } = null!;
     public DbSet<ClienteEntidade> Cliente { get; set; } = null!;
     public DbSet<EnderecoEntidade> Endereco { get; set; } = null!;
+    public DbSet<PedidoEntidade> Pedido { get; set; } = null!;
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         if (!options.IsConfigured)
         {   
-            options.UseSqlServer("Server=(LOCAL)\\MSSQLSERVER02;Database=PROJETOPI;Trusted_Connection=True;TrustServerCertificate=True;");
+            options.UseSqlServer("Server=(LOCAL)\\SQLEXPRESS;Database=PROJETOPI;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)

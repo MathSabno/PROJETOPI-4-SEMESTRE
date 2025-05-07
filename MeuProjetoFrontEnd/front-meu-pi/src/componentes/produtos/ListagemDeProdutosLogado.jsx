@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom"; // Adicione useLocation
-import authService from "../services/authService";
-import "../estilos/listagemDeProdutosLogado.css";
+import authService from "../../services/authService";
+import "../../estilos/listagemDeProdutosLogado.css";
 
 const ListaProdutos = () => {
     const navigate = useNavigate();
@@ -89,6 +89,16 @@ const ListaProdutos = () => {
         });
     };
 
+    const handleDetalhesPedido = () => {
+        // Passa o ID diretamente na rota
+        navigate(`/pedido-cliente`, {
+            state: {
+                userId,
+                userNome: userNome
+            }
+        });
+    };
+
     return (
         <div className="container">
             <header className="header">
@@ -107,6 +117,9 @@ const ListaProdutos = () => {
                     </button>
                     <button className="botao-alterarSenha" onClick={handleAlterarSenhaCliente}>
                         Alterar senha
+                    </button>
+                    <button className="botao-alterarSenha" onClick={handleDetalhesPedido}>
+                        Meus pedidos
                     </button>
                     <button className="botao-sair" onClick={handleLogout}>
                         Sair

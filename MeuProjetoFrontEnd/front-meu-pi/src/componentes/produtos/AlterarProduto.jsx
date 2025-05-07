@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
-import authService from "../services/authService";
+import authService from "../../services/authService";
 import CurrencyInput from 'react-currency-input-field';
-import "../estilos/alterarProduto.css";
+import "../../estilos/alterarProduto.css";
 
 const AlterarProduto = () => {
   const { id } = useParams(); // Obtém o ID do produto da URL

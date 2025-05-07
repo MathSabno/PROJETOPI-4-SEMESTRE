@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import authService from "../services/authService"; // Importando o serviço
+import authService from "../../services/authService"; // Importando o serviço
 import { useNavigate } from "react-router-dom"; // Importando useNavigate para redirecionamento
-import "../estilos/consultaUsuario.css"; // Importando o arquivo CSS
+import "../../estilos/consultaUsuario.css"; // Importando o arquivo CSS
 
 const ConsultaUsuarios = () => {
   const navigate = useNavigate();

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
-import authService from "../services/authService";
+import authService from "../../services/authService";
 import { } from "react-router-dom";
-import "../estilos/alterarDadosCliente.css";
+import "../../estilos/alterarDadosCliente.css";
 
 const AlterarDadosCliente = () => {
     const navigate = useNavigate();

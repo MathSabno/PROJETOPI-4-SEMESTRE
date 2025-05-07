@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import authService from "../services/authService";
+import authService from "../../services/authService";
 import { useNavigate } from "react-router-dom";
-import "../estilos/cadastroProduto.css";
+import "../../estilos/cadastroProduto.css";
 import CurrencyInput from 'react-currency-input-field'; // Importe a biblioteca de formatação de moeda
 
 const CadastroProduto = () => {

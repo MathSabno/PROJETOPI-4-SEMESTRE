@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import authService from "../services/authService";
-import "../estilos/visualizarProduto.css";
+import authService from "../../services/authService";
+import "../../estilos/visualizarProduto.css";
 
 const VisualizarProduto = () => {
   const { id } = useParams();

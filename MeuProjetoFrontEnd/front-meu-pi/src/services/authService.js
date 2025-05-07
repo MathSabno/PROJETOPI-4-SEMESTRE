@@ -126,9 +126,27 @@ const alterarSenhaCliente = async (id, novaSenha) => {
   }
 };
 
+const cadastrarPedido = async (pedidoData) => {
+  try {
+    const response = await api.post("/Pedido/Pedido", pedidoData);
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao cadastrar pedido.";
+  }
+};
+
+const listarPedidos = async () => {
+  try {
+    const response = await api.get("/Pedido/ListarPedidos");
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao listar pedidos";
+  }
+};
+
 const logout = () => {
   localStorage.removeItem("token");
   localStorage.removeItem("userData");
 };
 
-export default { login, listarUsuarios, cadastrarUsuario, atualizarUsuario, alterarSenha, listarProdutos, atualizarProduto, cadastrarProduto, cadastrarCliente, atualizarCliente, listarClientes, loginCliente, logout, alterarSenhaCliente};
+export default { login, listarUsuarios, cadastrarUsuario, atualizarUsuario, alterarSenha, listarProdutos, atualizarProduto, cadastrarProduto, cadastrarCliente, atualizarCliente, listarClientes, loginCliente, logout, alterarSenhaCliente, cadastrarPedido, listarPedidos};

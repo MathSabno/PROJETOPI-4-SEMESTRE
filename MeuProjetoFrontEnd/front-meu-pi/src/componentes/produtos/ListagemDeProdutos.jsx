@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import authService from "../services/authService";
-import "../estilos/listagemDeProdutos.css";
+import authService from "../../services/authService";
+import "../../estilos/listagemDeProdutos.css";
 
 const ListaProdutos = () => {
     const navigate = useNavigate();
@@ -37,7 +37,7 @@ const ListaProdutos = () => {
             <header className="header">
                 <div className="logo-container"> {/* Nova div container */}
                     <div className="logo">
-                        <img src="../logosite.png" alt="Logo da Loja" /> 
+                        <img src="../logosite.png" alt="Logo da Loja" />
                     </div>
                     <div className="nome-empresa">
                         <h2>Os D de DEV</h2>
@@ -67,8 +67,8 @@ const ListaProdutos = () => {
                             <div key={produto.id} className="card-produto">
                                 <div className="imagem-produto">
                                     {produto.imagens && produto.imagens.length > 0 ? (
-                                        <img 
-                                            src={`https://localhost:7075/api/Imagem/ExibirImagem/${produto.imagens[0].caminhoImg}`} 
+                                        <img
+                                            src={`https://localhost:7075/api/Imagem/ExibirImagem/${produto.imagens[0].caminhoImg}`}
                                             alt={produto.nome}
                                             onError={(e) => {
                                                 e.target.src = "https://via.placeholder.com/150";
