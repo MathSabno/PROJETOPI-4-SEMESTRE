@@ -6,17 +6,27 @@
   box-sizing: border-box;
 }
 
+/* Removemos o background-color do body padrão */
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Nunito', sans-serif;
+}
+
+/* Adicionamos uma classe específica para o body da página de login */
+body.login-page-body {
   background-color: #2e2e2e;
+  min-height: 100vh;
 }
 
 .login-container {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2e2e2e;
+  padding: 20px;
 }
 
 .login-box {
@@ -70,12 +80,13 @@ body {
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s;
   margin-top: 12px;
 }
 
 .login-button:hover {
   opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 .login-button.cadastro {

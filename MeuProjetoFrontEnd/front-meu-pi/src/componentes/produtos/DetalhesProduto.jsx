@@ -51,8 +51,8 @@ const DetalheProduto = () => {
             state: {
                 produto,
                 quantidade,
-                userId: location.state?.userId,    // Acesso seguro
-                userNome: location.state?.userNome
+                userId,
+                userNome: userNome
             }
         });
     };
@@ -63,8 +63,8 @@ const DetalheProduto = () => {
                 produto,
                 quantidade,
                 compraRapida: true,
-                userId: location.state?.userId,
-                userNome: location.state?.userNome
+                userId,
+                userNome: userNome
             }
         });
     };

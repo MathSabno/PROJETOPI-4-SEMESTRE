@@ -1,96 +1,96 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\pedidomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\model\\pedidomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\pedidomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\pedidoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\entidades\\pedidoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\pedidoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\enderecoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\entidades\\enderecoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\enderecoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\enderecoentregamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\model\\enderecoentregamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\enderecoentregamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\manipuladores\\clienteloginmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\manipuladores\\clienteloginmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:manipuladores\\clienteloginmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\manipuladores\\usuariologinmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\manipuladores\\usuariologinmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:manipuladores\\usuariologinmanipulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\imagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\controllers\\imagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\imagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\dto\\imagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\dto\\imagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:dto\\imagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\model\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\model\\atualizarclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\model\\atualizarclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\atualizarclientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\entidades\\imagementidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\entidades\\imagementidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\imagementidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\meuprojetoapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\p.i\\projetopi-4-semestre\\meuprojetoapi\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -107,11 +107,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PedidoModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\PedidoModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\PedidoModel.cs",
               "RelativeDocumentMoniker": "Model\\PedidoModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\PedidoModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\PedidoModel.cs",
               "RelativeToolTip": "Model\\PedidoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T02:14:16.753Z",
               "IsPinned": true,
@@ -121,11 +121,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PedidoController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\PedidoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PedidoController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\PedidoController.cs",
               "RelativeToolTip": "Controllers\\PedidoController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACsAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvxgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T02:11:14.58Z",
               "IsPinned": true,
@@ -135,29 +135,27 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "Controllers\\ProdutoController.cs",
               "ViewState": "AgIAAHsAAAAAAAAAAAAQwIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T02:10:54.626Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SiteDbContext.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
               "RelativeDocumentMoniker": "EF\\SiteDbContext.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
               "RelativeToolTip": "EF\\SiteDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T22:44:34.138Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -167,231 +165,214 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "EnderecoEntidade.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\EnderecoEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\EnderecoEntidade.cs",
               "RelativeDocumentMoniker": "Entidades\\EnderecoEntidade.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\EnderecoEntidade.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\EnderecoEntidade.cs",
               "RelativeToolTip": "Entidades\\EnderecoEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:14:58.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:14:58.974Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ProdutoEntidade.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
               "RelativeDocumentMoniker": "Entidades\\ProdutoEntidade.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
               "RelativeToolTip": "Entidades\\ProdutoEntidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:11:46.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:11:46.089Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "ProdutoModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\ProdutoModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\ProdutoModel.cs",
               "RelativeDocumentMoniker": "Model\\ProdutoModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\ProdutoModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\ProdutoModel.cs",
               "RelativeToolTip": "Model\\ProdutoModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:10:27.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:10:27.061Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAQwCkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T17:34:44.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T17:34:44.734Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "PedidoEntidade.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\PedidoEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\PedidoEntidade.cs",
               "RelativeDocumentMoniker": "Entidades\\PedidoEntidade.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\PedidoEntidade.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\PedidoEntidade.cs",
               "RelativeToolTip": "Entidades\\PedidoEntidade.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAkwBYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:03:04.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:03:04.074Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "EnderecoEntregaModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
               "RelativeDocumentMoniker": "Model\\EnderecoEntregaModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\EnderecoEntregaModel.cs",
               "RelativeToolTip": "Model\\EnderecoEntregaModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T00:00:44.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T00:00:44.891Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "ClienteLoginManipulador.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Manipuladores\\ClienteLoginManipulador.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Manipuladores\\ClienteLoginManipulador.cs",
               "RelativeDocumentMoniker": "Manipuladores\\ClienteLoginManipulador.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Manipuladores\\ClienteLoginManipulador.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Manipuladores\\ClienteLoginManipulador.cs",
               "RelativeToolTip": "Manipuladores\\ClienteLoginManipulador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:10:22.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:10:22.227Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "UsuarioLoginManipulador.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
               "RelativeDocumentMoniker": "Manipuladores\\UsuarioLoginManipulador.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Manipuladores\\UsuarioLoginManipulador.cs",
               "RelativeToolTip": "Manipuladores\\UsuarioLoginManipulador.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:10:20.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:10:20.757Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:11:19.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:11:19.132Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "ImagemController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ImagemController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ImagemController.cs",
               "RelativeDocumentMoniker": "Controllers\\ImagemController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ImagemController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ImagemController.cs",
               "RelativeToolTip": "Controllers\\ImagemController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:11:18.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:11:18.103Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "ProdutoDto.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\DTO\\ProdutoDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\DTO\\ProdutoDto.cs",
               "RelativeDocumentMoniker": "DTO\\ProdutoDto.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\DTO\\ProdutoDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\DTO\\ProdutoDto.cs",
               "RelativeToolTip": "DTO\\ProdutoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:10:47.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:10:47.33Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "ImagemDto.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\DTO\\ImagemDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\DTO\\ImagemDto.cs",
               "RelativeDocumentMoniker": "DTO\\ImagemDto.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\DTO\\ImagemDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\DTO\\ImagemDto.cs",
               "RelativeToolTip": "DTO\\ImagemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:10:45.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:10:45.97Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "UsuarioModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\UsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\UsuarioModel.cs",
               "RelativeDocumentMoniker": "Model\\UsuarioModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\UsuarioModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\UsuarioModel.cs",
               "RelativeToolTip": "Model\\UsuarioModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:10:29.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:10:29.839Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "ImagemEntidade.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\ImagemEntidade.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\ImagemEntidade.cs",
               "RelativeDocumentMoniker": "Entidades\\ImagemEntidade.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Entidades\\ImagemEntidade.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\ImagemEntidade.cs",
               "RelativeToolTip": "Entidades\\ImagemEntidade.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:05:37.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:05:37.828Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\appsettings.Development.json",
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-06T03:04:43.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T03:04:43.118Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "AtualizarClienteModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
               "RelativeDocumentMoniker": "Model\\AtualizarClienteModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\AtualizarClienteModel.cs",
               "RelativeToolTip": "Model\\AtualizarClienteModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T18:09:20.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T18:09:20.137Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "ClienteModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\ClienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\ClienteModel.cs",
               "RelativeDocumentMoniker": "Model\\ClienteModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Model\\ClienteModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\ClienteModel.cs",
               "RelativeToolTip": "Model\\ClienteModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T18:09:11.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T18:09:11.452Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "PhysicalFileProvider.cs",
               "DocumentMoniker": "C:\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
               "ToolTip": "C:\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
-              "RelativeToolTip": "..\\..\\..\\Users\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\moliv\\AppData\\Local\\Temp\\.vsdbgsrc\\198bf116f7049a2e3e03f29a33fa5180331819d2741ad4116d0479027e6bf834\\PhysicalFileProvider.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAhwGsAAAADAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T01:19:54.432Z"
@@ -400,9 +381,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "Controllers\\ClienteController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAqwDEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

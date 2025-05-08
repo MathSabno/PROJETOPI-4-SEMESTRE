@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import authService from "../../services/authService";
 import { useNavigate } from "react-router-dom";
-import "../../estilos/loginCliente.css"; // Importando o arquivo CSS
+import "../../estilos/loginCliente.css";
 
 const LoginCliente = () => {
   const navigate = useNavigate();
@@ -9,12 +9,18 @@ const LoginCliente = () => {
   const [senha, setSenha] = useState("");
   const [mensagem, setMensagem] = useState("");
 
+  // Efeito para adicionar/remover a classe do body
+  useEffect(() => {
+    document.body.classList.add("login-page-body");
+    return () => {
+      document.body.classList.remove("login-page-body");
+    };
+  }, []);
+
   const handleLogin = async (e) => {
     e.preventDefault();
-
     try {
       const response = await authService.loginCliente(email, senha);
-
       const userNome = response.nome;
       const userId = response.id;
 
@@ -22,10 +28,7 @@ const LoginCliente = () => {
       console.log("Resposta da API:", response);
 
       navigate("/listagem-de-produtos-logado", {
-        state: {
-          userId: userId,
-          userNome: userNome
-        },
+        state: { userId, userNome },
       });
     } catch (error) {
       setMensagem(error.message || "Erro ao fazer login");
