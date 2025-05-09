@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import authService from "../../services/authService";
-import "../../estilos/listagemDeProdutosLogado.css";
+import "../../estilos/pedidoCliente.css";
 
 const PedidoCliente = () => {
     const navigate = useNavigate();
@@ -9,9 +9,17 @@ const PedidoCliente = () => {
     const [pedidos, setPedidos] = useState([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState("");
+    const [paginaAtual, setPaginaAtual] = useState(1);
+    const itensPorPagina = 10;
 
     // Extrair dados do usuário
     const { userId, userNome } = location.state || {};
+
+    // Calcular índices de paginação
+    const indiceUltimoItem = paginaAtual * itensPorPagina;
+    const indicePrimeiroItem = indiceUltimoItem - itensPorPagina;
+    const pedidosAtuais = pedidos.slice(indicePrimeiroItem, indiceUltimoItem);
+    const totalPaginas = Math.ceil(pedidos.length / itensPorPagina);
 
     useEffect(() => {
         const buscarPedidos = async () => {
@@ -49,8 +57,33 @@ const PedidoCliente = () => {
         });
     };
 
+    const handleLogout = () => {
+        if (window.confirm("Deseja realmente sair da sua sessão?")) {
+            authService.logout();
+            navigate("/listagem-de-produtos");
+        }
+    };
+
     const handleVoltar = () => {
-        navigate(-1);
+        navigate("/listagem-de-produtos-logado", {
+            state: {
+                userId: userId,
+                userNome: userNome
+            },
+        });
+    };
+
+    // Funções de navegação entre páginas
+    const proximaPagina = () => {
+        if (paginaAtual < totalPaginas) {
+            setPaginaAtual(paginaAtual + 1);
+        }
+    };
+
+    const paginaAnterior = () => {
+        if (paginaAtual > 1) {
+            setPaginaAtual(paginaAtual - 1);
+        }
     };
 
     return (
@@ -70,7 +103,7 @@ const PedidoCliente = () => {
                     <button className="botao-voltar" onClick={handleVoltar}>
                         Voltar
                     </button>
-                    <button className="botao-sair" onClick={() => authService.logout()}>
+                    <button className="botao-sair" onClick={handleLogout}>
                         Sair
                     </button>
                 </div>
@@ -84,41 +117,66 @@ const PedidoCliente = () => {
                 ) : erro ? (
                     <p className="erro">{erro}</p>
                 ) : (
-                    <div className="tabela-pedidos">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Número</th>
-                                    <th>Data</th>
-                                    <th>Valor Total</th>
-                                    <th>Status</th>
-                                    <th>Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {pedidos.map((pedido) => (
-                                    <tr key={pedido.id}>
-                                        <td>#{pedido.id}</td>
-                                        <td>{formatarData(pedido.dataPedido)}</td>
-                                        <td>R$ {pedido.valorTotal.toFixed(2)}</td>
-                                        <td>
-                                            <span className={`status-${pedido.statusPedido.toLowerCase()}`}>
-                                                {pedido.statusPedido}
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <button
-                                                className="botao-detalhes"
-                                                onClick={() => handleDetalhesPedido(pedido.id)}
-                                            >
-                                                Mais Detalhes
-                                            </button>
-                                        </td>
+                    <>
+                        <div className="tabela-pedidos">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Número</th>
+                                        <th>Data</th>
+                                        <th>Valor Total</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
+                                </thead>
+                                <tbody>
+                                    {pedidosAtuais.map((pedido) => (
+                                        <tr key={pedido.id}>
+                                            <td>#{pedido.id}</td>
+                                            <td>{formatarData(pedido.dataPedido)}</td>
+                                            <td>R$ {pedido.valorTotal.toFixed(2)}</td>
+                                            <td>
+                                                <span className={`status-${pedido.statusPedido.toLowerCase()}`}>
+                                                    {pedido.statusPedido}
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <button
+                                                    className="botao-detalhes"
+                                                    onClick={() => handleDetalhesPedido(pedido.id)}
+                                                >
+                                                    Mais Detalhes
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        {/* Controles de Paginação */}
+                        <div className="controles-paginacao">
+                            <button 
+                                onClick={paginaAnterior}
+                                disabled={paginaAtual === 1}
+                                className="botao-paginacao"
+                            >
+                                Anterior
+                            </button>
+                            
+                            <span className="info-pagina">
+                                Página {paginaAtual} de {totalPaginas}
+                            </span>
+                            
+                            <button 
+                                onClick={proximaPagina}
+                                disabled={paginaAtual === totalPaginas}
+                                className="botao-paginacao"
+                            >
+                                Próxima
+                            </button>
+                        </div>
+                    </>
                 )}
             </div>
         </div>

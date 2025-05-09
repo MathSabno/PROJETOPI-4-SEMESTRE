@@ -246,12 +246,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.botaoFinalizarCompra {
-    background: linear-gradient(to left, #21d4fd, #b721ff);
-    text-transform: uppercase;
-    width: 15%;
-}
-
+.botaoFinalizarCompra,
 .botaoContinuarComprando {
     font-size: 16px;
     border: none;

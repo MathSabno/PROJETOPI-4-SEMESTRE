@@ -306,59 +306,14 @@ body {
   color: var(--danger-color);
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-  .grade-produtos {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .lista-produtos {
-    padding: 1.5rem;
-  }
-
-  .titulo {
-    font-size: 1.75rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .grade-produtos {
-    grid-template-columns: 1fr;
-  }
-
-  .botao-login {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .botao-carrinho {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-
-  .titulo {
-    font-size: 1.5rem;
-  }
-}
-
 /* Efeito de skeleton para carregamento */
 @keyframes shimmer {
   0% {
-    background-position: -468px 0
+    background-position: -468px 0;
   }
 
   100% {
-    background-position: 468px 0
+    background-position: 468px 0;
   }
 }
 
@@ -366,7 +321,6 @@ body {
   animation: shimmer 1.5s infinite linear;
   background: linear-gradient(to right, #f6f7f8 8%, #e8e8e8 18%, #f6f7f8 33%);
   background-size: 800px 104px;
-  position: relative;
   border-radius: var(--border-radius);
 }
 
@@ -374,82 +328,93 @@ body {
   height: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 4px;
+  background-color: #e0e0e0;
 }
 
 .skeleton-button {
   height: 2.5rem;
   margin-top: 1rem;
   border-radius: var(--border-radius);
+  background-color: #d6d6d6;
 }
 
-/* Estilos para a tabela de pedidos */
+/* Tabela de pedidos */
 .tabela-pedidos {
-  margin: 20px 0;
+  margin: 2rem 0;
   overflow-x: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: white;
 }
 
 .tabela-pedidos table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  min-width: 600px;
 }
 
 .tabela-pedidos th,
 .tabela-pedidos td {
-  padding: 12px 15px;
+  padding: 1rem;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .tabela-pedidos th {
-  background-color: #f8f9fa;
+  background-color: #f1f5f9;
+  color: var(--dark-color);
   font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
 }
 
 .tabela-pedidos tr:hover {
-  background-color: #f5f5f5;
+  background-color: #f9fafb;
 }
 
-/* Estilos para os status */
+/* Status */
 .status-pago {
-  color: #28a745;
-  font-weight: 500;
+  color: var(--success-color);
+  font-weight: 600;
 }
 
 .status-pendente {
-  color: #ffc107;
-  font-weight: 500;
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
 .status-cancelado {
-  color: #dc3545;
-  font-weight: 500;
+  color: var(--danger-color);
+  font-weight: 600;
 }
 
 /* Botão de detalhes */
 .botao-detalhes {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: var(--transition);
 }
 
 .botao-detalhes:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-hover);
 }
 
-/* Responsividade */
+/* Responsividade para tabela */
 @media (max-width: 768px) {
   .tabela-pedidos table {
     display: block;
+    width: 100%;
+    overflow-x: auto;
   }
 
   .tabela-pedidos th,
   .tabela-pedidos td {
-    padding: 8px;
+    padding: 0.75rem;
+    font-size: 0.9rem;
   }
 }

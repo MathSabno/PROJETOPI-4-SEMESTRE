@@ -21,18 +21,15 @@ const gerenciarCarrinho = {
     const itemExistenteIndex = itens.findIndex(item => item.id === produto.id);
 
     if (itemExistenteIndex !== -1) {
-      // Soma a nova quantidade à existente
-      itens[itemExistenteIndex].quantidade += quantidade;
-
-      // Garante que não ultrapasse o estoque máximo (se aplicável)
-      if (produto.quantidade) {
-        itens[itemExistenteIndex].quantidade = Math.min(
-          itens[itemExistenteIndex].quantidade,
-          produto.quantidade
-        );
-      }
+      // Atualiza os dados do produto, respeitando a nova quantidade solicitada
+      const novaQuantidade = Math.min(quantidade, produto.quantidade || Infinity);
+      itens[itemExistenteIndex] = {
+        ...produto,
+        quantidade: novaQuantidade,
+        imagens: produto.imagens || []
+      };
     } else {
-      // Adiciona novo item
+      // Adiciona novo item com a quantidade correta
       itens.push({
         ...produto,
         quantidade: Math.min(quantidade, produto.quantidade || Infinity),
@@ -57,6 +54,7 @@ const gerenciarCarrinho = {
   }
 };
 
+
 // Opções de frete
 const opcoesFrete = [
   { id: 1, nome: "Envio rápido", valor: 20.00 },
@@ -65,32 +63,65 @@ const opcoesFrete = [
 ];
 
 const Carrinho = () => {
+  // 1. Declaração de todos os hooks primeiro
   const navigate = useNavigate();
   const location = useLocation();
   const [itens, setItens] = useState([]);
   const [carregando, setCarregando] = useState(true);
   const [erro, setErro] = useState("");
-  const [freteSelecionado, setFreteSelecionado] = useState(opcoesFrete[0]); // Define o primeiro frete como padrão
+  const [freteSelecionado, setFreteSelecionado] = useState(opcoesFrete[0]);
 
-  // Nova validação do usuário
+  // 2. Extrair dados do state APÓS os hooks
   const userId = location.state?.userId;
   const userNome = location.state?.userNome;
 
-  // Dentro do componente Carrinho
+  // 3. Efeitos devem vir antes de condicionais
   useEffect(() => {
     console.log("Dados recebidos no Carrinho:", location.state);
   }, [location.state]);
 
-  // Verificação ANTES de carregar o carrinho
+  // 4. Função para atualizar contador
+  const atualizarContadorCarrinho = () => {
+    const totalItens = gerenciarCarrinho.get().reduce((acc, item) => acc + item.quantidade, 0);
+    document.dispatchEvent(new CustomEvent('carrinhoAtualizado', { detail: totalItens }));
+  };
+
+  // 5. ÚNICO useEffect para carregar o carrinho
+  useEffect(() => {
+    const carregarCarrinho = () => {
+      try {
+        if (location.state?.produto) {
+          const { produto, quantidade = 1 } = location.state;
+          const novosItens = gerenciarCarrinho.adicionarItem(produto, quantidade);
+          setItens(novosItens);
+          atualizarContadorCarrinho();
+          navigate(location.pathname, {
+            replace: true,
+            state: {
+              ...location.state
+            }
+          });
+        } else {
+          setItens(gerenciarCarrinho.get());
+        }
+        setCarregando(false);
+      } catch (error) {
+        setErro("Erro ao carregar carrinho");
+        setCarregando(false);
+      }
+    };
+
+    carregarCarrinho();
+  }, [location, navigate]);
+
+  // 6. Verificação condicional APÓS todos os hooks
   if (!userId || !userNome) {
     return (
       <div className="container">
         <div className="formContainer">
           <h1 className="titulo">Meu Carrinho</h1>
           <div className="usuarioNaoLogado">
-            <p className="mensagem">
-              Para acessar o carrinho, faça seu cadastro!
-            </p>
+            <p className="mensagem">Para acessar o carrinho, faça seu cadastro!</p>
             <button
               onClick={() => navigate("/cadastro-cliente")}
               className="loginFormBtn"
@@ -102,38 +133,6 @@ const Carrinho = () => {
       </div>
     );
   }
-
-  // Atualiza o contador do carrinho no cabeçalho
-  const atualizarContadorCarrinho = () => {
-    const totalItens = gerenciarCarrinho.get().reduce((acc, item) => acc + item.quantidade, 0);
-    document.dispatchEvent(new CustomEvent('carrinhoAtualizado', { detail: totalItens }));
-  };
-
-  // Carrega os itens do carrinho e verifica se há produto para adicionar
-  useEffect(() => {
-    const carregarCarrinho = () => {
-      try {
-        // Verifica se há produto para adicionar (vindo da tela de detalhes)
-        if (location.state?.produto) {
-          const { produto, quantidade = 1 } = location.state;
-          const novosItens = gerenciarCarrinho.adicionarItem(produto, quantidade);
-          setItens(novosItens);
-          atualizarContadorCarrinho();
-          // Remove o state para não adicionar novamente
-          navigate(location.pathname, { replace: true });
-        } else {
-          setItens(gerenciarCarrinho.get());
-        }
-
-        setCarregando(false);
-      } catch (error) {
-        setErro("Erro ao carregar carrinho");
-        setCarregando(false);
-      }
-    };
-
-    carregarCarrinho();
-  }, [location, navigate]);
 
   const removerItem = (id) => {
     const novosItens = gerenciarCarrinho.removerItem(id);
@@ -210,7 +209,12 @@ const Carrinho = () => {
           <div className="carrinhoVazio">
             <p className="mensagem">Seu carrinho está vazio</p>
             <button
-              onClick={() => navigate("/listagem-de-produtos")}
+              onClick={() => navigate("/listagem-de-produtos-logado", {
+                state: {
+                  userId: userId,
+                  userNome: userNome
+                }
+              })}
               className="loginFormBtn"
             >
               Continuar Comprando

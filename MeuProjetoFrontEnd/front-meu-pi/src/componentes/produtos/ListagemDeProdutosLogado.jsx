@@ -10,8 +10,10 @@ const ListaProdutos = () => {
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState("");
 
-    // Extrair dados do usuário do state de navegação
-    const { userId, userNome: userNome } = location.state || {};
+    // Extrair dados do usuário do state de navegação   
+    const { userId: stateUserId, userNome: stateUserNome } = location.state || {};
+    const userId = stateUserId || localStorage.getItem("userId");
+    const userNome = stateUserNome || localStorage.getItem("userNome");
 
     useEffect(() => {
         console.log("Dados recebidos no Carrinho:", location.state);

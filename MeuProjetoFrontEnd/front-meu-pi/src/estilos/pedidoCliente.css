@@ -1,0 +1,137 @@
+/**********************************DAQUI PARA BAIXO É O CSS DA TELA PEDIDOCLIENTE.JSX*******************************/
+/* Estados de carregamento e erro */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+    color: var(--dark-color);
+    background-color: #f1f5f9;
+  }
+  
+
+.carregando,
+.erro {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.carregando {
+  color: var(--gray-color);
+}
+
+.erro {
+  color: var(--danger-color);
+}
+
+/* Efeito de skeleton para carregamento */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton {
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(to right, #f6f7f8 8%, #e8e8e8 18%, #f6f7f8 33%);
+  background-size: 800px 104px;
+  border-radius: var(--border-radius);
+}
+
+.skeleton-text {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.skeleton-button {
+  height: 2.5rem;
+  margin-top: 1rem;
+  border-radius: var(--border-radius);
+  background-color: #d6d6d6;
+}
+
+/* Tabela de pedidos */
+.tabela-pedidos {
+  margin: 2rem 0;
+  overflow-x: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: white;
+}
+
+.tabela-pedidos table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.tabela-pedidos th,
+.tabela-pedidos td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabela-pedidos th {
+  background-color: #f1f5f9;
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.tabela-pedidos tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Status */
+.status-pago {
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.status-pendente {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.status-cancelado {
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+/* Botão de detalhes */
+.botao-detalhes {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.botao-detalhes:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Responsividade para tabela */
+@media (max-width: 768px) {
+  .tabela-pedidos table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .tabela-pedidos th,
+  .tabela-pedidos td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}

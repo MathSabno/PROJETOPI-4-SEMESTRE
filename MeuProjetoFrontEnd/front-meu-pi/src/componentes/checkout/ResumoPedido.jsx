@@ -71,12 +71,24 @@ const ResumoPedido = () => {
       // Enviar para o backend
       const resposta = await authService.cadastrarPedido(pedidoData);
 
+      // 🧹 Limpar o carrinho no localStorage
+      localStorage.setItem("carrinho", JSON.stringify([]));
+
+      // 🔄 Atualizar contador do carrinho (se você estiver usando esse evento globalmente)
+      document.dispatchEvent(new CustomEvent('carrinhoAtualizado', { detail: 0 }));
+
+      // ✅ Exibir mensagem de sucesso
+      alert("Pedido cadastrado com sucesso!");
+
+      // 🔁 Redirecionar para a página de pedidos do cliente
+      navigate("/pedido-cliente");
     } catch (error) {
       setErro(error.message || "Erro ao finalizar o pedido. Tente novamente.");
     } finally {
       setCarregando(false);
     }
   };
+
 
   // Verifica se há endereço de entrega
   if (!enderecoEntrega) {
