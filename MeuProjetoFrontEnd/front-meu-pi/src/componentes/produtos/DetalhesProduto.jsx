@@ -51,7 +51,7 @@ const DetalheProduto = () => {
             state: {
                 produto,
                 quantidade,
-                userId: userId,
+                userId,
                 userNome: userNome
             }
         });
@@ -63,7 +63,7 @@ const DetalheProduto = () => {
                 produto,
                 quantidade,
                 compraRapida: true,
-                userId: userId,
+                userId,
                 userNome: userNome
             }
         });
