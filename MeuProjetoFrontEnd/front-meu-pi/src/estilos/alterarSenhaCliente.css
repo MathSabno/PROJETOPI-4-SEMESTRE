@@ -59,7 +59,7 @@
 
 .botao {
     padding: 12px;
-    background-color: #007bff;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -70,9 +70,24 @@
 }
 
 .botao:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
 }
 
+.botaoVoltar {
+    padding: 12px;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
 
 .erro {
     margin-top: 20px;
@@ -87,5 +102,3 @@
     color: #28a745;
     text-align: center;
 }
-
-;

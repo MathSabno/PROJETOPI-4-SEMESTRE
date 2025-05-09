@@ -1,205 +1,205 @@
 /* Variáveis baseadas na estilização fornecida */
 :root {
-    --cor-primaria: #21d4fd;
-    --cor-secundaria: #b721ff;
-    --cor-texto: #333;
-    --cor-texto-claro: #6c757d;
-    --cor-fundo: #474747;
-    --cor-fundo-container: #fff;
-    --cor-borda: #f0f0f0;
-    --cor-destaque: #e63946;
-    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --fonte-principal: 'Nunito', sans-serif;
-  }
-  
-  /* Estilos gerais */
-  .enderecoContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
-    background-color: var(--cor-fundo);
-    font-family: var(--fonte-principal);
-    margin: 0;
-    padding: 20px 0;
-  }
-  
+  --cor-primaria: #21d4fd;
+  --cor-secundaria: #b721ff;
+  --cor-texto: #333;
+  --cor-texto-claro: #6c757d;
+  --cor-fundo: #474747;
+  --cor-fundo-container: #fff;
+  --cor-borda: #f0f0f0;
+  --cor-destaque: #e63946;
+  --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --fonte-principal: 'Nunito', sans-serif;
+}
+
+/* Estilos gerais */
+.enderecoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--cor-fundo);
+  font-family: var(--fonte-principal);
+  margin: 0;
+  padding: 20px 0;
+}
+
+.enderecoFormContainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  background-color: var(--cor-fundo-container);
+  border-radius: 10px;
+  box-shadow: var(--sombra);
+}
+
+.enderecoTitulo {
+  display: block;
+  font-size: 30px;
+  color: var(--cor-texto);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Lista de endereços */
+.enderecoLista {
+  margin-bottom: 30px;
+}
+
+.enderecoItem {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-bottom: 2px solid var(--cor-borda);
+  gap: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.enderecoItem:hover {
+  background-color: #f9f9f9;
+}
+
+.enderecoItem.principal {
+  border-left: 4px solid var(--cor-primaria);
+}
+
+.enderecoRadio {
+  margin-top: 5px;
+}
+
+.enderecoRadio input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--cor-texto-claro);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.enderecoRadio input[type="radio"]:checked {
+  border-color: var(--cor-primaria);
+}
+
+.enderecoRadio input[type="radio"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--cor-primaria);
+  border-radius: 50%;
+}
+
+.enderecoInfo {
+  flex: 1;
+}
+
+.enderecoInfo h3 {
+  font-size: 19px;
+  color: var(--cor-texto);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.enderecoTag {
+  font-size: 14px;
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.enderecoInfo p {
+  margin: 5px 0;
+  color: var(--cor-texto-claro);
+  font-size: 16px;
+}
+
+/* Botões */
+.enderecoBtnPrimario {
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to left, #21d4fd, #b721ff);
+  cursor: pointer;
+  font-family: var(--fonte-principal);
+  transition: all 0.3s ease;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+
+.enderecoBtnPrimario:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enderecoBtnSecundario {
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  background: linear-gradient(to left, #21d4fd, #b721ff);
+  cursor: pointer;
+  font-family: var(--fonte-principal);
+  transition: all 0.3s ease;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+
+.enderecoBtnSecundario:hover {
+  background-color: rgba(33, 212, 253, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .enderecoFormContainer {
-    width: 100%;
-    max-width: 1200px;
-    padding: 30px;
-    background-color: var(--cor-fundo-container);
-    border-radius: 10px;
-    box-shadow: var(--sombra);
+    padding: 25px 20px;
   }
-  
-  .enderecoTitulo {
-    display: block;
-    font-size: 30px;
-    color: var(--cor-texto);
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  /* Lista de endereços */
-  .enderecoLista {
-    margin-bottom: 30px;
-  }
-  
+
   .enderecoItem {
-    display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    border-bottom: 2px solid var(--cor-borda);
-    gap: 25px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  .enderecoItem:hover {
-    background-color: #f9f9f9;
-  }
-  
-  .enderecoItem.principal {
-    border-left: 4px solid var(--cor-primaria);
-  }
-  
+
   .enderecoRadio {
-    margin-top: 5px;
+    align-self: flex-start;
   }
-  
-  .enderecoRadio input[type="radio"] {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--cor-texto-claro);
-    border-radius: 50%;
-    outline: none;
-    cursor: pointer;
-    position: relative;
+}
+
+@media (max-width: 480px) {
+  .enderecoTitulo {
+    font-size: 26px;
   }
-  
-  .enderecoRadio input[type="radio"]:checked {
-    border-color: var(--cor-primaria);
-  }
-  
-  .enderecoRadio input[type="radio"]:checked::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    background-color: var(--cor-primaria);
-    border-radius: 50%;
-  }
-  
-  .enderecoInfo {
-    flex: 1;
-  }
-  
-  .enderecoInfo h3 {
-    font-size: 19px;
-    color: var(--cor-texto);
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .enderecoTag {
-    font-size: 14px;
-    background-color: var(--cor-primaria);
-    color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
-  }
-  
-  .enderecoInfo p {
-    margin: 5px 0;
-    color: var(--cor-texto-claro);
-    font-size: 16px;
-  }
-  
-  /* Botões */
-  .enderecoBtnPrimario {
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    line-height: 1.2;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 55px;
-    background: linear-gradient(to left, var(--cor-primaria), var(--cor-secundaria));
-    cursor: pointer;
-    font-family: var(--fonte-principal);
-    transition: all 0.3s ease;
-    margin-top: 25px;
-    letter-spacing: 1px;
-  }
-  
-  .enderecoBtnPrimario:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+
+  .enderecoBtnPrimario,
   .enderecoBtnSecundario {
-    font-size: 16px;
-    border: 2px solid var(--cor-primaria);
-    border-radius: 10px;
-    color: var(--cor-primaria);
-    line-height: 1.2;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 55px;
-    background: transparent;
-    cursor: pointer;
-    font-family: var(--fonte-principal);
-    transition: all 0.3s ease;
-    margin-top: 15px;
-    letter-spacing: 1px;
+    height: 50px;
+    font-size: 15px;
   }
-  
-  .enderecoBtnSecundario:hover {
-    background-color: rgba(33, 212, 253, 0.1);
-    transform: translateY(-2px);
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .enderecoFormContainer {
-      padding: 25px 20px;
-    }
-  
-    .enderecoItem {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .enderecoRadio {
-      align-self: flex-start;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .enderecoTitulo {
-      font-size: 26px;
-    }
-  
-    .enderecoBtnPrimario,
-    .enderecoBtnSecundario {
-      height: 50px;
-      font-size: 15px;
-    }
-  }
+}

@@ -95,17 +95,22 @@ const AlterarSenha = () => {
             {carregando ? "Carregando..." : "Salvar Alterações"}
           </button>
         </form>
+
         {/* Botão de Voltar */}
         <div className="containerLoginFormBtn">
-          <button onClick={() => navigate("/listagem-de-produtos-logado", {
-            state: {
-              userNome: userNome,
-              userId: userId
-            }
-          })}>
+          <button
+            onClick={() => navigate("/listagem-de-produtos-logado", {
+              state: {
+                userNome: userNome,
+                userId: userId
+              }
+            })}
+            className="botaoVoltar"  // Adicione esta linha
+          >
             Voltar
           </button>
         </div>
+
         {erro && <p className="erro">{erro}</p>}
         {mensagem && <p className="mensagem">{mensagem}</p>}
       </div>

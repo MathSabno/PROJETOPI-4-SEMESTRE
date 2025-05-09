@@ -59,7 +59,7 @@
 
 .botao {
     padding: 12px;
-    background-color: #007bff;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -70,7 +70,7 @@
 }
 
 .botao:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
 }
 
 

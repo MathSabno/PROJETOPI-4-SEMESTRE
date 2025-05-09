@@ -14,44 +14,44 @@ const Checkout = () => {
   const [erro, setErro] = useState("");
 
   useEffect(() => {
-    console.log("Dados recebidos no Carrinho:", location.state);
-  }, [location.state]);
-
-  useEffect(() => {
     const carregarEnderecosCliente = async () => {
-      try {
-        if (!userId) {
-          throw new Error("Usuário não identificado");
-        }
+      if (!userId) {
+        setErro("Usuário não identificado.");
+        setCarregando(false);
+        return;
+      }
 
+      try {
         const clientes = await authService.listarClientes();
         const cliente = clientes.find(c => c.id === parseInt(userId));
 
         if (!cliente) {
-          throw new Error("Cliente não encontrado");
+          setErro("Cliente não encontrado.");
+          return;
         }
 
         const enderecosCliente = cliente.enderecosEntrega || [];
 
-        // Adiciona apelido e marca o endereço principal
+        if (enderecosCliente.length === 0) {
+          setErro("Nenhum endereço cadastrado.");
+          return;
+        }
+
         const enderecosFormatados = enderecosCliente.map((endereco, index) => ({
           ...endereco,
-          id: endereco.id || index,
+          id: endereco.id ?? index,
           apelido: `Endereço ${index + 1}`,
-          principal: endereco.isPadrao || false,
-          cidade: endereco.cidade || endereco.localidade,
-          uf: endereco.uf || endereco.estado
+          principal: endereco.isPadrao ?? false,
+          cidade: endereco.cidade || endereco.localidade || "",
+          uf: endereco.uf || endereco.estado || ""
         }));
 
         setEnderecos(enderecosFormatados);
 
-        // Seleciona o endereço principal por padrão
-        const enderecoPadrao = enderecosFormatados.find(e => e.principal) ||
-          (enderecosFormatados.length > 0 ? enderecosFormatados[0] : null);
-        setEnderecoSelecionado(enderecoPadrao?.id || null);
-
-      } catch (error) {
-        setErro(error.message || "Erro ao carregar endereços");
+        const principal = enderecosFormatados.find(e => e.principal) || enderecosFormatados[0];
+        setEnderecoSelecionado(principal.id);
+      } catch (e) {
+        setErro("Erro ao carregar os endereços.");
       } finally {
         setCarregando(false);
       }
@@ -62,37 +62,38 @@ const Checkout = () => {
 
   const handleSelecionarEndereco = (id) => {
     setEnderecoSelecionado(id);
+    setErro(""); // Limpa erro se usuário seleciona algo
   };
 
   const handleConfirmarEndereco = () => {
-    if (!enderecoSelecionado) {
-      setErro("Selecione um endereço de entrega");
+    const endereco = enderecos.find(e => e.id === enderecoSelecionado);
+
+    if (!endereco) {
+      setErro("Selecione um endereço de entrega.");
       return;
     }
 
-    const enderecoSelecionadoObj = enderecos.find(e => e.id === enderecoSelecionado);
+    const camposObrigatorios = ["logradouro", "numero", "bairro", "cidade", "uf", "cep"];
+    const incompleto = camposObrigatorios.some(campo => !endereco[campo]);
 
-    // Validação adicional dos campos do endereço
-    if (!enderecoSelecionadoObj.logradouro || !enderecoSelecionadoObj.numero ||
-      !enderecoSelecionadoObj.bairro || !enderecoSelecionadoObj.cidade ||
-      !enderecoSelecionadoObj.uf || !enderecoSelecionadoObj.cep) {
-      setErro("O endereço selecionado está incompleto");
+    if (incompleto) {
+      setErro("O endereço selecionado está incompleto.");
       return;
     }
 
     navigate("/checkout-carrinho", {
       state: {
-        ...location.state, // Mantém todos os dados anteriores
-        enderecoEntrega: enderecoSelecionadoObj,
+        ...location.state,
+        enderecoEntrega: endereco,
         userId: userId
       }
     });
   };
 
   const handleAdicionarEndereco = () => {
-    navigate("/alterar-dados-cliente", {
+    navigate(`/alterar-dados-cliente/${userId}`, {
       state: {
-        userId: userId,
+        userId,
         adicionarEndereco: true
       }
     });
@@ -102,25 +103,18 @@ const Checkout = () => {
     return <div className="enderecoContainer">Carregando endereços...</div>;
   }
 
-  if (erro) {
-    return <div className="enderecoContainer">
-      <div className="enderecoFormContainer">
-        <p className="erro">{erro}</p>
-        <button onClick={() => navigate(-1)}>Voltar</button>
-      </div>
-    </div>;
-  }
-
   return (
     <div className="enderecoContainer">
       <div className="enderecoFormContainer">
         <h1 className="enderecoTitulo">Selecione o endereço de entrega</h1>
 
-        {enderecos.length === 0 ? (
+        {erro && (
           <div className="semEnderecos">
-            <p>Nenhum endereço cadastrado</p>
+            <p className="erro">{erro}</p>
           </div>
-        ) : (
+        )}
+
+        {!erro && enderecos.length > 0 && (
           <div className="enderecoLista">
             {enderecos.map((endereco) => (
               <div

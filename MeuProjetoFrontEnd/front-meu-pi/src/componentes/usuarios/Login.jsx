@@ -26,7 +26,7 @@ const Login = () => {
       console.log("Resposta da API:", response);
 
       // Extrai o grupo do usuário da resposta da API
-      const userGroup = response.grupo; // Certifique-se de que a API retorne o grupo
+      const userGroup = response.grupo; // Certifica de que a API retorna o grupo
 
       // Redireciona para a página home após o login bem-sucedido
       navigate("/home-site", { state: { userGroup } }); // Passa o grupo como estado
