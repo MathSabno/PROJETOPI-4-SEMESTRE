@@ -1,12 +1,12 @@
 /**********************************DAQUI PARA BAIXO É O CSS DA TELA PEDIDOCLIENTE.JSX*******************************/
 /* Estados de carregamento e erro */
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.5;
-    color: var(--dark-color);
-    background-color: #f1f5f9;
-  }
-  
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  color: var(--dark-color);
+  background-color: #f1f5f9;
+}
+
 
 .carregando,
 .erro {
@@ -105,9 +105,32 @@ body {
   font-weight: 600;
 }
 
+.botao-voltar {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to left, #21d4fd, #b721ff);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.botao-paginacao {
+  background: linear-gradient(to left, #21d4fd, #b721ff);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+
+}
+
 /* Botão de detalhes */
 .botao-detalhes {
-  background-color: var(--primary-color);
+  background: linear-gradient(to left, #21d4fd, #b721ff);
   color: white;
   border: none;
   padding: 0.5rem 1rem;

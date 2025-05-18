@@ -219,16 +219,16 @@
     .dadosContainer {
         padding: 10px 0;
     }
-    
+
     .dadosFormContainer {
         padding: 20px;
         margin: 10px;
     }
-    
+
     .formSection {
         padding: 15px;
     }
-    
+
     .enderecoEntregaGroup {
         padding: 15px;
     }
@@ -251,7 +251,7 @@ input[type="radio"] {
 }
 
 /* Garantia extra para labels de radio */
-.formGroup label > input[type="radio"] {
+.formGroup label>input[type="radio"] {
     vertical-align: middle;
     margin-top: -2px;
 }
