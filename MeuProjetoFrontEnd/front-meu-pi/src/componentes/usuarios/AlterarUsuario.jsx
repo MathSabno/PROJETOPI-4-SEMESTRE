@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import authService from "../../services/authService";
-import "../../estilos/alterarUsuario.css"; // Importando o arquivo CSS
+import styles from "../../estilos/alterarUsuario.module.css"; // Atualizado para CSS Module
 
 const AlterarUsuario = () => {
-  const { id } = useParams(); // Obtém o ID do usuário da URL
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const [nome, setNome] = useState("");
   const [cpf, setCpf] = useState("");
-  const [grupo, setGrupo] = useState("1"); // 1 = Administrador, 2 = Estoquista
+  const [grupo, setGrupo] = useState("1");
   const [senha, setSenha] = useState("");
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState("")
+  const [status, setStatus] = useState("");
   const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
   const [carregando, setCarregando] = useState(false);
 
-  // Carrega os dados do usuário ao abrir a tela
   useEffect(() => {
     const carregarUsuario = async () => {
       try {
@@ -63,7 +62,6 @@ const AlterarUsuario = () => {
   const handleAlteracao = async (e) => {
     e.preventDefault();
 
-    // Validações
     if (!nome || !cpf) {
       setErro("Nome e CPF são obrigatórios.");
       return;
@@ -74,7 +72,6 @@ const AlterarUsuario = () => {
       return;
     }
 
-    // Objeto de usuário para enviar à API
     const usuarioAtualizado = {
       id: parseInt(id),
       name: nome,
@@ -87,12 +84,11 @@ const AlterarUsuario = () => {
 
     setCarregando(true);
 
-    console.log(usuarioAtualizado);
     try {
-      await authService.atualizarUsuario(usuarioAtualizado); // Usando o serviço
+      await authService.atualizarUsuario(usuarioAtualizado);
       setMensagem("Usuário atualizado com sucesso!");
       setErro("");
-      setTimeout(() => navigate("/consulta-usuario"), 2000); // Redireciona após 2 segundos
+      setTimeout(() => navigate("/consulta-usuario"), 2000);
     } catch (error) {
       setErro(error.message || "Erro ao atualizar usuário.");
       setMensagem("");
@@ -102,64 +98,67 @@ const AlterarUsuario = () => {
   };
 
   return (
-    <div className="container">
-      <div className="formContainer">
-        <h1 className="titulo">Alterar Usuário</h1>
-        <form onSubmit={handleAlteracao} className="form">
-          <div className="wrapInput">
+    <div className={styles.container}>
+      <div className={styles.formContainer}>
+        <h1 className={styles.titulo}>Alterar Usuário</h1>
+        <form onSubmit={handleAlteracao} className={styles.form}>
+          <div className={styles.wrapInput}>
             <input
               type="text"
               id="nome"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              className="input"
+              className={styles.input}
               placeholder="Nome"
               required
             />
-            <span className="focusInput" data-placeholder="Nome"></span>
+            <span className={styles.focusInput} data-placeholder="Nome"></span>
           </div>
-          <div className="wrapInput">
+          <div className={styles.wrapInput}>
             <input
               type="text"
               id="cpf"
               value={cpf}
               onChange={(e) => setCpf(e.target.value)}
-              className="input"
+              className={styles.input}
               placeholder="CPF"
               required
             />
-            <span className="focusInput" data-placeholder="CPF"></span>
+            <span className={styles.focusInput} data-placeholder="CPF"></span>
           </div>
-          <div className="wrapInput">
+          <div className={styles.wrapInput}>
             <select
               id="grupo"
               value={grupo}
               onChange={(e) => setGrupo(e.target.value)}
-              className="input"
+              className={styles.input}
               required
             >
               <option value="1">Administrador</option>
               <option value="2">Estoquista</option>
             </select>
-            <span className="focusInput" data-placeholder="Grupo"></span>
+            <span className={styles.focusInput} data-placeholder="Grupo"></span>
           </div>
-          <div className="containerLoginFormBtn">
-            <button type="submit" className="loginFormBtn" disabled={carregando}>
+          <div className={styles.containerLoginFormBtn}>
+            <button
+              type="submit"
+              className={styles.loginFormBtn}
+              disabled={carregando}
+            >
               {carregando ? "Carregando..." : "Salvar Alterações"}
             </button>
           </div>
         </form>
-        {/* Botão de Voltar */}
-        <div className="containerLoginFormBtn">
+        <div className={styles.containerLoginFormBtn}>
           <button
-            onClick={() => navigate("/consulta-usuario")} // Redireciona para a consulta de usuários
-            className="loginFormBtn"
+            onClick={() => navigate("/consulta-usuario")}
+            className={styles.loginFormBtn}
           >
             Voltar
           </button>
         </div>
-        {erro && <p className="erro">{erro}</p>}
-        {mensagem && <p className="mensagem">{mensagem}</p>}
+        {erro && <p className={styles.erro}>{erro}</p>}
+        {mensagem && <p className={styles.mensagem}>{mensagem}</p>}
       </div>
     </div>
   );

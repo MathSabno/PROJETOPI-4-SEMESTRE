@@ -25,6 +25,11 @@ const HomeSite = () => {
               Consultar Usuário
             </button>
           )}
+          {userGroup === 2 && (
+            <button onClick={() => navigate("/consultar-pedido")} className="loginFormBtn">
+              Consultar Pedidos
+            </button>
+          )}
         </div>
       </div>
     </div>

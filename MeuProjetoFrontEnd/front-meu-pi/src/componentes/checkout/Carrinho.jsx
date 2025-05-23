@@ -54,7 +54,6 @@ const gerenciarCarrinho = {
   }
 };
 
-
 // Opções de frete
 const opcoesFrete = [
   { id: 1, nome: "Envio rápido", valor: 20.00 },
@@ -63,7 +62,7 @@ const opcoesFrete = [
 ];
 
 const Carrinho = () => {
-  // 1. Declaração de todos os hooks primeiro
+  // Declaração de todos os hooks primeiro
   const navigate = useNavigate();
   const location = useLocation();
   const [itens, setItens] = useState([]);
@@ -71,22 +70,21 @@ const Carrinho = () => {
   const [erro, setErro] = useState("");
   const [freteSelecionado, setFreteSelecionado] = useState(opcoesFrete[0]);
 
-  // 2. Extrair dados do state APÓS os hooks
+  // Extrair dados do state APÓS os hooks
   const userId = location.state?.userId;
   const userNome = location.state?.userNome;
 
-  // 3. Efeitos devem vir antes de condicionais
   useEffect(() => {
     console.log("Dados recebidos no Carrinho:", location.state);
   }, [location.state]);
 
-  // 4. Função para atualizar contador
+  // Função para atualizar contador
   const atualizarContadorCarrinho = () => {
     const totalItens = gerenciarCarrinho.get().reduce((acc, item) => acc + item.quantidade, 0);
     document.dispatchEvent(new CustomEvent('carrinhoAtualizado', { detail: totalItens }));
   };
 
-  // 5. ÚNICO useEffect para carregar o carrinho
+  // ÚNICO useEffect para carregar o carrinho
   useEffect(() => {
     const carregarCarrinho = () => {
       try {
@@ -113,26 +111,6 @@ const Carrinho = () => {
 
     carregarCarrinho();
   }, [location, navigate]);
-
-  // 6. Verificação condicional APÓS todos os hooks
-  if (!userId || !userNome) {
-    return (
-      <div className="container">
-        <div className="formContainer">
-          <h1 className="titulo">Meu Carrinho</h1>
-          <div className="usuarioNaoLogado">
-            <p className="mensagem">Para acessar o carrinho, faça seu cadastro!</p>
-            <button
-              onClick={() => navigate("/cadastro-cliente")}
-              className="loginFormBtn"
-            >
-              Cadastrar Agora
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   const removerItem = (id) => {
     const novosItens = gerenciarCarrinho.removerItem(id);
@@ -167,6 +145,13 @@ const Carrinho = () => {
   };
 
   const finalizarCompra = () => {
+    // Validação de cliente logado no clique de finalizar compra
+    if (!userId || !userNome) {
+      alert("Você precisa estar logado para finalizar a compra.");
+      navigate("/login-cliente");  // Redireciona para página de login, por exemplo
+      return;
+    }
+
     navigate("/checkout", {
       state: {
         itens,

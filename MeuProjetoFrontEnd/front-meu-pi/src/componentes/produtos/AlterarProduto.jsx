@@ -170,7 +170,8 @@ const AlterarProduto = () => {
       <div className="formContainer">
         <h1 className="titulo">Alterar Produto</h1>
         <form onSubmit={handleAtualizar} className="form" encType="multipart/form-data">
-          {/* Campo: Nome */}
+
+          {/* Nome */}
           <div className="wrapInput">
             <input
               type="text"
@@ -178,12 +179,12 @@ const AlterarProduto = () => {
               onChange={(e) => setNome(e.target.value)}
               placeholder="Nome"
               required
-              disabled={isGrupo2} // Desabilita se o grupo for 2
+              disabled={isGrupo2}
             />
             <span className="focusInput" data-placeholder="Nome"></span>
           </div>
 
-          {/* Campo: Descrição */}
+          {/* Descrição */}
           <div className="wrapInput">
             <input
               type="text"
@@ -191,12 +192,12 @@ const AlterarProduto = () => {
               onChange={(e) => setDescricao(e.target.value)}
               placeholder="Descrição"
               required
-              disabled={isGrupo2} // Desabilita se o grupo for 2
+              disabled={isGrupo2}
             />
             <span className="focusInput" data-placeholder="Descrição"></span>
           </div>
 
-          {/* Campo: Avaliação */}
+          {/* Avaliação */}
           <div className="wrapInput">
             <input
               type="number"
@@ -207,12 +208,12 @@ const AlterarProduto = () => {
               max={5}
               step={0.5}
               required
-              disabled={isGrupo2} // Desabilita se o grupo for 2
+              disabled={isGrupo2}
             />
             <span className="focusInput" data-placeholder="Avaliação"></span>
           </div>
 
-          {/* Campo: Preço */}
+          {/* Preço */}
           <div className="wrapInput">
             <CurrencyInput
               placeholder="Preço"
@@ -223,12 +224,12 @@ const AlterarProduto = () => {
               groupSeparator="."
               prefix="R$ "
               required
-              disabled={isGrupo2} // Desabilita se o grupo for 2
+              disabled={isGrupo2}
             />
             <span className="focusInput" data-placeholder="Preço"></span>
           </div>
 
-          {/* Campo: Quantidade em Estoque */}
+          {/* Quantidade em estoque */}
           <div className="wrapInput">
             <input
               type="number"
@@ -237,70 +238,68 @@ const AlterarProduto = () => {
               placeholder="Quantidade em Estoque"
               min={0}
               required
-            // O campo de quantidade NÃO é desabilitado, mesmo para o grupo 2
             />
             <span className="focusInput" data-placeholder="Quantidade em Estoque"></span>
           </div>
 
-          {/* Upload de novas imagens */}
+          {/* Upload de imagens */}
           <div className="wrapInput">
             <input
               type="file"
               onChange={handleImagensChange}
               multiple
-              disabled={isGrupo2} // Desabilita se o grupo for 2
+              disabled={isGrupo2}
             />
-            <span className="focusInput" data-placeholder="Novas Imagens"></span>
+            <span className="focusInput" data-placeholder="Imagens"></span>
           </div>
 
-          {/* Prévia das imagens existentes e novas */}
+          {/* Pré-visualização de imagens */}
           {(imagensExistentes.length > 0 || imagens.length > 0) && (
             <div className="wrapInput">
-              <label>Imagens:</label>
               {imagensExistentes.map((imagem, index) => (
-                <div key={index}>
+                <div key={index} className="imagemPreview">
                   <img
                     src={`https://localhost:7075/${imagem.caminhoImg}`}
                     alt={`Imagem ${index}`}
-                    style={{ width: '50px', height: '50px', marginRight: '10px' }}
                   />
-                  <input
-                    type="checkbox"
-                    checked={imagensParaRemover.includes(imagem.id)}
-                    onChange={() => handleRemoverImagem(imagem.id)}
-                    disabled={isGrupo2} // Desabilita se o grupo for 2
-                  />
-                  <label>Remover</label>
-                  <input
-                    type="radio"
-                    name="imagemPadrao"
-                    value={index}
-                    onChange={() => handleImagemPadraoChange(index)}
-                    disabled={isGrupo2} // Desabilita se o grupo for 2
-                  />
-                  <label>Padrão</label>
+                  <div>
+                    <input
+                      type="checkbox"
+                      checked={imagensParaRemover.includes(imagem.id)}
+                      onChange={() => handleRemoverImagem(imagem.id)}
+                      disabled={isGrupo2}
+                    />
+                    <label>Remover</label>
+                    <input
+                      type="radio"
+                      name="imagemPadrao"
+                      value={index}
+                      onChange={() => handleImagemPadraoChange(index)}
+                      disabled={isGrupo2}
+                    />
+                    <label>Padrão</label>
+                  </div>
                 </div>
               ))}
               {imagens.map((imagem, index) => (
-                <div key={index + imagensExistentes.length}>
+                <div key={index + imagensExistentes.length} className="imagemPreview">
                   <img
                     src={URL.createObjectURL(imagem)}
                     alt={imagem.name}
-                    style={{ width: '50px', height: '50px', marginRight: '10px' }}
                   />
                   <input
                     type="radio"
                     name="imagemPadrao"
                     value={index + imagensExistentes.length}
                     onChange={() => handleImagemPadraoChange(index + imagensExistentes.length)}
-                    disabled={isGrupo2} // Desabilita se o grupo for 2
+                    disabled={isGrupo2}
                   />
                 </div>
               ))}
             </div>
           )}
 
-          {/* Botão de atualização */}
+          {/* Botões */}
           <div className="containerLoginFormBtn">
             <button type="submit" className="loginFormBtn">
               {carregando ? "Carregando..." : "Atualizar"}
@@ -308,15 +307,19 @@ const AlterarProduto = () => {
           </div>
 
           <div className="containerLoginFormBtn">
-            <button onClick={() => navigate("/consultar-produto", { state: { userGroup } })} type="submit" className="loginFormBtn">
-              {"Voltar"}
+            <button
+              type="button"
+              className="loginFormBtn"
+              onClick={() => navigate("/consultar-produto", { state: { userGroup } })}
+            >
+              Voltar
             </button>
           </div>
-        </form>
 
-        {/* Mensagens de erro e sucesso */}
-        {erro && <p className="erro">{erro}</p>}
-        {mensagem && <p className="mensagem">{mensagem}</p>}
+          {/* Mensagens */}
+          {erro && <p className="erro">{erro}</p>}
+          {mensagem && <p className="mensagem">{mensagem}</p>}
+        </form>
       </div>
     </div>
   );

@@ -22,12 +22,13 @@ import Checkout from "../componentes/checkout/Checkout";
 import CheckoutCarrinho from "../componentes/checkout/CheckoutCarrinho";
 import ResumoPedido from "../componentes/checkout/ResumoPedido";
 import PedidoCliente from "../componentes/clientes/PedidoCliente";
+import ConsultarPedido from "../componentes/usuarios/ConsultarPedido";
 
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ListagemDeProdutos />} />
+        <Route path="/" element={<Login />} />
         <Route path="/home-site" element={<HomeSite />} />
         <Route path="/alterar-usuario/:id" element={<AlterarUsuario />} />
         <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
@@ -49,7 +50,7 @@ const AppRoutes = () => {
         <Route path="/checkout-carrinho" element={<CheckoutCarrinho />} />
         <Route path="/resumo-pedido" element={<ResumoPedido />} />
         <Route path="/pedido-cliente" element={<PedidoCliente />} />
-
+        <Route path="/consultar-pedido" element={<ConsultarPedido />} /> 
       </Routes>
     </Router>
   );

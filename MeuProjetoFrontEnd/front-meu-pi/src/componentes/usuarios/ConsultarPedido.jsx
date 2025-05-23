@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import authService from "../../services/authService";
-import styles from "../../estilos/pedidoCliente.module.css"; // Importa o CSS Module
+import styles from "../../estilos/alterarStatusPedido.module.css"; // Importando o CSS Module
 
-const PedidoCliente = () => {
+const ConsultarPedido = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [pedidos, setPedidos] = useState([]);
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState("");
     const [paginaAtual, setPaginaAtual] = useState(1);
-    const [pedidoSelecionado, setPedidoSelecionado] = useState(null);
     const itensPorPagina = 10;
 
+    // Extrair dados do usuário
     const { userId, userNome } = location.state || {};
 
+    // Calcular índices de paginação
     const indiceUltimoItem = paginaAtual * itensPorPagina;
     const indicePrimeiroItem = indiceUltimoItem - itensPorPagina;
     const pedidosAtuais = pedidos.slice(indicePrimeiroItem, indiceUltimoItem);
@@ -47,18 +48,10 @@ const PedidoCliente = () => {
         return new Date(dataString).toLocaleDateString('pt-BR', options);
     };
 
-    const handleDetalhesPedido = (pedido) => {
-        setPedidoSelecionado(pedido);
-    };
-
-    const handleFecharModal = () => {
-        setPedidoSelecionado(null);
-    };
-
     const handleLogout = () => {
         if (window.confirm("Deseja realmente sair da sua sessão?")) {
             authService.logout();
-            navigate("/listagem-de-produtos");
+            navigate("/login");
         }
     };
 
@@ -71,6 +64,7 @@ const PedidoCliente = () => {
         });
     };
 
+    // Funções de navegação entre páginas
     const proximaPagina = () => {
         if (paginaAtual < totalPaginas) {
             setPaginaAtual(paginaAtual + 1);
@@ -83,13 +77,35 @@ const PedidoCliente = () => {
         }
     };
 
+    // Função para alterar o status do pedido
+    const handleAlterarStatus = async (pedidoId) => {
+        const status = prompt("Digite o novo status do pedido (ex: 'Em andamento', 'Concluído', 'Cancelado'):");
+
+        if (status) {
+            try {
+                // Enviar a atualização para o back-end
+                const response = await authService.atualizarStatusPedido(pedidoId, status);
+                alert("Status do pedido alterado com sucesso!");
+                // Atualizar a lista de pedidos no front-end após a alteração
+                setPedidos((prevPedidos) =>
+                    prevPedidos.map((pedido) =>
+                        pedido.id === pedidoId ? { ...pedido, statusPedido: status } : pedido
+                    )
+                );
+            } catch (error) {
+                alert("Erro ao alterar o status do pedido.");
+                console.error("Erro ao alterar status:", error);
+            }
+        }
+    };
+
     return (
         <div className={styles.container}>
             <div className={styles.listaPedidos}>
                 <h1 className={styles.titulo}>Meus Pedidos</h1>
 
                 {carregando ? (
-                    <p className={styles.carregando}>Carregando pedidos...</p>
+                    <p>Carregando pedidos...</p>
                 ) : erro ? (
                     <p className={styles.erro}>{erro}</p>
                 ) : (
@@ -112,16 +128,16 @@ const PedidoCliente = () => {
                                             <td>{formatarData(pedido.dataPedido)}</td>
                                             <td>R$ {pedido.valorTotal.toFixed(2)}</td>
                                             <td>
-                                                <span className={`${styles.statusPago}`}>
+                                                <span className={`status-${pedido.statusPedido.toLowerCase()}`}>
                                                     {pedido.statusPedido}
                                                 </span>
                                             </td>
                                             <td>
                                                 <button
-                                                    className={styles.botaoDetalhes}
-                                                    onClick={() => handleDetalhesPedido(pedido)}
+                                                    className={styles.botaoAlterarStatus}
+                                                    onClick={() => handleAlterarStatus(pedido.id)} // Alterando o status
                                                 >
-                                                    Mais Detalhes
+                                                    Alterar status
                                                 </button>
                                             </td>
                                         </tr>
@@ -130,6 +146,7 @@ const PedidoCliente = () => {
                             </table>
                         </div>
 
+                        {/* Controles de Paginação */}
                         <div className={styles.controlesPaginacao}>
                             <button
                                 onClick={paginaAnterior}
@@ -154,22 +171,8 @@ const PedidoCliente = () => {
                     </>
                 )}
             </div>
-
-            {/* Modal para mostrar os detalhes do pedido */}
-            {pedidoSelecionado && (
-                <div className={styles.modal}>
-                    <div className={styles.modalConteudo}>
-                        <h2>Detalhes do Pedido</h2>
-                        <p><strong>ID do Pedido:</strong> #{pedidoSelecionado.id}</p>
-                        <p><strong>Data:</strong> {formatarData(pedidoSelecionado.dataPedido)}</p>
-                        <p><strong>Valor Total:</strong> R$ {pedidoSelecionado.valorTotal.toFixed(2)}</p>
-                        <p><strong>Status:</strong> {pedidoSelecionado.statusPedido}</p>
-                        <button onClick={handleFecharModal}>Fechar</button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 };
 
-export default PedidoCliente;
+export default ConsultarPedido;

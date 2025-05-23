@@ -70,7 +70,7 @@ const atualizarProduto = async (formData) => {
         "Content-Type": "multipart/form-data", // Define o tipo de conteúdo como FormData
       },
     });
-    return response.data; 
+    return response.data;
   } catch (error) {
     throw error.response?.data || "Erro ao atualizar produto.";
   }
@@ -144,9 +144,20 @@ const listarPedidos = async () => {
   }
 };
 
+const atualizarStatusPedido = async (pedidoId, novoStatus) => {
+  try {
+    const response = await api.put(`/Pedido/AlterarStatus/${pedidoId}`, {
+      status: novoStatus // Enviar o novo status no corpo como um objeto
+    });
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || "Erro ao atualizar status do pedido.";
+  }
+};
+
 const logout = () => {
   localStorage.removeItem("token");
   localStorage.removeItem("userData");
 };
 
-export default { login, listarUsuarios, cadastrarUsuario, atualizarUsuario, alterarSenha, listarProdutos, atualizarProduto, cadastrarProduto, cadastrarCliente, atualizarCliente, listarClientes, loginCliente, logout, alterarSenhaCliente, cadastrarPedido, listarPedidos};
+export default { login, listarUsuarios, cadastrarUsuario, atualizarUsuario, alterarSenha, listarProdutos, atualizarProduto, cadastrarProduto, cadastrarCliente, atualizarCliente, listarClientes, loginCliente, logout, alterarSenhaCliente, cadastrarPedido, listarPedidos, atualizarStatusPedido};

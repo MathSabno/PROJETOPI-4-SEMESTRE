@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import authService from "../../services/authService";
 import { useNavigate } from "react-router-dom";
-import "../../estilos/cadastroProduto.css";
-import CurrencyInput from 'react-currency-input-field'; // Importe a biblioteca de formatação de moeda
+import "../../estilos/loginCliente.css"; // Usamos o mesmo CSS
+import CurrencyInput from 'react-currency-input-field';
 
 const CadastroProduto = () => {
   const navigate = useNavigate();
 
-  // Estados para os campos do formulário
   const [nome, setNome] = useState("");
   const [descricao, setDescricao] = useState("");
   const [avaliacao, setAvaliacao] = useState(1);
@@ -16,17 +15,18 @@ const CadastroProduto = () => {
   const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
   const [carregando, setCarregando] = useState(false);
-
-  // Estado para armazenar as imagens selecionadas
   const [imagens, setImagens] = useState([]);
-  const [imagemPadraoIndex, setImagemPadraoIndex] = useState(null); // Índice da imagem padrão
+  const [imagemPadraoIndex, setImagemPadraoIndex] = useState(null);
 
-  // Função para arredondar a avaliação
-  const arredondarAvaliacao = (valor) => {
-    return Math.floor(valor);
-  };
+  useEffect(() => {
+    document.body.classList.add("login-page-body");
+    return () => {
+      document.body.classList.remove("login-page-body");
+    };
+  }, []);
 
-  // Função para validar os campos do formulário
+  const arredondarAvaliacao = (valor) => Math.floor(valor);
+
   const validarCampos = () => {
     if (!nome || !descricao || !avaliacao || !preco || !quantidadeEstoque) {
       setErro("Todos os campos são obrigatórios.");
@@ -48,12 +48,8 @@ const CadastroProduto = () => {
       return false;
     }
 
-    // Converte o preço para número e valida
     const precoNumerico = parseFloat(
-      preco
-        .replace("R$", "") // Remove o prefixo "R$"
-        .replace(/\./g, "") // Remove os pontos (separadores de milhares)
-        .replace(",", ".") // Substitui a vírgula por ponto
+      preco.replace("R$", "").replace(/\./g, "").replace(",", ".")
     );
     if (isNaN(precoNumerico) || precoNumerico <= 0) {
       setErro("O preço deve ser um valor monetário válido.");
@@ -73,7 +69,6 @@ const CadastroProduto = () => {
     return true;
   };
 
-  // Função para lidar com a seleção de imagens
   const handleImagensChange = (e) => {
     const files = Array.from(e.target.files);
     const extensoesPermitidas = ['.jpg', '.jpeg', '.png', '.gif'];
@@ -92,7 +87,6 @@ const CadastroProduto = () => {
     setImagemPadraoIndex(null);
   };
 
-  // Função para definir a imagem padrão
   const handleImagemPadraoChange = (index) => {
     setImagemPadraoIndex(index);
   };
@@ -100,43 +94,32 @@ const CadastroProduto = () => {
   const handleCadastro = async (e) => {
     e.preventDefault();
 
-    // Valida os campos
     if (!validarCampos()) return;
 
-    // Arredonda a avaliação para o menor valor inteiro
     const avaliacaoArredondada = arredondarAvaliacao(avaliacao);
-
-    // Converte o preço para número
     const precoNumerico = parseFloat(
-      preco
-        .replace("R$", "") // Remove o prefixo "R$"
-        .replace(/\./g, "") // Remove os pontos (separadores de milhares)
-        .replace(",", ".") // Substitui a vírgula por ponto
+      preco.replace("R$", "").replace(/\./g, "").replace(",", ".")
     );
 
-    // Cria um objeto FormData para enviar os dados do produto e as imagens
     const formData = new FormData();
     formData.append("nome", nome);
     formData.append("descricao", descricao);
     formData.append("avaliacao", avaliacaoArredondada);
-    formData.append("preco", precoNumerico); // Usa o valor convertido
+    formData.append("preco", precoNumerico);
     formData.append("quantidadeEstoque", parseInt(quantidadeEstoque));
     formData.append("status", 1);
 
-    // Adiciona as imagens ao FormData
     imagens.forEach((imagem, index) => {
-      formData.append("imagens", imagem); // Adiciona cada imagem
+      formData.append("imagens", imagem);
       if (index === imagemPadraoIndex) {
-        formData.append("imagemPadraoIndex", index); // Define a imagem padrão
+        formData.append("imagemPadraoIndex", index);
       }
     });
 
-    console.log("Dados enviados:", formData); // Log para depuração
-
-    setCarregando(true); // Inicia o carregamento
+    setCarregando(true);
 
     try {
-      await authService.cadastrarProduto(formData); // Usando o serviço
+      await authService.cadastrarProduto(formData);
       setMensagem("Produto cadastrado com sucesso!");
       setErro("");
       setTimeout(() => navigate("/consultar-produto"), 2000);
@@ -149,112 +132,95 @@ const CadastroProduto = () => {
   };
 
   return (
-    <div className="container">
-      <div className="formContainer">
-        <h1 className="titulo">Cadastro de Produto</h1>
-        <form onSubmit={handleCadastro} className="form" encType="multipart/form-data">
-          {/* Campo: Nome */}
-          <div className="wrapInput">
+    <div className="login-container">
+      <div className="login-box">
+        <h2 className="login-title">Cadastro de Produto</h2>
+        <form onSubmit={handleCadastro} encType="multipart/form-data">
+          <div className="form-group">
+            <label htmlFor="nome">Nome</label>
             <input
               type="text"
               id="nome"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              className="input"
-              placeholder="Nome"
               maxLength={200}
               required
             />
-            <span className="focusInput" data-placeholder="Nome"></span>
           </div>
 
-          {/* Campo: Descrição */}
-          <div className="wrapInput">
+          <div className="form-group">
+            <label htmlFor="descricao">Descrição</label>
             <input
               type="text"
               id="descricao"
               value={descricao}
               onChange={(e) => setDescricao(e.target.value)}
-              className="input"
-              placeholder="Descrição"
               required
             />
-            <span className="focusInput" data-placeholder="Descrição"></span>
           </div>
 
-          {/* Campo: Avaliação */}
-          <div className="wrapInput">
+          <div className="form-group">
+            <label htmlFor="avaliacao">Avaliação (1 a 5)</label>
             <input
               type="number"
               id="avaliacao"
               value={avaliacao}
               onChange={(e) => setAvaliacao(parseFloat(e.target.value))}
-              className="input"
-              placeholder="Avaliação (1 a 5)"
               min={1}
               max={5}
               step={0.5}
               required
             />
-            <span className="focusInput" data-placeholder="Avaliação"></span>
           </div>
 
-          {/* Campo: Preço */}
-          <div className="wrapInput">
+          <div className="form-group">
+            <label htmlFor="preco">Preço</label>
             <CurrencyInput
               id="preco"
               name="preco"
               placeholder="Preço"
               value={preco}
               onValueChange={(value) => setPreco(value)}
-              decimalsLimit={2} // Limita a 2 casas decimais
-              decimalSeparator="," // Usa vírgula como separador decimal
-              groupSeparator="." // Usa ponto como separador de milhares
-              prefix="R$ " // Adiciona o prefixo de moeda
-              className="input"
+              decimalsLimit={2}
+              decimalSeparator=","
+              groupSeparator="."
+              prefix="R$ "
               required
             />
-            <span className="focusInput" data-placeholder="Preço"></span>
           </div>
 
-          {/* Campo: Quantidade em Estoque */}
-          <div className="wrapInput">
+          <div className="form-group">
+            <label htmlFor="quantidadeEstoque">Quantidade em Estoque</label>
             <input
               type="number"
               id="quantidadeEstoque"
               value={quantidadeEstoque}
               onChange={(e) => setQuantidadeEstoque(e.target.value)}
-              className="input"
-              placeholder="Quantidade em Estoque"
               min={0}
               required
             />
-            <span className="focusInput" data-placeholder="Quantidade em Estoque"></span>
           </div>
 
-          {/* Campo: Upload de Imagens */}
-          <div className="wrapInput">
+          <div className="form-group">
+            <label htmlFor="imagens">Imagens do Produto</label>
             <input
               type="file"
               id="imagens"
               onChange={handleImagensChange}
-              className="input"
-              multiple // Permite selecionar várias imagens
+              multiple
               required
             />
-            <span className="focusInput" data-placeholder="Imagens"></span>
           </div>
 
-          {/* Prévia das Imagens Carregadas */}
           {imagens.length > 0 && (
-            <div className="wrapInput">
-              <label>Imagens Carregadas:</label>
+            <div className="form-group">
+              <label>Pré-visualização:</label>
               {imagens.map((imagem, index) => (
                 <div key={index}>
                   <img
                     src={URL.createObjectURL(imagem)}
                     alt={imagem.name}
-                    style={{ width: '50px', height: '50px', marginRight: '10px' }}
+                    style={{ width: "50px", height: "50px", marginRight: "10px" }}
                   />
                   <input
                     type="radio"
@@ -268,24 +234,21 @@ const CadastroProduto = () => {
             </div>
           )}
 
-          {/* Botão de Cadastro */}
-          <div className="containerLoginFormBtn">
-            <button type="submit" className="loginFormBtn" disabled={carregando}>
-              {carregando ? "Carregando..." : "Cadastrar"}
-            </button>
-          </div>
-        </form>
+          {erro && <p className="mensagem erro">{erro}</p>}
+          {mensagem && <p className="mensagem">{mensagem}</p>}
 
-        {/* Botão de Voltar */}
-        <div className="containerLoginFormBtn">
-          <button onClick={() => navigate("/consultar-produto")} className="loginFormBtn">
+          <button type="submit" className="login-button" disabled={carregando}>
+            {carregando ? "Carregando..." : "Cadastrar Produto"}
+          </button>
+
+          <button
+            type="button"
+            className="login-button cadastro"
+            onClick={() => navigate("/consultar-produto")}
+          >
             Voltar
           </button>
-        </div>
-
-        {/* Mensagens de erro e sucesso */}
-        {erro && <p className="erro">{erro}</p>}
-        {mensagem && <p className="mensagem">{mensagem}</p>}
+        </form>
       </div>
     </div>
   );

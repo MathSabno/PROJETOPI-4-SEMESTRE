@@ -1,77 +1,81 @@
-import React, { useState } from "react";
-import authService from "../../services/authService"; // Importando o serviço de autenticação
-import { useNavigate } from "react-router-dom"; // Importando useNavigate para redirecionamento
-import "../../estilos/login.css"; // Importando o arquivo CSS
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import authService from "../../services/authService";
+import "../../estilos/login.css";
 
 const Login = () => {
   const navigate = useNavigate();
-
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [mensagem, setMensagem] = useState("");
+
+  useEffect(() => {
+    document.body.classList.add("login-page-body");
+    return () => {
+      document.body.classList.remove("login-page-body");
+    };
+  }, []);
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await authService.login(email, senha); // Usando o serviço de autenticação
+      const response = await authService.login(email, senha);
 
-      // Verifica o status do usuário
       if (response.status === 2) {
         setMensagem("USUÁRIO INATIVO NO SISTEMA");
-        return; // Impede o login e interrompe a execução da função
+        return;
       }
 
       setMensagem("Login realizado com sucesso!");
-      console.log("Resposta da API:", response);
-
-      // Extrai o grupo do usuário da resposta da API
-      const userGroup = response.grupo; // Certifica de que a API retorna o grupo
-
-      // Redireciona para a página home após o login bem-sucedido
-      navigate("/home-site", { state: { userGroup } }); // Passa o grupo como estado
+      const userGroup = response.grupo;
+      navigate("/home-site", { state: { userGroup } });
     } catch (error) {
-      setMensagem(error.message || "Erro ao fazer login");
       console.error("Erro ao fazer login:", error);
+      setMensagem(error.message || "Erro ao fazer login");
     }
   };
 
   return (
-    <div className="container">
-      <div className="formContainer">
-        <h1 className="titulo">Bem vindo</h1>
-        <form onSubmit={handleLogin} className="form">
-          <div className="wrapInput">
+    <div className="login-container">
+      <div className="login-box">
+        <h2 className="login-title">Login</h2>
+        <form onSubmit={handleLogin}>
+          <div className="form-group">
+            <label htmlFor="email">E-mail</label>
             <input
               type="email"
               id="email"
+              placeholder="Digite seu e-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="input"
-              placeholder="E-mail"
               required
             />
-            <span className="focusInput" data-placeholder="Email"></span>
           </div>
-          <div className="wrapInput">
+
+          <div className="form-group">
+            <label htmlFor="senha">Senha</label>
             <input
               type="password"
               id="senha"
+              placeholder="Digite sua senha"
               value={senha}
               onChange={(e) => setSenha(e.target.value)}
-              className="input"
-              placeholder="Senha"
               required
             />
-            <span className="focusInput" data-placeholder="Senha"></span>
           </div>
-          <div className="containerLoginFormBtn">
-            <button type="submit" className="loginFormBtn">
-              Entrar
-            </button>
-          </div>
+
+          {mensagem && <p className="mensagem">{mensagem}</p>}
+
+          <button type="submit" className="login-button">
+            Entrar
+          </button>
+
+          {/* Se quiser adicionar um botão de cadastro aqui no futuro */}
+          {/* <button type="button" className="login-button cadastro" onClick={() => navigate("/cadastro-admin")}>
+            Cadastrar
+          </button> */}
         </form>
-        {mensagem && <p className="mensagem">{mensagem}</p>}
       </div>
     </div>
   );

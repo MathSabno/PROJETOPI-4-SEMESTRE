@@ -47,4 +47,21 @@ public class PedidoController : ControllerBase
 
         return await context.Pedido.ToListAsync();
     }
+
+    [HttpPut("AlterarStatus/{pedidoId}")]
+    public async Task<IActionResult> AlterarStatusPedido(int pedidoId, [FromBody] AtualizarStatusPedidoModel statusPedidoModel)
+    {
+        var pedido = await _context.Pedido.FindAsync(pedidoId);
+
+        if (pedido == null)
+            return NotFound("Pedido não encontrado.");
+
+        pedido.StatusPedido = statusPedidoModel.Status; // Atualiza o status do pedido
+
+        _context.Pedido.Update(pedido);
+        await _context.SaveChangesAsync();
+
+        return Ok(pedido); // Retorna o pedido atualizado
+    }
+
 }

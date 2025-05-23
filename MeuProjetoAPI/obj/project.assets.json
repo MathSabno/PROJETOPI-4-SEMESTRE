@@ -5216,24 +5216,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\moliv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
+      "projectUniqueName": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
       "projectName": "MeuProjetoAPI",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\p.i\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\obj\\",
+      "projectPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\MeuProjetoAPI.csproj",
+      "packagesPath": "C:\\Users\\moliv\\.nuget\\packages\\",
+      "outputPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\moliv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5241,6 +5236,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5258,8 +5254,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -5313,7 +5308,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
