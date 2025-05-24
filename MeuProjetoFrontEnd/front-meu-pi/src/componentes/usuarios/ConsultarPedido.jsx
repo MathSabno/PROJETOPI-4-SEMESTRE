@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import authService from "../../services/authService";
-import styles from "../../estilos/alterarStatusPedido.module.css"; // Importando o CSS Module
+import styles from "../../estilos/alterarStatusPedido.module.css";
 
 const ConsultarPedido = () => {
     const navigate = useNavigate();
@@ -12,14 +12,16 @@ const ConsultarPedido = () => {
     const [paginaAtual, setPaginaAtual] = useState(1);
     const itensPorPagina = 10;
 
-    // Extrair dados do usuário
     const { userId, userNome } = location.state || {};
 
-    // Calcular índices de paginação
     const indiceUltimoItem = paginaAtual * itensPorPagina;
     const indicePrimeiroItem = indiceUltimoItem - itensPorPagina;
     const pedidosAtuais = pedidos.slice(indicePrimeiroItem, indiceUltimoItem);
     const totalPaginas = Math.ceil(pedidos.length / itensPorPagina);
+
+    const [pedidoSelecionado, setPedidoSelecionado] = useState(null);
+    const [novoStatus, setNovoStatus] = useState("");
+    const [mostrarModal, setMostrarModal] = useState(false);
 
     useEffect(() => {
         const buscarPedidos = async () => {
@@ -64,7 +66,6 @@ const ConsultarPedido = () => {
         });
     };
 
-    // Funções de navegação entre páginas
     const proximaPagina = () => {
         if (paginaAtual < totalPaginas) {
             setPaginaAtual(paginaAtual + 1);
@@ -77,25 +78,30 @@ const ConsultarPedido = () => {
         }
     };
 
-    // Função para alterar o status do pedido
-    const handleAlterarStatus = async (pedidoId) => {
-        const status = prompt("Digite o novo status do pedido (ex: 'Em andamento', 'Concluído', 'Cancelado'):");
+    const handleAlterarStatus = (pedidoId) => {
+        setPedidoSelecionado(pedidoId);
+        setMostrarModal(true);
+    };
 
-        if (status) {
-            try {
-                // Enviar a atualização para o back-end
-                const response = await authService.atualizarStatusPedido(pedidoId, status);
-                alert("Status do pedido alterado com sucesso!");
-                // Atualizar a lista de pedidos no front-end após a alteração
-                setPedidos((prevPedidos) =>
-                    prevPedidos.map((pedido) =>
-                        pedido.id === pedidoId ? { ...pedido, statusPedido: status } : pedido
-                    )
-                );
-            } catch (error) {
-                alert("Erro ao alterar o status do pedido.");
-                console.error("Erro ao alterar status:", error);
-            }
+    const confirmarAlteracaoStatus = async () => {
+        if (!novoStatus) return;
+
+        try {
+            await authService.atualizarStatusPedido(pedidoSelecionado, novoStatus);
+            alert("Status do pedido alterado com sucesso!");
+
+            setPedidos((prevPedidos) =>
+                prevPedidos.map((pedido) =>
+                    pedido.id === pedidoSelecionado ? { ...pedido, statusPedido: novoStatus } : pedido
+                )
+            );
+
+            setMostrarModal(false);
+            setPedidoSelecionado(null);
+            setNovoStatus("");
+        } catch (error) {
+            alert("Erro ao alterar o status do pedido.");
+            console.error("Erro ao alterar status:", error);
         }
     };
 
@@ -135,7 +141,7 @@ const ConsultarPedido = () => {
                                             <td>
                                                 <button
                                                     className={styles.botaoAlterarStatus}
-                                                    onClick={() => handleAlterarStatus(pedido.id)} // Alterando o status
+                                                    onClick={() => handleAlterarStatus(pedido.id)}
                                                 >
                                                     Alterar status
                                                 </button>
@@ -146,7 +152,6 @@ const ConsultarPedido = () => {
                             </table>
                         </div>
 
-                        {/* Controles de Paginação */}
                         <div className={styles.controlesPaginacao}>
                             <button
                                 onClick={paginaAnterior}
@@ -171,6 +176,36 @@ const ConsultarPedido = () => {
                     </>
                 )}
             </div>
+
+            {/* Modal para alterar status */}
+            {mostrarModal && (
+                <div className={styles.modal}>
+                    <div className={styles.modalConteudo}>
+                        <h2>Alterar Status do Pedido</h2>
+                        <select
+                            value={novoStatus}
+                            onChange={(e) => setNovoStatus(e.target.value)}
+                            className={styles.selectStatus}
+                        >
+                            <option value="">Selecione um status</option>
+                            <option value="Aguardando pagamento">Aguardando pagamento</option>
+                            <option value="Pagamento rejeitado">Pagamento rejeitado</option>
+                            <option value="Pagamento com sucesso">Pagamento com sucesso</option>
+                            <option value="Aguardando retirada">Aguardando retirada</option>
+                            <option value="Em trânsito">Em trânsito</option>
+                            <option value="Entregue">Entregue</option>
+                        </select>
+                        <div className={styles.modalBotoes}>
+                            <button onClick={confirmarAlteracaoStatus} className={styles.botaoConfirmar}>
+                                Confirmar
+                            </button>
+                            <button onClick={() => setMostrarModal(false)} className={styles.botaoCancelar}>
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

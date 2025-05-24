@@ -1,5 +1,3 @@
-/* pedidoCliente.module.css */
-
 /* Container principal */
 .container {
     display: flex;
@@ -7,17 +5,29 @@
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
-    background-color: #f4f4f4; /* Cor de fundo mais suave */
+    background-color: #f4f4f4;
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
     position: relative;
-    overflow: hidden; /* Impede a rolagem enquanto o modal estiver aberto */
+    overflow: hidden;
+    flex-direction: column;
 }
 
 /* Lista de Pedidos */
 .listaPedidos {
-    z-index: 1; /* Garante que o conteúdo da lista de pedidos fique abaixo do modal */
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Título */
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
 }
 
 /* Modal */
@@ -32,7 +42,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    backdrop-filter: blur(5px); /* Adiciona o efeito de desfoque no fundo */
+    backdrop-filter: blur(5px);
 }
 
 /* Conteúdo do Modal */
@@ -43,85 +53,96 @@
     width: 400px;
     text-align: center;
     position: relative;
-    z-index: 1100; /* Garante que o conteúdo do modal fique acima do fundo */
+    z-index: 1100;
 }
 
-/* Estilos dos Botões */
-button {
+/* Estilo base dos botões */
+button,
+.botaoDetalhes,
+.botaoPaginacao {
     padding: 10px 20px;
     margin-top: 10px;
-    background: #007BFF;
+    background: linear-gradient(to left, #21d4fd, #b721ff);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
 }
 
-button:hover {
+button:hover,
+.botaoDetalhes:hover,
+.botaoPaginacao:hover {
     background: #0056b3;
 }
 
-/* Tabela de pedidos */
-.tabela-pedidos {
+/* Container da tabela de pedidos */
+.tabelaPedidos {
     margin: 2rem 0;
     overflow-x: auto;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: white;
 }
 
-.tabela-pedidos table {
+/* Estilo da tabela */
+.tabelaPedidos table {
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
 }
 
-.tabela-pedidos th,
-.tabela-pedidos td {
+.tabelaPedidos th,
+.tabelaPedidos td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #e5e7eb;
 }
 
-.tabela-pedidos th {
+.tabelaPedidos th {
     background-color: #f1f5f9;
-    color: var(--dark-color);
+    color: #333;
     font-weight: 600;
     font-size: 0.95rem;
     text-transform: uppercase;
 }
 
-.tabela-pedidos tr:hover {
+.tabelaPedidos tr:hover {
     background-color: #f9fafb;
 }
 
-/* Estilo dos Botões de Detalhes */
-.botao-detalhes {
-    background: linear-gradient(to left, #21d4fd, #b721ff);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    font-weight: 500;
-    cursor: pointer;
-    transition: var(--transition);
+/* Status */
+.statusPago {
+    font-weight: bold;
+    color: green;
 }
 
-.botao-detalhes:hover {
-    background-color: var(--primary-hover);
+/* Controles de paginação */
+.controlesPaginacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
-/* Responsividade para tabela */
+.infoPagina {
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  .tabela-pedidos table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-  }
+    .tabelaPedidos table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
 
-  .tabela-pedidos th,
-  .tabela-pedidos td {
-    padding: 0.75rem;
-    font-size: 0.9rem;
-  }
+    .tabelaPedidos th,
+    .tabelaPedidos td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
 }
