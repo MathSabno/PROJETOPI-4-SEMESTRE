@@ -30,6 +30,7 @@ const Login = () => {
       setMensagem("Login realizado com sucesso!");
       const userGroup = response.grupo;
       navigate("/home-site", { state: { userGroup } });
+      
     } catch (error) {
       console.error("Erro ao fazer login:", error);
       setMensagem(error.message || "Erro ao fazer login");

@@ -12,15 +12,15 @@ public class LoginController : ControllerBase
 {
     [HttpPost]
     [Route("Login")]
-    public async Task<IActionResult> Login([FromBody] UsuarioLoginManipulador usuario)
+    public async Task<IActionResult> Login([FromBody] UsuarioLoginComandoEntrada usuario)
     {
         // Verifica se os dados do usuário são válidos
-        if (usuario is null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(usuario.Email))
+        if (usuario is null || string.IsNullOrWhiteSpace(usuario.Senha) || string.IsNullOrWhiteSpace(usuario.Email)) 
             return BadRequest("Email e senha são obrigatórios.");
 
-        using var context = new SiteDbContext(); // Criando uma nova instância do DbContext
-
-        // Busca o usuário pelo email (não compara a senha ainda)
+        using var context = new SiteDbContext(); //Criando uma nova instância do DbContext
+        
+        //Busca o usuário pelo email (não compara a senha ainda)
         var usuarioExistente = await context.Usuario
             .FirstOrDefaultAsync(x => x.Email == usuario.Email);
 
@@ -38,14 +38,14 @@ public class LoginController : ControllerBase
         return Ok(new
         {
             Mensagem = "Login realizado com sucesso.",
-            Grupo = usuarioExistente.Grupo, // Retorna o grupo do usuário
-            Status = usuarioExistente.Status
+            usuarioExistente.Grupo,
+            usuarioExistente.Status
         });
     }
 
     [HttpPost]
     [Route("LoginCliente")]
-    public async Task<IActionResult> LoginCliente([FromBody] ClienteLoginManipulador usuario)
+    public async Task<IActionResult> LoginCliente([FromBody] ClienteLoginComandoEntrada usuario)
     {
         // Verifica se os dados do usuário são válidos
         if (usuario is null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(usuario.Email))

@@ -67,7 +67,7 @@ const atualizarProduto = async (formData) => {
   try {
     const response = await api.put("/Produto/UpdateProduto", formData, {
       headers: {
-        "Content-Type": "multipart/form-data", // Define o tipo de conteúdo como FormData
+        "Content-Type": "multipart/form-data", 
       },
     });
     return response.data;
