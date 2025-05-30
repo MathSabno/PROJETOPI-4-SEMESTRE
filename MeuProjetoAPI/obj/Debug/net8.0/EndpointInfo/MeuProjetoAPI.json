@@ -413,6 +413,48 @@
         }
       }
     },
+    "/api/Pedido/AlterarStatus/{pedidoId}": {
+      "put": {
+        "tags": [
+          "Pedido"
+        ],
+        "parameters": [
+          {
+            "name": "pedidoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarStatusPedidoModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarStatusPedidoModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarStatusPedidoModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Produto/CreateProduto": {
       "post": {
         "tags": [
@@ -971,6 +1013,16 @@
             "items": {
               "$ref": "#/components/schemas/EnderecoEntregaModel"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AtualizarStatusPedidoModel": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
             "nullable": true
           }
         },
