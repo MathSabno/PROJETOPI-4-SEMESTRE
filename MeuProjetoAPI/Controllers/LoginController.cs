@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MeuProjetoAPI.Manipuladores;
-using BCrypt.Net; 
 
 namespace MeuProjetoAPI.Controllers;
 
@@ -10,18 +9,23 @@ namespace MeuProjetoAPI.Controllers;
 [ApiController]
 public class LoginController : ControllerBase
 {
+    private readonly SiteDbContext _context;
+
+    public LoginController(SiteDbContext context)
+    {
+        _context = context;
+    }
+
     [HttpPost]
     [Route("Login")]
     public async Task<IActionResult> Login([FromBody] UsuarioLoginComandoEntrada usuario)
     {
+
         // Verifica se os dados do usuário são válidos
-        if (usuario is null || string.IsNullOrWhiteSpace(usuario.Senha) || string.IsNullOrWhiteSpace(usuario.Email)) 
+        if (usuario is null || string.IsNullOrWhiteSpace(usuario.Senha) || string.IsNullOrWhiteSpace(usuario.Email))
             return BadRequest("Email e senha são obrigatórios.");
 
-        using var context = new SiteDbContext(); //Criando uma nova instância do DbContext
-        
-        //Busca o usuário pelo email (não compara a senha ainda)
-        var usuarioExistente = await context.Usuario
+        var usuarioExistente = await _context.Usuario
             .FirstOrDefaultAsync(x => x.Email == usuario.Email);
 
         // Verifica se o usuário existe
@@ -51,10 +55,7 @@ public class LoginController : ControllerBase
         if (usuario is null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(usuario.Email))
             return BadRequest("Email e senha são obrigatórios.");
 
-        using var context = new SiteDbContext(); // Criando uma nova instância do DbContext
-
-        // Busca o usuário pelo email (não compara a senha ainda)
-        var usuarioExistente = await context.Cliente
+        var usuarioExistente = await _context.Usuario
             .FirstOrDefaultAsync(x => x.Email == usuario.Email);
 
         // Verifica se o usuário existe
@@ -73,7 +74,7 @@ public class LoginController : ControllerBase
             Mensagem = "Login realizado com sucesso.",
             Id = usuarioExistente.Id,
             Nome = usuarioExistente.Name // Retorna o nome do usuário
-            
+
         });
     }
 }

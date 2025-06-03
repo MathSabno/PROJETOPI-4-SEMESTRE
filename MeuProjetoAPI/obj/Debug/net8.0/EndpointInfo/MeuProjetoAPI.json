@@ -291,17 +291,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioLoginManipulador"
+                "$ref": "#/components/schemas/UsuarioLoginComandoEntrada"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioLoginManipulador"
+                "$ref": "#/components/schemas/UsuarioLoginComandoEntrada"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioLoginManipulador"
+                "$ref": "#/components/schemas/UsuarioLoginComandoEntrada"
               }
             }
           }
@@ -322,17 +322,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteLoginManipulador"
+                "$ref": "#/components/schemas/ClienteLoginComandoEntrada"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteLoginManipulador"
+                "$ref": "#/components/schemas/ClienteLoginComandoEntrada"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ClienteLoginManipulador"
+                "$ref": "#/components/schemas/ClienteLoginComandoEntrada"
               }
             }
           }
@@ -1110,7 +1110,7 @@
         },
         "additionalProperties": false
       },
-      "ClienteLoginManipulador": {
+      "ClienteLoginComandoEntrada": {
         "type": "object",
         "properties": {
           "email": {
@@ -1387,7 +1387,7 @@
         },
         "additionalProperties": false
       },
-      "UsuarioLoginManipulador": {
+      "UsuarioLoginComandoEntrada": {
         "type": "object",
         "properties": {
           "email": {

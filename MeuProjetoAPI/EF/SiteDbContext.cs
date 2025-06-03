@@ -7,7 +7,7 @@ public class SiteDbContext : DbContext
 {
     public SiteDbContext() { }
     public SiteDbContext(DbContextOptions<SiteDbContext> options) : base(options) { }
-    public DbSet<UsuarioEntidade> Usuario { get; set; } = null!;
+    public virtual DbSet<UsuarioEntidade> Usuario { get; set; } = null!;
     public DbSet<ProdutoEntidade> Produto { get; set; } = null!;
     public DbSet<ImagemEntidade> Imagem { get; set; } = null!;
     public DbSet<ClienteEntidade> Cliente { get; set; } = null!;
@@ -18,7 +18,7 @@ public class SiteDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         if (!options.IsConfigured)
-        {   
+        {
             options.UseSqlServer("Server=(LOCAL)\\SQLEXPRESS;Database=PROJETOPI;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }

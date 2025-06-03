@@ -3,32 +3,18 @@
   "WorkspaceRootPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1E77057-4DFF-42D7-A6F4-C05C57AD3DB7}|..\\MeuProjetoAPI.Tests\\MeuProjetoAPI.Tests.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi.tests\\logincontrollerunitariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\model\\pedidomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:model\\pedidomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\entidades\\enderecoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\enderecoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\produtoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\entidades\\pedidoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:entidades\\pedidoentidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1E77057-4DFF-42D7-A6F4-C05C57AD3DB7}|..\\MeuProjetoAPI.Tests\\MeuProjetoAPI.Tests.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi.tests\\logincontrollerintegracaotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,42 +29,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PedidoModel.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\PedidoModel.cs",
-              "RelativeDocumentMoniker": "Model\\PedidoModel.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Model\\PedidoModel.cs",
-              "RelativeToolTip": "Model\\PedidoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:14:16.753Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PedidoController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\PedidoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PedidoController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\PedidoController.cs",
-              "RelativeToolTip": "Controllers\\PedidoController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAADwvyEAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:11:14.58Z",
+              "WhenOpened": "2025-05-31T00:03:24.754Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAADwv9QAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LoginControllerUnitarioTest.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
+              "RelativeDocumentMoniker": "..\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
+              "RelativeToolTip": "..\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAADgv1QAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:10:54.626Z",
-              "IsPinned": true
+              "WhenOpened": "2025-05-31T00:17:56.417Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1666858208:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
@@ -88,50 +66,23 @@
               "RelativeDocumentMoniker": "EF\\SiteDbContext.cs",
               "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
               "RelativeToolTip": "EF\\SiteDbContext.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwCIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T22:44:34.138Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1666858208:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+              "WhenOpened": "2025-06-01T21:41:40.479Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EnderecoEntidade.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\EnderecoEntidade.cs",
-              "RelativeDocumentMoniker": "Entidades\\EnderecoEntidade.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\EnderecoEntidade.cs",
-              "RelativeToolTip": "Entidades\\EnderecoEntidade.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginControllerIntegracaoTest.cs",
+              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "RelativeDocumentMoniker": "..\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "RelativeToolTip": "..\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:06:06.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProdutoEntidade.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
-              "RelativeDocumentMoniker": "Entidades\\ProdutoEntidade.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\ProdutoEntidade.cs",
-              "RelativeToolTip": "Entidades\\ProdutoEntidade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:06:00.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PedidoEntidade.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\PedidoEntidade.cs",
-              "RelativeDocumentMoniker": "Entidades\\PedidoEntidade.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Entidades\\PedidoEntidade.cs",
-              "RelativeToolTip": "Entidades\\PedidoEntidade.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T03:05:41.432Z"
+              "WhenOpened": "2025-05-31T01:38:25.176Z",
+              "EditorCaption": ""
             }
           ]
         }
