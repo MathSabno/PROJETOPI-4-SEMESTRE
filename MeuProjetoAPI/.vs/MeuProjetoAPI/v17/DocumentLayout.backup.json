@@ -1,20 +1,19 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1E77057-4DFF-42D7-A6F4-C05C57AD3DB7}|..\\MeuProjetoAPI.Tests\\MeuProjetoAPI.Tests.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi.tests\\logincontrollerunitariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1E77057-4DFF-42D7-A6F4-C05C57AD3DB7}|..\\MeuProjetoAPI.Tests\\MeuProjetoAPI.Tests.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\projetopi-4-semestre\\meuprojetoapi.tests\\testhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1E77057-4DFF-42D7-A6F4-C05C57AD3DB7}|..\\MeuProjetoAPI.Tests\\MeuProjetoAPI.Tests.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\projetopi-4-semestre\\meuprojetoapi.tests\\logincontrollerintegracaotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E77057-4DFF-42D7-A6F4-C05C57AD3DB7}|..\\MeuProjetoAPI.Tests\\MeuProjetoAPI.Tests.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\projetopi-4-semestre\\meuprojetoapi.tests\\logincontrollerunitariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\users\\dell\\desktop\\lucas\\4 semestre\\p.i\\projetopi-4-semestre\\meuprojetoapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi\\ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E11D291-C7D5-4F53-B3CC-4AF261CA36D2}|MeuProjetoAPI.csproj|solutionrelative:ef\\sitedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1E77057-4DFF-42D7-A6F4-C05C57AD3DB7}|..\\MeuProjetoAPI.Tests\\MeuProjetoAPI.Tests.csproj|c:\\4 semestre\\pi - desenvolvimento web\\projetopi-4-semestre\\meuprojetoapi.tests\\logincontrollerintegracaotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,35 +23,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T00:03:24.754Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginControllerUnitarioTest.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
-              "RelativeDocumentMoniker": "..\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
-              "RelativeToolTip": "..\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAADgv1QAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T00:17:56.417Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -60,28 +44,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SiteDbContext.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
-              "RelativeDocumentMoniker": "EF\\SiteDbContext.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI\\EF\\SiteDbContext.cs",
-              "RelativeToolTip": "EF\\SiteDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TestHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\TestHelpers.cs",
+              "RelativeDocumentMoniker": "..\\MeuProjetoAPI.Tests\\TestHelpers.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\TestHelpers.cs",
+              "RelativeToolTip": "..\\MeuProjetoAPI.Tests\\TestHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T21:41:40.479Z",
+              "WhenOpened": "2025-06-03T16:36:04.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginControllerIntegracaoTest.cs",
-              "DocumentMoniker": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
-              "RelativeDocumentMoniker": "..\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
-              "ToolTip": "C:\\4 SEMESTRE\\PI - DESENVOLVIMENTO WEB\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
-              "RelativeToolTip": "..\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAA9AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginControllerUnitarioTest.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
+              "RelativeDocumentMoniker": "..\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs*",
+              "RelativeToolTip": "..\\MeuProjetoAPI.Tests\\LoginControllerUnitarioTest.cs*",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowGYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T01:38:25.176Z",
+              "WhenOpened": "2025-06-03T16:36:05.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginControllerIntegracaoTest.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "RelativeDocumentMoniker": "..\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\lucas\\4 SEMESTRE\\P.I\\PROJETOPI-4-SEMESTRE\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "RelativeToolTip": "..\\MeuProjetoAPI.Tests\\LoginControllerIntegracaoTest.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAiwEAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T16:35:47.12Z",
               "EditorCaption": ""
             }
           ]

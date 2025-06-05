@@ -13,18 +13,14 @@ namespace MeuProjetoAPI.Tests
 {
     public class LoginControllerTeste
     {
-        // Testando o Login do Usuário
         [Fact]
         public async Task LoginRetornarErroQuandoEmailOuSenhaEstiveremNulosOuVazios()
         {
-            // Arrange
             var mockContext = new Mock<SiteDbContext>();
             var controller = new LoginController(mockContext.Object);
 
-            // Act
             var result = await controller.Login(null);
 
-            // Assert
             var badRequestResult = Assert.IsType<BadRequestObjectResult>(result);
             Assert.Equal("Email e senha são obrigatórios.", badRequestResult.Value);
         }
@@ -32,7 +28,6 @@ namespace MeuProjetoAPI.Tests
         [Fact]
         public async Task LoginRetornarOkQuandoCredenciaisValidas()
         {
-            // Arrange
             var usuarioExistente = new UsuarioEntidade
             {
                 Id = 1,
@@ -107,7 +102,6 @@ namespace MeuProjetoAPI.Tests
                 Senha = "senha123"
             };
 
-            // Act
             var result = await controller.Login(usuario);
 
             var unauthorizedResult = Assert.IsType<UnauthorizedObjectResult>(result);
